@@ -5,7 +5,7 @@
 [项目预览(http://www.ibizsys.cn/Ionic/index.html)](http://www.ibizsys.cn/Ionic/index.html)
 
 ## 目录说明
-> * pub结尾项目为iBizSys平台生产代码，usr项目为开发过程中手写代码
+> pub结尾项目为iBizSys平台生产代码，usr项目为开发过程中手写代码
 
 > 移动端
 >> * app_IonicApp_pub
@@ -28,7 +28,7 @@
 > * Ionic-Angular
 
 ## 移动端项目结构
-
+![项目结构](readme-source/directory.png "项目结构")
 
 ## 移动端概览
 ![首页](readme-source/home.png "首页")
