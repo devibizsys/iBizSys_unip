@@ -1,0 +1,31 @@
+org-user-mob-mpickup-view {
+    .scroll-content {
+        background: #f4f4f4 !important;
+    }
+    .scroll-content {
+        background: #f4f4f4 !important;
+    }
+    .ibiz-footer-sum button{
+        width: 100%;
+        height: 45px;
+        text-align: center;
+        margin: 0px;
+        background: #fff;
+        border:none;
+    }
+    .ibiz-footer-sum h2{
+        font-size: 1.5rem;
+        float: left;
+        color: #5094f3;
+        margin: 18px 10px 15px 5px;
+    }
+    .ibiz-footer-sum h1{
+        font-size: 1.5rem;
+        float: left;
+        color: #5094f3;
+        margin: 18px 0px 15px 0px;
+    }
+    .ibiz-footer-sum button a[disabled], button[disabled], [ion-button][disabled]{
+        opacity: inherit !important;
+    }
+}

@@ -1,0 +1,1 @@
+var CodeItemEditViewController = CodeItemEditViewControllerBase.extend({});

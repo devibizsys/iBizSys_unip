@@ -1,0 +1,1 @@
+var WXOrgSectorGridViewController = WXOrgSectorGridViewControllerBase.extend({});

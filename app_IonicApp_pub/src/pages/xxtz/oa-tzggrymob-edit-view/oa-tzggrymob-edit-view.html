@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-navbar hideBackButton="true">
+        <ion-buttons start *ngIf="!isRootView()">
+            <button ion-button icon-only (click)="backView()">
+                <ion-icon name="arrow-back"></ion-icon>返回
+            </button>
+        </ion-buttons>
+    <ion-title text-center>通知公告人员</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+<input  type="hidden" [(ngModel)]="form.$data.srfupdatedate" name="srfupdatedate"><input  type="hidden" [(ngModel)]="form.$data.srforikey" name="srforikey"><input  type="hidden" [(ngModel)]="form.$data.srfkey" name="srfkey"><input  type="hidden" [(ngModel)]="form.$data.srfmajortext" name="srfmajortext"><input  type="hidden" [(ngModel)]="form.$data.srftempmode" name="srftempmode"><input  type="hidden" [(ngModel)]="form.$data.srfuf" name="srfuf"><input  type="hidden" [(ngModel)]="form.$data.srfdeid" name="srfdeid"><input  type="hidden" [(ngModel)]="form.$data.srfsourcekey" name="srfsourcekey"><input  type="hidden" [(ngModel)]="form.$data.oa_tzggryid" name="oa_tzggryid"><input  type="hidden" [(ngModel)]="form.$data.orguserid" name="orguserid">
+          <ion-item-group >
+	<ion-item-divider>通知公告人员基本信息</ion-item-divider>
+<ion-item *ngIf="form?.$item?.oa_tzggryname?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.oa_tzggryname.allowEmpty">*</span>通知公告人员名称</ion-avatar>
+	<ion-avatar>{{form.$data.oa_tzggryname}}</ion-avatar>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.sfyd?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.sfyd.allowEmpty">*</span>是否已读</ion-avatar>
+	<ion-avatar>{{form.$data.sfyd}}</ion-avatar>
+    </ion-item>	
+
+</ion-item-group>
+
+  
+  </ion-list>
+</ion-content>

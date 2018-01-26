@@ -1,0 +1,1 @@
+var WFStepDataTraceChartViewController = WFStepDataTraceChartViewControllerBase.extend({});

@@ -1,0 +1,11 @@
+/* CSS Document */
+/*
+ * Site:
+ * Author:Created by cyleen on 2015-11-30
+*/
+/* CSS Document */
+
+
+.btn { display:inline-block; -webkit-box-sizing:content-box; -moz-box-sizing:content-box; box-sizing:content-box; text-align:center; vertical-align:middle; word-wrap:normal; white-space:nowrap;}
+.btn.btnSheer-aa { height: 30px; line-height: 30px; padding: 0 10px; color: #ffffff; font-size: 14px; font-family: "微软雅黑"; background: #458fce; min-width: 50px; text-align: center; border-radius: 2px; -o-border-radius: 2px; -ms-border-radius: 2px; -moz-border-radius: 2px; -webkit-border-radius: 2px;}
+.btn.btnSheer-aa:hover {background: #b80000;}

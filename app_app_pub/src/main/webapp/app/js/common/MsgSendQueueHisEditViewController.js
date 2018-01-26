@@ -1,0 +1,1 @@
+var MsgSendQueueHisEditViewController = MsgSendQueueHisEditViewControllerBase.extend({});

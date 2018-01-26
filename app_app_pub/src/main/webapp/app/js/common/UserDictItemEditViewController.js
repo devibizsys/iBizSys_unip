@@ -1,0 +1,1 @@
+var UserDictItemEditViewController = UserDictItemEditViewControllerBase.extend({});

@@ -1,0 +1,4 @@
+<ion-label>
+	<ion-badge *ngFor="let item of selectedFileList">{{item.name}}<ion-icon name="close-circle" (tap)="deleteSelected(item)"></ion-icon></ion-badge>
+	<ion-icon name="add" item-end (click)="openPickView()"></ion-icon>
+</ion-label>

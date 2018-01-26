@@ -1,0 +1,118 @@
+/* CSS Document */
+/*
+ * Site:
+ * Author:Created by cyleen on 2015-11-30
+*/
+/* CSS Document */
+header { width: 100%;}
+.mini_nav { width: 100%; height: 30px; line-height: 30px; background: #314454; }
+.inMain { margin: 0 auto;}
+.main_nav { width: 100%; height: 70px; 
+	filter:alpha(opacity=100 finishopacity=50 style=1 startx=0,starty=100,finishx=0,finishy=0) progid:DXImageTransform.Microsoft.gradient(startcolorstr="#55adf9",endcolorstr="#4ea1e8",gradientType=0);
+    background:-webkit-linear-gradient(#55adf9,#4ea1e8,#55adf9);
+    background:-moz-linear-gradient(#55adf9,#4ea1e8,#55adf9);
+    background:-ms-linear-gradient(#55adf9,#4ea1e8,#55adf9);
+    background:-o-linear-gradient(#55adf9,#4ea1e8,#55adf9);
+    background:linear-gradient(#55adf9,#4ea1e8,#55adf9);
+}
+.main_nav h1 { width: 30%; float: left;}
+.main_nav .search { float: left; width: 50%;}
+.search-box { width: 100%; float: left; margin-top: 20px;}
+.search-input-box { position: relative; width: 50%; float: left; }
+.search-input-box input { padding-left: 20px; width: 90%;}
+.search-input-box i { position: absolute; left: 5px; top: 7px;}
+.search-keyword { width: 100%; float: left; line-height: 30px;}
+.search-keyword a { margin-right: 15px; color: #fff;}
+.dept_select { height: 30px; background: #036cc3; color: #fff; padding: 0 10px 0 10px;}
+
+.main { width: 100%; background: #f2f2f2; padding-top: 20px;}
+.part1, .part2, .part3, .part4 { width: 100%; overflow: hidden;}
+.part_left { width: 68%; float: left; }
+.bar {position: relative; border-bottom: 2px #0067bd solid;}
+.bar strong { position: absolute; left: 0;}
+.bar .tabHead { padding: 0 80px;}
+.bar span { position: absolute; right: 0; top: 0;}
+.tabHead-aa li { padding: 0 10px; line-height: 20px;}
+.tabHead-aa li a { color: #666; }
+.tabHead-aa li a:hover { color: #4ea1e8;}
+.tabHead-aa li.active { background: #d2dbe2; border: 1px #bebebe solid; border-bottom: 0; border-top-left-radius: 5px !important; border-top-right-radius: 5px !important;}
+.tabHead-aa li.active a { color: #000;}
+.tabCont { width: 100%; }
+.tabSameSty { width: 100%; }
+.tabSameSty ul { width: 100%; }
+.tabSameSty ul li { width: 100%; height: 30px; line-height: 30px;}
+.tabSameSty ul li a { color: #666;}
+.tabSameSty ul li a:hover { color: #0067bd;}
+.tabSameSty ul li span { display: block; float: left; overflow: hidden;}
+.tabSameSty ul li font { display: block; float: left; }
+.tabSameSty ul li time { display: block; float: right;}
+.tabSameSty ul li small { display: block; float: left;}
+.wait_list_a ul li { line-height: 30px;}
+.wait_list_a ul li span { width: 60%; }
+.wait_list_a ul li font { 20%; }
+.part_right { float: left; width: 30%; margin-left: 2%;}
+.bar-aa { width: 100%; padding-left: 5px; height: 20px; line-height: 20px; color: #fff; background: #0067bd; position: relative; font-size: 13px;font-weight: bold;}
+.bar-aa a { position: absolute; right: 5px; color: #fff;}
+.tabHead-ab { border-bottom: 2px #0067bd solid;}
+.tabHead-ab li { padding: 0 10px; line-height: 20px;}
+.tabHead-ab li a { color: #666; }
+.tabHead-ab li a:hover { color: #4ea1e8;}
+.tabHead-ab li.active { background: #0067bd; }
+.tabHead-ab li.active a { color: #fff;}
+.notice_list_a ul li { border-bottom: 1px #c0c0c0 dashed;}
+.notice_list_a ul li span { width: 60%; }
+.read_list_a ul li span { width: 60%;}
+.read_list_a ul li font {width: 20%; }
+.read_list_a ul li small { font-size: 12px; width: 5%;}
+
+.msg h3 { width: 100%; border-bottom: 2px #0067bd solid; color: #6d98ce;font-size:14px;font-weight:bold;}
+.msg ul li { width: 100%; position: relative; line-height: 40px; border-bottom: 1px #c0c0c0 dashed;}
+.msg ul li a { color: #666;font-size: 16px;}
+.msg ul li a:hover { color: #4ea1e8;}
+.msg ul li span { color: #e86da2; margin: 0 10px; }
+.msg ul li i { position: absolute; right: 5px; top: 15px;}
+
+.tabHead-ac { width: 100%; border-bottom: 2px #0067bd solid; height: 20px;}
+.tabHead-ac li { padding: 0 50px; line-height: 20px;}
+.tabHead-ac li a { color: #666; }
+.tabHead-ac li a:hover { color: #4ea1e8;}
+.tabHead-ac li.active { height: 21px; background: #f2f2f2; border: 1px #0067bd solid; border-bottom: 0; border-top-left-radius: 5px; border-top-right-radius: 5px;}
+.tabHead-ac li.active a { color: #0067bd;}
+.news { width: 100%; }
+.news_left { float: left; width: 56%;}
+.news_left b { display: block; float: left; width: 20%;}
+.news_brief { float: left; width: 80%;}
+.news_right { float: left; width: 40%; margin-left: 4%;}
+.news_right ul li { width: 100%; line-height: 30px;}
+.news_right ul li a { color: #666;}
+.news_right ul li a:hover { color: #4ea1e8;}
+.news_right ul li i { display: block; float: left; width: 3%; font-size: 16px; font-weight: bold;}
+.news_right ul li span { display: block; float: left; width: 70%;}
+.news_right ul li time { display: block; float: right; }
+.part4 ul { width: 780px; margin: 20px auto; overflow: hidden;}
+.part4 ul li { float: left; margin: 0 10px;}
+.part4 ul li a { display: block; width: 110px; height: 80px; background: #e9e9e9; border-radius: 5px;}
+.part4 ul li b { display: block; width: 40px; height: 40px; padding: 10px 35px 0 35px; vertical-align: middle;}
+.part4 ul li span { display: block; width: 100%; text-align: center;}
+.part4 ul li a:hover { background: #e0e0e0;}
+
+footer {background: #314454;}
+footer p { line-height: 30px; color: #fff;}
+
+.login {width: 100%; overflow: hidden; min-height: 500px; margin-top: 50px;}
+.login_form { float: left; width: 25%; padding: 50px 5% 50px 15%; border-right:1px #e0e0e0 solid;}
+.login_form h3 {color: #e40077; line-height: 50px;}
+.login_form ul { width: 100%; }
+.login_form ul li { width: 100%; position: relative; margin: 5px 0;}
+.login_form ul li label { position: absolute; left: 5px; top: 5px;}
+.login_form ul li input { width: 200px; padding-left: 40px; padding-right: 0;}
+.login_form p { margin-top:10px; }
+.login_form p button { width: 220px;} 
+.login_ad { float: left; width: 30%; margin: 50px 10%; background: #ccc; height: 235px;}
+.btn-msg { background: #fff; border: 1px #ccc solid; border-radius: 5px; height: 28px; line-height: 28px; width: 80px;}
+.btn-msg:hover { background: #e0e0e0; }
+
+
+.icon.icon-refresh2 { width: 14px; height: 17px; background-position: -31px -186px;}
+
+

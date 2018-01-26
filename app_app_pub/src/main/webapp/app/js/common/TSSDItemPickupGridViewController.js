@@ -1,0 +1,1 @@
+var TSSDItemPickupGridViewController = TSSDItemPickupGridViewControllerBase.extend({});

@@ -1,0 +1,1 @@
+var MsgSendQueueHisMPickupViewController = MsgSendQueueHisMPickupViewControllerBase.extend({});

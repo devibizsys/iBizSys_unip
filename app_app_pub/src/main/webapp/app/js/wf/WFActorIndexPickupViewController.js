@@ -1,0 +1,1 @@
+var WFActorIndexPickupViewController = WFActorIndexPickupViewControllerBase.extend({});

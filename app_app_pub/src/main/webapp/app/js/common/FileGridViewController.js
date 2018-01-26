@@ -1,0 +1,1 @@
+var FileGridViewController = FileGridViewControllerBase.extend({});

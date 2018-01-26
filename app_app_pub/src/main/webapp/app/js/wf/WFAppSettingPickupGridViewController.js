@@ -1,0 +1,1 @@
+var WFAppSettingPickupGridViewController = WFAppSettingPickupGridViewControllerBase.extend({});

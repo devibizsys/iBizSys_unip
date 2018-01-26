@@ -1,0 +1,1 @@
+var OA_CLMPickupViewController = OA_CLMPickupViewControllerBase.extend({});

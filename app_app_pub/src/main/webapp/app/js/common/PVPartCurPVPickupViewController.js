@@ -1,0 +1,1 @@
+var PVPartCurPVPickupViewController = PVPartCurPVPickupViewControllerBase.extend({});

@@ -1,0 +1,1 @@
+var DALogEditView2Controller = DALogEditView2ControllerBase.extend({});

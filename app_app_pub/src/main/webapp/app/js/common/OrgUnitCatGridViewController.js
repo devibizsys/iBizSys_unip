@@ -1,0 +1,1 @@
+var OrgUnitCatGridViewController = OrgUnitCatGridViewControllerBase.extend({});

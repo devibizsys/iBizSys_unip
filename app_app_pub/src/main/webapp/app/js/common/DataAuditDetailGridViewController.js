@@ -1,0 +1,1 @@
+var DataAuditDetailGridViewController = DataAuditDetailGridViewControllerBase.extend({});

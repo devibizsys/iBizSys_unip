@@ -1,0 +1,1 @@
+var OA_CLWXEditViewController = OA_CLWXEditViewControllerBase.extend({});

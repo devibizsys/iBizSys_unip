@@ -1,0 +1,1 @@
+var OA_PCSQPCSQLC_W20_WFGridViewController = OA_PCSQPCSQLC_W20_WFGridViewControllerBase.extend({});

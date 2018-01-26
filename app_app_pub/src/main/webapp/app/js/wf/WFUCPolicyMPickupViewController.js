@@ -1,0 +1,1 @@
+var WFUCPolicyMPickupViewController = WFUCPolicyMPickupViewControllerBase.extend({});

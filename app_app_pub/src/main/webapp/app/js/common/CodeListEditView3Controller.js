@@ -1,0 +1,1 @@
+var CodeListEditView3Controller = CodeListEditView3ControllerBase.extend({});

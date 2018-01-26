@@ -1,0 +1,20 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title text-center>审批</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+    
+  <grid-menu-portlet url='/IonicApp/cg/sp.do' name="db_sphead" (menuClick)='menuClick($event)' [counter]="$uicounters?.MobCount"></grid-menu-portlet>
+
+
+
+  <group-menu-portlet class="menu-group-right" url='/IonicApp/cg/sp.do' name='db_sp' (menuClick)='menuClick($event)' ></group-menu-portlet>
+
+
+
+</ion-content>

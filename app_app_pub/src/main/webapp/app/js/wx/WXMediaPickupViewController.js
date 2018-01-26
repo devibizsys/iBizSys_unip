@@ -1,0 +1,1 @@
+var WXMediaPickupViewController = WXMediaPickupViewControllerBase.extend({});

@@ -1,0 +1,1 @@
+var WFSystemUserEditView2Controller = WFSystemUserEditView2ControllerBase.extend({});

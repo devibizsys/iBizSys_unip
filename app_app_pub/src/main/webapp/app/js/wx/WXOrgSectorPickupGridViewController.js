@@ -1,0 +1,1 @@
+var WXOrgSectorPickupGridViewController = WXOrgSectorPickupGridViewControllerBase.extend({});

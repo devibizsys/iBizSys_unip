@@ -1,0 +1,1 @@
+var OA_FLFGPickupGridViewController = OA_FLFGPickupGridViewControllerBase.extend({});

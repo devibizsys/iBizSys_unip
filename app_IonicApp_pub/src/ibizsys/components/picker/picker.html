@@ -1,0 +1,4 @@
+<ion-label>
+	<ion-badge *ngIf="content != '' && content != undefined">{{content}}<ion-icon name="close-circle" (tap)="clear()"></ion-icon></ion-badge>
+	<ion-icon name="add" item-end (click)="openPickView()"></ion-icon>
+</ion-label>

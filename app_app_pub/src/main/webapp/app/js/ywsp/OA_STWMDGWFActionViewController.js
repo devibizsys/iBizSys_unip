@@ -1,0 +1,1 @@
+var OA_STWMDGWFActionViewController = OA_STWMDGWFActionViewControllerBase.extend({});

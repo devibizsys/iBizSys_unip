@@ -1,0 +1,1 @@
+var WFStepActorPickupGridViewController = WFStepActorPickupGridViewControllerBase.extend({});

@@ -1,0 +1,1 @@
+var OA_JPYDEditView2Controller = OA_JPYDEditView2ControllerBase.extend({});

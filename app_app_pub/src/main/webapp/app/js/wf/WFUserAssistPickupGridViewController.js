@@ -1,0 +1,1 @@
+var WFUserAssistPickupGridViewController = WFUserAssistPickupGridViewControllerBase.extend({});

@@ -1,0 +1,1 @@
+var OA_YBHYSQYBHYSQ_WFExpViewController = OA_YBHYSQYBHYSQ_WFExpViewControllerBase.extend({});

@@ -1,0 +1,1 @@
+var WFUCPolicyEditViewController = WFUCPolicyEditViewControllerBase.extend({});

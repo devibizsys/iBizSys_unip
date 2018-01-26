@@ -1,0 +1,409 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>sln_unip</artifactId>
+    <groupId>com.sa.unip</groupId>
+    <version>1.0.0.0</version>
+    <packaging>pom</packaging>
+
+    <dependencies>
+            <dependency>
+			<groupId>SmartUpload</groupId>
+			<artifactId>SmartUpload</artifactId> 
+			<version>1.0</version> 
+		</dependency>
+            <dependency>
+  			<groupId>org.codehaus.groovy</groupId>
+  			<artifactId>groovy-all</artifactId>
+  			<version>1.8.6</version>
+		</dependency>
+            <dependency>
+  			<groupId>joda-time</groupId>
+  			<artifactId>joda-time</artifactId>
+  			<version>2.9.4</version>
+		</dependency>
+            <dependency>
+		  <groupId>com.lowagie</groupId>
+		  <artifactId>itextasian</artifactId>
+		  <version>1.0.0</version>
+		</dependency>
+            <dependency>
+		    <groupId>xerces</groupId>
+		    <artifactId>xercesImpl</artifactId>
+		    <version>2.11.0</version> 
+		</dependency>
+            <dependency>
+			<groupId>net.sf.ezmorph</groupId>
+			<artifactId>ezmorph</artifactId>
+			<version>1.0.6</version>
+		</dependency>
+            <!-- log4j -->
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.17</version>
+		</dependency>
+            <!-- commons-logging -->
+		<dependency>
+			<groupId>commons-logging</groupId>
+			<artifactId>commons-logging</artifactId>
+			<version>1.2</version>
+		</dependency>
+            <!-- slf4j-api -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>1.7.21</version>
+		</dependency>
+            <!-- slf4j-log4j12 -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>1.7.21</version>
+		</dependency>
+            <dependency>
+			<groupId>javax.servlet.jsp</groupId>
+			<artifactId>jsp-api</artifactId>
+			<version>2.2</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.2</version>
+		</dependency>
+            <!-- servlet-api -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>3.1.0</version>
+		</dependency>
+            <!-- json-lib -->
+		<dependency>
+			<groupId>net.ibizsys.private</groupId>
+			<artifactId>json-lib</artifactId>
+			<version>2.4</version>
+			<classifier>jdk15</classifier>
+		</dependency>
+            <!-- antlr -->
+		<dependency>
+			<groupId>antlr</groupId>
+			<artifactId>antlr</artifactId>
+			<version>2.7.7</version>
+		</dependency>
+            <!-- spring-aop -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-aop</artifactId>
+			<version>4.1.4.RELEASE</version>
+		</dependency>
+
+		<!-- spring-aspects -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-aspects</artifactId>
+			<version>4.1.4.RELEASE</version>
+		</dependency>
+
+		<!-- spring-beans -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-beans</artifactId>
+			<version>4.1.4.RELEASE</version>
+		</dependency>
+
+		<!-- spring-context -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>4.1.4.RELEASE</version>
+		</dependency>
+
+		<!-- spring-context-support -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context-support</artifactId>
+			<version>4.1.4.RELEASE</version>
+		</dependency>
+
+		<!-- spring-core -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-core</artifactId>
+			<version>4.1.4.RELEASE</version>
+		</dependency>
+
+		<!-- spring-expression -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-expression</artifactId>
+			<version>4.1.4.RELEASE</version>
+		</dependency>
+
+		<!-- spring-jdbc -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-jdbc</artifactId>
+			<version>4.1.4.RELEASE</version>
+		</dependency>
+
+		<!-- spring-orm -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-orm</artifactId>
+			<version>4.1.4.RELEASE</version>
+		</dependency>
+
+		<!-- spring-oxm -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-oxm</artifactId>
+			<version>4.1.4.RELEASE</version>
+		</dependency>
+
+		<!-- spring-tx -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-tx</artifactId>
+			<version>4.1.4.RELEASE</version>
+		</dependency>
+
+		<!-- spring-web -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-web</artifactId>
+			<version>4.1.4.RELEASE</version>
+		</dependency>
+
+		<!-- spring-webmvc -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>4.1.4.RELEASE</version>
+		</dependency>
+            <!-- dom4j -->
+		<dependency>
+			<groupId>dom4j</groupId>
+			<artifactId>dom4j</artifactId>
+			<version>1.6.1</version>
+		</dependency>
+            <!-- hibernate-commons-annotations -->
+		<dependency>
+			<groupId>org.hibernate.common</groupId>
+			<artifactId>hibernate-commons-annotations</artifactId>
+			<version>4.0.5.Final</version>
+		</dependency>
+
+		<!-- hibernate-core -->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
+			<version>4.3.8.Final</version>
+		</dependency>
+
+		<!-- hibernate-jpa -->
+		<dependency>
+			<groupId>org.hibernate.javax.persistence</groupId>
+			<artifactId>hibernate-jpa-2.0-api</artifactId>
+			<version>1.0.0.Final</version>
+		</dependency>
+
+		<!-- jandex -->
+		<dependency>
+			<groupId>org.jboss</groupId>
+			<artifactId>jandex</artifactId>
+			<version>1.0.0.Final</version>
+		</dependency>
+
+		<!-- javassist -->
+		<dependency>
+			<groupId>org.javassist</groupId>
+			<artifactId>javassist</artifactId>
+			<version>3.18.2-GA</version>
+		</dependency>
+
+		<!-- jboss-logging -->
+		<dependency>
+			<groupId>org.jboss.logging</groupId>
+			<artifactId>jboss-logging</artifactId>
+			<version>3.1.3.GA</version>
+		</dependency>
+
+		<!-- jboss-logging-annotations -->
+		<dependency>
+			<groupId>org.jboss.logging</groupId>
+			<artifactId>jboss-logging-annotations</artifactId>
+			<version>1.2.0.Final</version>
+		</dependency>
+
+		<!-- jboss-transaction-api_1.2_spec -->
+		<dependency>
+			<groupId>org.jboss.spec.javax.transaction</groupId>
+			<artifactId>jboss-transaction-api_1.2_spec</artifactId>
+			<version>1.0.0.Final</version>
+		</dependency>
+            <!-- commons-httpclient -->
+		<dependency>
+			<groupId>commons-httpclient</groupId>
+			<artifactId>commons-httpclient</artifactId>
+			<version>3.1</version>
+		</dependency>
+            <!-- freemarker -->
+		<dependency>
+			<groupId>org.freemarker</groupId>
+			<artifactId>freemarker</artifactId>
+			<version>2.3.23</version>
+		</dependency>
+            <!-- ant -->
+		<dependency>
+			<groupId>org.apache.ant</groupId>
+			<artifactId>ant</artifactId>
+			<version>1.9.7</version>
+		</dependency>
+            <!-- activemq-all -->
+		<dependency>
+			<groupId>org.apache.activemq</groupId>
+			<artifactId>activemq-all</artifactId>
+			<version>5.6.0</version>
+		</dependency>
+            <!-- jxl -->
+		<dependency>
+			<groupId>net.sourceforge.jexcelapi</groupId>
+			<artifactId>jxl</artifactId>
+			<version>2.6.12</version>
+		</dependency>
+            <!-- poi -->
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi</artifactId>
+			<version>3.13</version>
+		</dependency>
+
+		<!-- poi-ooxml -->
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>3.13</version>
+		</dependency>
+
+		<!-- poi-ooxml-schemas -->
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml-schemas</artifactId>
+			<version>3.13</version>
+		</dependency>
+
+		<!-- poi-scratchpad -->
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-scratchpad</artifactId>
+			<version>3.13</version>
+		</dependency>
+            <!-- javax.mail -->
+		<dependency>
+			<groupId>com.sun.mail</groupId>
+			<artifactId>javax.mail</artifactId>
+			<version>1.5.6</version>
+		</dependency>
+            <!-- c3p0 -->
+		<dependency>
+			<groupId>com.mchange</groupId>
+			<artifactId>c3p0</artifactId>
+			<version>0.9.5.2</version>
+		</dependency>
+
+		<!-- c3p0-oracle-thin-extras -->
+		<dependency>
+			<groupId>com.google.code.maven-play-plugin.com.mchange</groupId>
+			<artifactId>c3p0-oracle-thin-extras</artifactId>
+			<version>0.9.5</version>
+		</dependency>
+            <dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>5.1.26</version>
+		</dependency>
+            <!-- mchange-commons-java -->
+		<dependency>
+			<groupId>com.mchange</groupId>
+			<artifactId>mchange-commons-java</artifactId>
+			<version>0.2.11</version>
+		</dependency>
+            <dependency>
+			<groupId>net.sf.jasperreports</groupId>
+			<artifactId>jasperreports</artifactId>
+			<version>6.2.1</version>
+		</dependency>
+		<dependency>
+			<groupId>net.sf.jasperreports</groupId>
+			<artifactId>jasperreports-fonts</artifactId>
+			<version>6.2.1</version>
+		</dependency>
+		<dependency>
+			<groupId>net.sf.jasperreports</groupId>
+			<artifactId>jasperreports-functions</artifactId>
+			<version>6.2.1</version>
+		</dependency>
+		<dependency>
+			<groupId>net.sf.jasperreports</groupId>
+			<artifactId>jasperreports-javaflow</artifactId>
+			<version>6.2.1</version>
+		</dependency>
+            <dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpclient</artifactId>
+			<version>4.5.2</version>
+		</dependency>
+            <dependency>
+			<groupId>com.edb.Driver</groupId>
+			<artifactId>edb</artifactId>
+			<version>16</version>
+		</dependency>
+            <dependency>
+			<groupId>xml-apis</groupId>
+			<artifactId>xml-apis</artifactId>
+			<version>1.4.01</version>
+		</dependency>
+            <dependency>
+  <groupId>commons-fileupload</groupId>
+  <artifactId>commons-fileupload</artifactId>
+  <version>1.3.1</version>
+</dependency>
+            <dependency>
+			<groupId>org.jasig.cas.client</groupId>
+			<artifactId>cas-client-core</artifactId>
+			<version>3.1.12</version>
+		</dependency>
+            <dependency>
+			<groupId>net.ibizsys.runtime</groupId>
+			<artifactId>saibz5_all</artifactId>
+			<version>5.0.17.4</version>
+		</dependency>
+	</dependencies>
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.7</source>
+					<target>1.7</target>
+					<encoding>UTF-8</encoding>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+	<repositories>
+		<repository>
+			<id>ibizmvnrepository</id>
+			<name>ibizmvnrepository</name>
+			<url>http://172.16.150.220:8081/nexus/content/groups/public/</url>
+			<layout>default</layout>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+				<updatePolicy>always</updatePolicy>  
+			</snapshots>
+		</repository>
+	</repositories>
+</project>

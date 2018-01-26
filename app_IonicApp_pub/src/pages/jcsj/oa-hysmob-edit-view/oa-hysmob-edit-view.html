@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-navbar hideBackButton="true">
+        <ion-buttons start *ngIf="!isRootView()">
+            <button ion-button icon-only (click)="backView()">
+                <ion-icon name="arrow-back"></ion-icon>返回
+            </button>
+        </ion-buttons>
+    <ion-title text-center>会议室</ion-title>
+    <ion-buttons end>
+    </ion-buttons>
+
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+<input  type="hidden" [(ngModel)]="form.$data.srfupdatedate" name="srfupdatedate"><input  type="hidden" [(ngModel)]="form.$data.srforikey" name="srforikey"><input  type="hidden" [(ngModel)]="form.$data.srfkey" name="srfkey"><input  type="hidden" [(ngModel)]="form.$data.srfmajortext" name="srfmajortext"><input  type="hidden" [(ngModel)]="form.$data.srftempmode" name="srftempmode"><input  type="hidden" [(ngModel)]="form.$data.srfuf" name="srfuf"><input  type="hidden" [(ngModel)]="form.$data.srfdeid" name="srfdeid"><input  type="hidden" [(ngModel)]="form.$data.srfsourcekey" name="srfsourcekey"><input  type="hidden" [(ngModel)]="form.$data.oa_hysid" name="oa_hysid">
+          <ion-item-group >
+	
+<ion-item *ngIf="form?.$item?.oa_hysname?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.oa_hysname.allowEmpty">*</span>会议室名称</ion-avatar>
+	<ion-avatar>{{form.$data.oa_hysname}}</ion-avatar>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.hysdz?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.hysdz.allowEmpty">*</span>会议室地址</ion-avatar>
+	<ion-avatar>{{form.$data.hysdz}}</ion-avatar>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.syqk?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.syqk.allowEmpty">*</span>使用情况</ion-avatar>
+	<ion-avatar>{{form.$data.syqk}}</ion-avatar>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.sysj?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.sysj.allowEmpty">*</span>使用时间</ion-avatar>
+	<ion-avatar>{{form.$data.sysj}}</ion-avatar>
+    </ion-item>	
+
+</ion-item-group>
+
+  
+  </ion-list>
+</ion-content>

@@ -1,0 +1,1 @@
+var SystemEditView2Controller = SystemEditView2ControllerBase.extend({});

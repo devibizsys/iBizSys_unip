@@ -1,0 +1,1 @@
+var OA_JPYDJPYDLC_D_WFEditView3Controller = OA_JPYDJPYDLC_D_WFEditView3ControllerBase.extend({});

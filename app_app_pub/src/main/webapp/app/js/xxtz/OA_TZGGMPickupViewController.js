@@ -1,0 +1,1 @@
+var OA_TZGGMPickupViewController = OA_TZGGMPickupViewControllerBase.extend({});

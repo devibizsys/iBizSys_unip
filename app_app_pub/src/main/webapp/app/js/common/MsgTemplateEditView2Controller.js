@@ -1,0 +1,1 @@
+var MsgTemplateEditView2Controller = MsgTemplateEditView2ControllerBase.extend({});

@@ -1,0 +1,1 @@
+var OA_JPYDMPickupViewController = OA_JPYDMPickupViewControllerBase.extend({});

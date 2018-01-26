@@ -1,0 +1,1 @@
+var TSSDTaskPolicyPickupViewController = TSSDTaskPolicyPickupViewControllerBase.extend({});

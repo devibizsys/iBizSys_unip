@@ -1,0 +1,46 @@
+$IRM('IBIZAPP.CONFIRM.TITLE.WARN','Warning');
+$IRM('IBIZAPP.CONFIRM.TITLE.INFO','Information');
+$IRM('IBIZAPP.CONFIRM.TITLE.ERROR','Error');
+$IRM('IBIZAPP.CONFIRM.BUTTON.OK','Ok');
+$IRM('IBIZAPP.CONFIRM.BUTTON.CANCEL','Cancel');
+
+/*编辑表单-保存*/
+$IRM('IBIZEDITFORM.UNLOADDATA','Form data unload！');
+
+/*编辑表单-保存*/
+$IRM('IBIZEDITFORM.SAVE2FAILED.TITLE','Save error info');
+$IRM('IBIZEDITFORM.SAVE2FAILED.INFO','Data save failed,{0}');
+$IRM('IBIZEDITFORM.SAVE2FAILED.INFO2','Data save failed,{0},Do you want to reload?');
+/*编辑表单-删除*/
+$IRM('IBIZEDITFORM.REMOVEFAILED.TITLE','Remove error info');
+$IRM('IBIZEDITFORM.REMOVEFAILED.INFO','Data remove error,{0}');
+/*编辑表单-启动流程*/
+$IRM('IBIZEDITFORM.WFSTARTFAILED.TITLE','Start workflow error info');
+$IRM('IBIZEDITFORM.WFSTARTFAILED.INFO','Data start error,{0}');
+/*编辑表单-流程操作*/
+$IRM('IBIZEDITFORM.WFSUBMITFAILED.TITLE','Submit workflow error info');
+$IRM('IBIZEDITFORM.WFSUBMITFAILED.INFO','Data submit workflow error,{0}');
+/*编辑表单-界面操作*/
+$IRM('IBIZEDITFORM.DOUIACTIONFAILED.TITLE','Interface operation error info');
+$IRM('IBIZEDITFORM.DOUIACTIONFAILED.INFO','Operate failed,{0}');
+$IRM('IBIZEDITFORM.DOUIACTIONFAILED.INFO2','Execute request exception！');
+
+/*编辑视图*/
+$IRM('EDITVIEWCONTROLLER.UPDATEVIEWINFO.CONTENT','New');
+
+/*表格控件 -工具栏信息*/
+$IRM('IBIZDATAGRID.CONSTRUCT.FILTER','show/hide column');
+$IRM('IBIZDATAGRID.CONSTRUCT.LOCKLIFT','lock the first');
+$IRM('IBIZDATAGRID.CONSTRUCT.LOCKRIGHT','columns');
+$IRM('IBIZDATAGRID.CONSTRUCT.ROWGROUP','items');
+$IRM('IBIZDATAGRID.ISOPENEDIT.CONFIRM','Some of the data has been modified. Do you close the edit?');
+
+$IRM('EDITVIEWCONTROLLER.ONFORMSAVED.INFO','Save success！');
+
+$IRM('IBIZDROPDOWNLISTFIELD.PLACEHOLDER','Select...');
+$IRM('IBIZDROPDOWNLISTFIELD.CLEAN','(Clean)');
+/*文件上传*/
+$IRM('IBIZFILEFIELD.OPENUPLOADVIEW.INFO','Upload file');
+/*图表 -加载*/
+$IRM('IBIZCHART.TOOLBAR.DATAVIEW','dataView');
+$IRM('IBIZCHART.TOOLBAR.SAVEASIMAGE','saveAsImage');

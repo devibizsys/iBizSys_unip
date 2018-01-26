@@ -1,0 +1,1 @@
+var QueryModelGridViewController = QueryModelGridViewControllerBase.extend({});

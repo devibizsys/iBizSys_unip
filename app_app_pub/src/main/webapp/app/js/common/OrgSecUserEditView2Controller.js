@@ -1,0 +1,1 @@
+var OrgSecUserEditView2Controller = OrgSecUserEditView2ControllerBase.extend({});

@@ -1,0 +1,133 @@
+.wfstart {
+	/* border: 1px solid #346789;
+	box-shadow: 2px 2px 19px #aaa;
+	-o-box-shadow: 2px 2px 19px #aaa;
+	-webkit-box-shadow: 2px 2px 19px #aaa;
+	-moz-box-shadow: 2px 2px 19px #aaa;
+	-moz-border-radius: 0.5em;
+	opacity: 0.8; */
+	z-index: 20;
+	position: absolute;
+	background-color: #000000;
+	color: black;
+	width: 25px;
+	height: 25px;
+	border-radius: 25px; top : 14em;
+	left: 22em;
+	top: 14em;
+}
+
+.wfstart:hover {
+	box-shadow: 2px 2px 19px #444;
+	-o-box-shadow: 2px 2px 19px #444;
+	-webkit-box-shadow: 2px 2px 19px #444;
+	-moz-box-shadow: 2px 2px 19px #444;
+	opacity: 0.6;
+	filter: alpha(opacity =  60);
+}
+
+.wfend {
+	border: 1px solid #346789;
+	box-shadow: 2px 2px 19px #aaa;
+	-o-box-shadow: 2px 2px 19px #aaa;
+	-webkit-box-shadow: 2px 2px 19px #aaa;
+	-moz-box-shadow: 2px 2px 19px #aaa;
+	-moz-border-radius: 0.5em;
+	opacity: 0.8;
+	z-index: 20;
+	position: absolute;
+	background-color: #ffffff;
+	color: black;
+	width: 25px;
+	height: 25px;
+	border-radius: 25px;
+	top: 14em;
+	left: 22em;
+}
+
+.wfend:hover {
+	box-shadow: 2px 2px 19px #444;
+	-o-box-shadow: 2px 2px 19px #444;
+	-webkit-box-shadow: 2px 2px 19px #444;
+	-moz-box-shadow: 2px 2px 19px #444;
+	opacity: 0.6;
+	filter: alpha(opacity =  60);
+}
+
+.wfprocess {
+	border: 1px solid #346789;
+	box-shadow: 2px 2px 19px #aaa;
+	-o-box-shadow: 2px 2px 19px #aaa;
+	-webkit-box-shadow: 2px 2px 19px #aaa;
+	-moz-box-shadow: 2px 2px 19px #aaa;
+	-moz-border-radius: 0.5em;
+	border-radius: 0.5em;
+	opacity: 0.8;
+	filter: alpha(opacity =  80);
+	text-align: center;
+	z-index: 20;
+	position: absolute;
+	background-color: #eeeeef;
+	color: black;
+	font-family: helvetica;
+	padding: 0.5em;
+	font-size: 0.9em;
+	width: 140px;
+	height: 40px;
+	top: 14em;
+	left: 22em;
+	vertical-align: middle; 
+}
+
+.wfprocess:hover {
+	box-shadow: 2px 2px 19px #444;
+	-o-box-shadow: 2px 2px 19px #444;
+	-webkit-box-shadow: 2px 2px 19px #444;
+	-moz-box-shadow: 2px 2px 19px #444;
+	opacity: 0.6;
+	filter: alpha(opacity =  60);
+}
+
+.wfdecide {
+	text-align: center;
+	z-index: 20;
+	position: absolute;
+	background-image:url(lx.png);
+	font-family: helvetica;
+	font-size: 0.9em;
+	width: 120px;
+	height: 70px;
+	top: 14em;
+	left: 22em;
+}
+
+.wfdecide:hover {
+	box-shadow: 2px 2px 19px #444;
+	-o-box-shadow: 2px 2px 19px #444;
+	-webkit-box-shadow: 2px 2px 19px #444;
+	-moz-box-shadow: 2px 2px 19px #444;
+	opacity: 0.6;
+	/* filter: alpha(opacity =  60); */
+}
+.fl_container_bg {
+  position: absolute;
+  text-align: center;
+  background-color: grey;
+  color: white;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px gray;
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,1 @@
+var OrgUserLevelEditViewController = OrgUserLevelEditViewControllerBase.extend({});

@@ -1,0 +1,1 @@
+var OrgUserPCFZRXZGLPickupGridViewController = OrgUserPCFZRXZGLPickupGridViewControllerBase.extend({});

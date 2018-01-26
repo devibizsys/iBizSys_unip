@@ -1,0 +1,1 @@
+var SystemPickupGridViewController = SystemPickupGridViewControllerBase.extend({});

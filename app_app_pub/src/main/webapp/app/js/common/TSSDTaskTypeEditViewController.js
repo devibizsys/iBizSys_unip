@@ -1,0 +1,1 @@
+var TSSDTaskTypeEditViewController = TSSDTaskTypeEditViewControllerBase.extend({});

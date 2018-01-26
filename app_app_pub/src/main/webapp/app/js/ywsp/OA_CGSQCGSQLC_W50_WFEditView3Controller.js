@@ -1,0 +1,1 @@
+var OA_CGSQCGSQLC_W50_WFEditView3Controller = OA_CGSQCGSQLC_W50_WFEditView3ControllerBase.extend({});

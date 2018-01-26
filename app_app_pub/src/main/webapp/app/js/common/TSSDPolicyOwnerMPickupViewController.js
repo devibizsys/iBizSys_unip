@@ -1,0 +1,1 @@
+var TSSDPolicyOwnerMPickupViewController = TSSDPolicyOwnerMPickupViewControllerBase.extend({});

@@ -1,0 +1,1 @@
+var WFStepDataGridViewController = WFStepDataGridViewControllerBase.extend({});

@@ -1,0 +1,1 @@
+var OrgSecUserPickupGridViewController = OrgSecUserPickupGridViewControllerBase.extend({});

@@ -1,0 +1,1 @@
+var DataSyncAgentGridViewController = DataSyncAgentGridViewControllerBase.extend({});

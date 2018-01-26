@@ -1,0 +1,99 @@
+ion-avatar{
+    padding: 12px 8px 12px 0;
+}
+ion-select{
+    max-width: 100% !important;
+}
+.toolbar-background{
+    background: #fff !important;
+}
+.header::after{
+    bottom: -1px !important;
+    height: 1px !important;
+}
+ion-header .toolbar-content{
+    position: absolute;
+    width: 100%;
+    z-index: -1;    
+}
+.toolbar{
+    min-height: 54px !important;
+}
+.back-button{
+    margin: 0 !important;
+}
+.bar-button {
+    margin: 0 !important;    
+    padding: 0 !important;
+}
+.toolbarBtn {
+    margin-right: 1rem !important;
+}
+ion-fab {
+    position: fixed !important;
+}
+ion-fab[bottom] {
+    bottom: 100px !important;
+}
+.ibiz-alert .toast-wrapper{
+    background: initial !important;
+}
+.ibiz-alert .toast-message{
+   margin: 0 auto;
+   border-radius:10px;
+   text-align: center;
+   background: #333 !important;
+   opacity: 0.8 !important;
+   flex: initial;
+   -webkit-flex: initial;
+   -webkit-box-flex: initial;
+}
+.ibiz-select-alert{
+    .alert-wrapper{
+        border-radius:5px;
+        width:80% !important;
+    }
+    .alert-title {
+        font-size: 20px !important;
+    }
+    .alert-head {
+        text-align: center;
+        letter-spacing: 1px;
+        padding: 15px 24px 10px !important;
+    }
+    .alert-button-group {
+        padding:0px !important;
+        justify-content: initial !important;
+    }
+    .alert-button{
+        margin:0px !important;
+    }
+    .alert-button .button-inner{
+        font-size: 18px !important;
+        letter-spacing: 3px;
+    }
+    .alert-button-group .alert-button:first-child{
+        padding:0px 50px 0px 50px;
+        border-right:solid 1px #dedede;
+        height: 45px;
+        color: #adadad !important;
+    }
+    .alert-button-group .alert-button:last-child{
+        margin-left:40px !important;
+    }
+    .alert-ios .alert-button{
+        min-width: 0% !important;
+    }
+    .alert-ios .alert-title{
+        font-weight: inherit;
+    }
+    .alert-button-ios{
+        padding: 0px !important;
+    }
+    .alert-button-group .alert-button:last-child{
+        margin: 0px !important;
+    }
+    .alert-button-group .alert-button-default-md:last-child{
+        margin-left: 40px !important;
+    }
+}

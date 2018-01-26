@@ -1,0 +1,31 @@
+/* CSS Document */
+/*
+ * Site:
+ * Author:Created by cyleen on 2015-11-30
+*/
+/* CSS Document */
+html,body,fieldset,legend,h1,h2,h3,h4,h5,h6,hgroup,a,abbr,img,p,hr,pre,blockquote,ol,ul,li,dl,dt,dd,figure,figcaption,div,button,details,input,label,menu,select,textarea,form,em,strong,small,s,cite,q,dfn,data,time,code,var,samp,kbd,sub,sup,i,b,u,mark,ruby,rt,rp,bdi,bdo,span,br,wbr,font,tt,ins,del,table,caption,colgroup,col,tbody,thead,tfoot,tr,td,th,audio,canvas,embed,iframe,math,object,svg,video,meter,progress,output,keygen,header,footer,address,details,summary,menu,menuitem,dialog { margin: 0; padding: 0; border: none; outline: none;}
+article,aside,nav,section { display: block; margin: 0; padding: 0; border: none; outline: none; }
+html { font-size: 100%; height: 100%; overflow-y: scroll; cursor: default; -webkit-tap-highlight-color: transparent;  -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;}
+body { color: #666666;}
+body,input,button,select,textarea { font: 12px/1.5 sans-serif;}
+input,button,select,textarea { vertical-align: middle; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; -ms-box-sizing: content-box; -o-box-sizing: content-box; box-sizing: content-box; word-wrap: normal; white-space: nowrap;}
+input,textarea,select { text-align: left}
+button { line-height: normal; cursor: pointer;}
+table { border-collapse: collapse;  border-spacing: 0;}
+li { display: inline-block; list-style: none;}
+a { color:#6d98ce; text-decoration: none; outline: none; }
+a:link { color: #6d98ce; text-decoration: none; outline: none; }
+a:visited { color: #6d98ce; text-decoration: none; outline: none; }
+a:hover { color: #0067bd; text-decoration: none; outline: none; }
+a:active { color: #6d98ce; text-decoration: none; outline: none; }
+i,em,s { font-style: normal !important; text-decoration: none;}
+abbr[title], dfn[title] { border-bottom: 1px dotted; cursor: help;}
+pre,code,kbd,samp { font-family: monospace, sans-serif; _font-family: 'Courier New', monospace, sans-serif; font-size: 1em;}
+pre {white-space: pre; word-wrap: break-word;}
+blockquote,q { quotes: none;}
+blockquote:before,blockquote:after,q:before,q:after {content: '';}
+small { font-size: 75%;}
+sub,sup {font-size: 75%;line-height: 0;position: relative;vertical-align: baseline;}
+sup {top: -0.5em;}
+sub {bottom: -0.25em;}

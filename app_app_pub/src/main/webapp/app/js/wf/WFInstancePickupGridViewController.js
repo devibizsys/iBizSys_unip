@@ -1,0 +1,1 @@
+var WFInstancePickupGridViewController = WFInstancePickupGridViewControllerBase.extend({});

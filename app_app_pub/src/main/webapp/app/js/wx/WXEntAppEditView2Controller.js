@@ -1,0 +1,1 @@
+var WXEntAppEditView2Controller = WXEntAppEditView2ControllerBase.extend({});

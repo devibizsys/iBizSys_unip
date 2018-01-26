@@ -1,0 +1,1 @@
+var DataSyncAgentEditView2Controller = DataSyncAgentEditView2ControllerBase.extend({});

@@ -1,0 +1,1 @@
+var QueryModelPickupGridViewController = QueryModelPickupGridViewControllerBase.extend({});

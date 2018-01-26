@@ -1,0 +1,1 @@
+var CodeListGridViewController = CodeListGridViewControllerBase.extend({});

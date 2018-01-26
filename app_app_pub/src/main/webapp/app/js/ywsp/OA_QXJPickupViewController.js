@@ -1,0 +1,1 @@
+var OA_QXJPickupViewController = OA_QXJPickupViewControllerBase.extend({});

@@ -1,0 +1,1 @@
+var OA_YBHYSQMPickupViewController = OA_YBHYSQMPickupViewControllerBase.extend({});

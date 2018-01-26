@@ -1,0 +1,1 @@
+var OrgUnitCatEditView2Controller = OrgUnitCatEditView2ControllerBase.extend({});

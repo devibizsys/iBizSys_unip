@@ -1,0 +1,1 @@
+var OA_TZGGRYPickupViewController = OA_TZGGRYPickupViewControllerBase.extend({});

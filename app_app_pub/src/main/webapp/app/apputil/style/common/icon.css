@@ -1,0 +1,37 @@
+/* CSS Document */
+/*
+ * Site:
+ * Author:Created by cyleen on 2015-11-30
+*/
+/* CSS Document */
+/* icon 图标 S */
+/* i(icon)Add(图标名字)-aa(值的分类) */
+.icon { display: inline-block; background: url("../../images/icon.png") no-repeat;vertical-align: middle;}
+.icon.icon-aa { width: 32px; height: 32px; background-position: 0 0;}
+.icon.icon-ab { width: 36px; height: 28px; background-position: -47px 0;}
+.icon.icon-ac { width: 39px; height: 39px; background-position: -102px 0;}
+.icon.icon-ad { width: 36px; height: 36px; background-position: -160px 0;}
+.icon.icon-ae { width: 36px; height: 36px; background-position: -214px 0;}
+.icon.icon-af { width: 40px; height: 40px; background-position: -270px 0;}
+.icon.icon-search { width: 16px; height: 16px; background-position: 0 -188px;}
+.icon.icon-refresh { width: 14px; height: 17px; background-position: -31px -186px;}
+.icon.icon-look { width: 19px; height: 11px; background-position: -56px -192px;}
+.icon.icon-remind { width: 14px; height: 14px; background-position: -88px -186px;}
+.icon.icon-sms { width: 19px; height: 15px; background-position: -111px -188px;}
+.icon.icon-schedule { width: 17px; height: 15px; background-position: -144px -188px;}
+.icon.icon-host { width: 18px; height: 18px; background-position: -173px -185px;}
+.icon.icon-search2 { width: 13px; height: 13px; background-position: -201px -187px;}
+.icon.icon-menu1 { width: 18px; height: 18px; background-position: 0 -145px;}
+.icon.icon-menu2 { width: 18px; height: 18px; background-position: -31px -145px;}
+.icon.icon-menu3 { width: 17px; height: 17px; background-position: -65px -145px;}
+.icon.icon-menu4 { width: 16px; height: 16px; background-position: -95px -146px;}
+.icon.icon-menu5 { width: 17px; height: 15px; background-position: -124px -147px;}
+.icon.icon-menu6 { width: 18px; height: 18px; background-position: -158px -144px;}
+.icon.icon-menu7 { width: 21px; height: 21px; background-position: -191px -141px;}
+.icon.icon-menu8 { width: 19px; height: 19px; background-position: -228px -111px;}
+.icon.icon-new { width: 13px; height: 15px; background-position: 0 -219px;}
+.icon.icon-edit { width: 15px; height: 11px; background-position: -24px -222px;}
+.icon.icon-copy { width: 16px; height: 16px; background-position: -49px -219px;}
+.icon.icon-delete { width: 11px; height: 9px; background-position: -73px -224px;}
+.icon.icon-export { width: 14px; height: 14px; background-position: -94px -219px;}
+.icon.icon-sort { width: 9px; height: 15px; background-position: -224px -188px;}

@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-navbar hideBackButton="true">
+        <ion-buttons start *ngIf="!isRootView()">
+            <button ion-button icon-only (click)="backView()">
+                <ion-icon name="arrow-back"></ion-icon>返回
+            </button>
+        </ion-buttons>
+    <ion-title text-center>知识库</ion-title>
+    <ion-buttons end>
+          <button class="toolbarBtn" ion-button icon-only (click)="clickButton('SaveAndExit')">保存</button>
+
+    </ion-buttons>
+
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+<input  type="hidden" [(ngModel)]="form.$data.srfupdatedate" name="srfupdatedate"><input  type="hidden" [(ngModel)]="form.$data.srforikey" name="srforikey"><input  type="hidden" [(ngModel)]="form.$data.srfkey" name="srfkey"><input  type="hidden" [(ngModel)]="form.$data.srfmajortext" name="srfmajortext"><input  type="hidden" [(ngModel)]="form.$data.srftempmode" name="srftempmode"><input  type="hidden" [(ngModel)]="form.$data.srfuf" name="srfuf"><input  type="hidden" [(ngModel)]="form.$data.srfdeid" name="srfdeid"><input  type="hidden" [(ngModel)]="form.$data.srfsourcekey" name="srfsourcekey"><input  type="hidden" [(ngModel)]="form.$data.oa_zskid" name="oa_zskid"><input  type="hidden" [(ngModel)]="form.$data.orguserid" name="orguserid"><input  type="hidden" [(ngModel)]="form.$data.orgusername" name="orgusername"><input  type="hidden" [(ngModel)]="form.$data.orgsectorid" name="orgsectorid">
+          <ion-item-group >
+	
+<ion-item *ngIf="form?.$item?.oa_zskname?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.oa_zskname.allowEmpty">*</span>标题</ion-avatar>
+	<ion-input type="text" [(ngModel)]="form.$data.oa_zskname" placeholder="" [disabled]="form.$item.oa_zskname.disabled" (ngModelChange)="form.fieldChange($event, 'oa_zskname', form.$item.oa_zskname)"></ion-input>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.orgsectorname?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.orgsectorname.allowEmpty">*</span>录入部门</ion-avatar>
+	<picker [(ngModel)]="form.$data.orgsectorname" textItem="customname" valueItem="orgsectorid" [formService]="form" pickupView='{"view":"OrgSectorMobPickupView"}' (ngModelChange)="form.fieldChange($event, 'orgsectorname', form.$item.orgsectorname)"></picker>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.lrsj?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.lrsj.allowEmpty">*</span>录入时间</ion-avatar>
+	<ion-datetime displayFormat="YYYY-MM-DD HH:mm:ss" doneText="OK" [(ngModel)]="form.$data.lrsj" (ngModelChange)="form.fieldChange($event, 'lrsj', form.$item.lrsj)"></ion-datetime>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.content?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.content.allowEmpty">*</span>内容</ion-avatar>
+	<ion-textarea [(ngModel)]="form.$data.content" placeholder="" [disabled]="form.$item.content.disabled" (ngModelChange)="form.fieldChange($event, 'content', form.$item.content)"></ion-textarea>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.fj?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.fj.allowEmpty">*</span>附件</ion-avatar>
+	<ion-textarea [(ngModel)]="form.$data.fj" placeholder="" [disabled]="form.$item.fj.disabled" (ngModelChange)="form.fieldChange($event, 'fj', form.$item.fj)"></ion-textarea>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.memo?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.memo.allowEmpty">*</span>备注</ion-avatar>
+	<ion-input type="text" [(ngModel)]="form.$data.memo" placeholder="" [disabled]="form.$item.memo.disabled" (ngModelChange)="form.fieldChange($event, 'memo', form.$item.memo)"></ion-input>
+    </ion-item>	
+
+</ion-item-group>
+
+  
+  </ion-list>
+</ion-content>

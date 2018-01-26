@@ -1,0 +1,1 @@
+var WFStepDataTraceGridViewController = WFStepDataTraceGridViewControllerBase.extend({});

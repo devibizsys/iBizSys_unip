@@ -1,0 +1,1 @@
+var LoginAccountEditView2Controller = LoginAccountEditView2ControllerBase.extend({});

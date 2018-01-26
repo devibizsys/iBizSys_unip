@@ -1,0 +1,1 @@
+var SysAdminFuncGridViewController = SysAdminFuncGridViewControllerBase.extend({});

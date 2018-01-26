@@ -1,0 +1,1 @@
+var OA_XXPickupGridViewController = OA_XXPickupGridViewControllerBase.extend({});

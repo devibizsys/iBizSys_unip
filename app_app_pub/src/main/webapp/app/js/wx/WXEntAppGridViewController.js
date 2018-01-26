@@ -1,0 +1,1 @@
+var WXEntAppGridViewController = WXEntAppGridViewControllerBase.extend({});

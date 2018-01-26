@@ -1,0 +1,1 @@
+var DataAuditDetailPickupViewController = DataAuditDetailPickupViewControllerBase.extend({});

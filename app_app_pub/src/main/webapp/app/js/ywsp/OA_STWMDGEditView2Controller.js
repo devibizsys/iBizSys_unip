@@ -1,0 +1,1 @@
+var OA_STWMDGEditView2Controller = OA_STWMDGEditView2ControllerBase.extend({});

@@ -1,0 +1,1 @@
+var LoginAccountGridViewController = LoginAccountGridViewControllerBase.extend({});

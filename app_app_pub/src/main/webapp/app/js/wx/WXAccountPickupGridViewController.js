@@ -1,0 +1,1 @@
+var WXAccountPickupGridViewController = WXAccountPickupGridViewControllerBase.extend({});

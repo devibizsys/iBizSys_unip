@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title text-center>出差申请查看</ion-title>
+    <ion-buttons end>
+    </ion-buttons>
+
+  </ion-navbar>
+<ion-searchbar [(ngModel)]="$searchValue" showCancelButton="true" (ionInput)="onInput($event)" (ionCancel)="onCancel($event)"></ion-searchbar>
+</ion-header>
+<ion-content>
+  <ion-refresher (ionRefresh)="doRefresher($event)">
+    <ion-refresher-content pullingIcon="arrow-dropdown" refreshingSpinner="circles" refreshingText="加载中...">
+    </ion-refresher-content>
+  </ion-refresher>
+    <ion-list>
+    <ion-item-sliding *ngFor="let item of mdctrl.$items">
+      <ion-item (tap)="mdctrl.clickItem(item)">
+        <ion-card>
+          <ion-card-header>
+            <ion-avatar item-start *ngIf="(item.iconcls != '' && item.iconcls != undefined) || (item.icon != '' && item.icon != undefined)">
+              <ion-icon *ngIf="item.iconcls != '' && item.iconcls != undefined" name="{{item.iconcls}}"></ion-icon>
+              <img *ngIf="item.iconcls == '' || item.iconcls == undefined" src="/assets/images/'+{{item.icon}}" />
+            </ion-avatar>
+            <h2>{{ item.srfmajortext }}</h2>
+            <p>{{ item.srfsubtitle }} {{item.srftype}}</p>
+            <ion-note item-right>{{ item.srftime }}</ion-note>
+            </ion-card-header>
+        </ion-card>
+      </ion-item>
+        <ion-item-options side="right">
+          <button ion-button color="danger" (click)="mdctrl.doRemove(item)">删除</button>
+        </ion-item-options>
+      </ion-item-sliding>
+  </ion-list>
+  <ion-infinite-scroll enabled="false" (ionInfinite)="doInfinite($event)">
+    <ion-infinite-scroll-content loadingSpinner="bubbles" loadingText="Loading more data...">
+    </ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+</ion-content>
+<ion-footer class="ibiz-footer">
+  <div *ngIf="!mdctrl.$isOpenMultiselect" class="ibiz-remove">
+    <button clear ion-button (click)="mdctrl.checkChangeAll()">全选</button>
+    <button clear ion-button [disabled]="mdctrl.$selection.length" (click)="mdctrl.doRemoveAll()">删除</button>
+  </div>
+</ion-footer>

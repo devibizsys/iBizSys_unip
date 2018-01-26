@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="unip-1.0.0.0">
+        <wb-resource deploy-path="/" source-path="/target/m2e-wtp/web-resources"/>
+        <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
+        <dependent-module archiveName="srv_unip_pub-1.0.0.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/srv_unip_pub/srv_unip_pub">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="srv_unip_usr-1.0.0.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/srv_unip_usr/srv_unip_usr">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module deploy-path="/" handle="module:/overlay/prj/app_app_pub?includes=**/**&amp;excludes=**/web.xml">
+            <dependency-type>consumes</dependency-type>
+        </dependent-module>
+        <dependent-module deploy-path="/" handle="module:/overlay/prj/app_app_usr?includes=**/**&amp;excludes=**/web.xml">
+            <dependency-type>consumes</dependency-type>
+        </dependent-module>
+        <dependent-module deploy-path="/" handle="module:/overlay/slf/?includes=**/**&amp;excludes=META-INF/MANIFEST.MF">
+            <dependency-type>consumes</dependency-type>
+        </dependent-module>
+        <property name="context-root" value="unip"/>
+        <property name="java-output-path" value="/unip/target/classes"/>
+    </wb-module>
+</project-modules>

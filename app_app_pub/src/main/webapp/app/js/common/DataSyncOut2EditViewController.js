@@ -1,0 +1,1 @@
+var DataSyncOut2EditViewController = DataSyncOut2EditViewControllerBase.extend({});

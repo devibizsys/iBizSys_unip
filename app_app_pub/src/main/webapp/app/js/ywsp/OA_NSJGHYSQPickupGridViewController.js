@@ -1,0 +1,1 @@
+var OA_NSJGHYSQPickupGridViewController = OA_NSJGHYSQPickupGridViewControllerBase.extend({});

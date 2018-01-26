@@ -1,0 +1,1 @@
+var OA_YCSQGridViewController = OA_YCSQGridViewControllerBase.extend({});

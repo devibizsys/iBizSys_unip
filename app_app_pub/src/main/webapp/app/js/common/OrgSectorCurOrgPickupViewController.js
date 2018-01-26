@@ -1,0 +1,1 @@
+var OrgSectorCurOrgPickupViewController = OrgSectorCurOrgPickupViewControllerBase.extend({});

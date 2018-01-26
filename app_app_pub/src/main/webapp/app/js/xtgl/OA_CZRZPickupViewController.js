@@ -1,0 +1,1 @@
+var OA_CZRZPickupViewController = OA_CZRZPickupViewControllerBase.extend({});

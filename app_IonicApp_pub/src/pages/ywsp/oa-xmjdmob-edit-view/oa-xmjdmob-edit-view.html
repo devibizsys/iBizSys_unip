@@ -1,0 +1,223 @@
+<ion-header>
+  <ion-navbar hideBackButton="true">
+        <ion-buttons start *ngIf="!isRootView()">
+            <button ion-button icon-only (click)="backView()">
+                <ion-icon name="arrow-back"></ion-icon>返回
+            </button>
+        </ion-buttons>
+    <ion-title text-center>项目进度</ion-title>
+    <ion-buttons end>
+          <button class="toolbarBtn" ion-button icon-only (click)="clickButton('SaveAndExit')">保存</button>
+
+    </ion-buttons>
+
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+<input  type="hidden" [(ngModel)]="form.$data.srfupdatedate" name="srfupdatedate"><input  type="hidden" [(ngModel)]="form.$data.srforikey" name="srforikey"><input  type="hidden" [(ngModel)]="form.$data.srfkey" name="srfkey"><input  type="hidden" [(ngModel)]="form.$data.srfmajortext" name="srfmajortext"><input  type="hidden" [(ngModel)]="form.$data.srftempmode" name="srftempmode"><input  type="hidden" [(ngModel)]="form.$data.srfuf" name="srfuf"><input  type="hidden" [(ngModel)]="form.$data.srfdeid" name="srfdeid"><input  type="hidden" [(ngModel)]="form.$data.srfsourcekey" name="srfsourcekey"><input  type="hidden" [(ngModel)]="form.$data.oa_xmjdid" name="oa_xmjdid">
+          <ion-item-group >
+	
+<ion-item *ngIf="form?.$item?.oa_xmjdname?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.oa_xmjdname.allowEmpty">*</span>项目进度名称</ion-avatar>
+	<ion-input type="text" [(ngModel)]="form.$data.oa_xmjdname" placeholder="" [disabled]="form.$item.oa_xmjdname.disabled" (ngModelChange)="form.fieldChange($event, 'oa_xmjdname', form.$item.oa_xmjdname)"></ion-input>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.xmbh?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.xmbh.allowEmpty">*</span>项目编号</ion-avatar>
+	<ion-input type="text" [(ngModel)]="form.$data.xmbh" placeholder="" [disabled]="form.$item.xmbh.disabled" (ngModelChange)="form.fieldChange($event, 'xmbh', form.$item.xmbh)"></ion-input>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.sdxmbhrq?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.sdxmbhrq.allowEmpty">*</span>收到项目编号日期</ion-avatar>
+	<ion-datetime displayFormat="YYYY-MM-DD HH:mm:ss" doneText="OK" [(ngModel)]="form.$data.sdxmbhrq" (ngModelChange)="form.fieldChange($event, 'sdxmbhrq', form.$item.sdxmbhrq)"></ion-datetime>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.ysje?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.ysje.allowEmpty">*</span>预算金额</ion-avatar>
+	<ion-input type="text" [(ngModel)]="form.$data.ysje" placeholder="" [disabled]="form.$item.ysje.disabled" (ngModelChange)="form.fieldChange($event, 'ysje', form.$item.ysje)"></ion-input>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.ksxczsbrq?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.ksxczsbrq.allowEmpty">*</span>开始向财政申报期日期</ion-avatar>
+	<ion-datetime displayFormat="YYYY-MM-DD HH:mm:ss" doneText="OK" [(ngModel)]="form.$data.ksxczsbrq" (ngModelChange)="form.fieldChange($event, 'ksxczsbrq', form.$item.ksxczsbrq)"></ion-datetime>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.zbwjqrrq?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.zbwjqrrq.allowEmpty">*</span>招标文件确认日期</ion-avatar>
+	<ion-datetime displayFormat="YYYY-MM-DD HH:mm:ss" doneText="OK" [(ngModel)]="form.$data.zbwjqrrq" (ngModelChange)="form.fieldChange($event, 'zbwjqrrq', form.$item.zbwjqrrq)"></ion-datetime>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.cgfs?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.cgfs.allowEmpty">*</span>采购方式</ion-avatar>
+	<ion-input type="text" [(ngModel)]="form.$data.cgfs" placeholder="" [disabled]="form.$item.cgfs.disabled" (ngModelChange)="form.fieldChange($event, 'cgfs', form.$item.cgfs)"></ion-input>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.psrq?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.psrq.allowEmpty">*</span>评审日期</ion-avatar>
+	<ion-datetime displayFormat="YYYY-MM-DD HH:mm:ss" doneText="OK" [(ngModel)]="form.$data.psrq" (ngModelChange)="form.fieldChange($event, 'psrq', form.$item.psrq)"></ion-datetime>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.psdb?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.psdb.allowEmpty">*</span>评审代表</ion-avatar>
+	<ion-input type="text" [(ngModel)]="form.$data.psdb" placeholder="" [disabled]="form.$item.psdb.disabled" (ngModelChange)="form.fieldChange($event, 'psdb', form.$item.psdb)"></ion-input>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.dljgpsbgbh?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.dljgpsbgbh.allowEmpty">*</span>代理机构评审报告编号</ion-avatar>
+	<ion-input type="text" [(ngModel)]="form.$data.dljgpsbgbh" placeholder="" [disabled]="form.$item.dljgpsbgbh.disabled" (ngModelChange)="form.fieldChange($event, 'dljgpsbgbh', form.$item.dljgpsbgbh)"></ion-input>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.ztbwjgdrq?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.ztbwjgdrq.allowEmpty">*</span>招投标文件归档日期</ion-avatar>
+	<ion-datetime displayFormat="YYYY-MM-DD HH:mm:ss" doneText="OK" [(ngModel)]="form.$data.ztbwjgdrq" (ngModelChange)="form.fieldChange($event, 'ztbwjgdrq', form.$item.ztbwjgdrq)"></ion-datetime>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.cjzbgs?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.cjzbgs.allowEmpty">*</span>成交中标公司</ion-avatar>
+	<ion-input type="text" [(ngModel)]="form.$data.cjzbgs" placeholder="" [disabled]="form.$item.cjzbgs.disabled" (ngModelChange)="form.fieldChange($event, 'cjzbgs', form.$item.cjzbgs)"></ion-input>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.htze?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.htze.allowEmpty">*</span>合同总额</ion-avatar>
+	<ion-input type="text" [(ngModel)]="form.$data.htze" placeholder="" [disabled]="form.$item.htze.disabled" (ngModelChange)="form.fieldChange($event, 'htze', form.$item.htze)"></ion-input>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.barq?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.barq.allowEmpty">*</span>备案日期</ion-avatar>
+	<ion-datetime displayFormat="YYYY-MM-DD HH:mm:ss" doneText="OK" [(ngModel)]="form.$data.barq" (ngModelChange)="form.fieldChange($event, 'barq', form.$item.barq)"></ion-datetime>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.zbbhje?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.zbbhje.allowEmpty">*</span>质保保函金额</ion-avatar>
+	<ion-input type="text" [(ngModel)]="form.$data.zbbhje" placeholder="" [disabled]="form.$item.zbbhje.disabled" (ngModelChange)="form.fieldChange($event, 'zbbhje', form.$item.zbbhje)"></ion-input>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.bhfyjcfdd?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.bhfyjcfdd.allowEmpty">*</span>保函复印件存放地点</ion-avatar>
+	<ion-input type="text" [(ngModel)]="form.$data.bhfyjcfdd" placeholder="" [disabled]="form.$item.bhfyjcfdd.disabled" (ngModelChange)="form.fieldChange($event, 'bhfyjcfdd', form.$item.bhfyjcfdd)"></ion-input>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.ysrq?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.ysrq.allowEmpty">*</span>验收日期</ion-avatar>
+	<ion-datetime displayFormat="YYYY-MM-DD HH:mm:ss" doneText="OK" [(ngModel)]="form.$data.ysrq" (ngModelChange)="form.fieldChange($event, 'ysrq', form.$item.ysrq)"></ion-datetime>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.tbrq?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.tbrq.allowEmpty">*</span>退保日期</ion-avatar>
+	<ion-datetime displayFormat="YYYY-MM-DD HH:mm:ss" doneText="OK" [(ngModel)]="form.$data.tbrq" (ngModelChange)="form.fieldChange($event, 'tbrq', form.$item.tbrq)"></ion-datetime>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.wfyk?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.wfyk.allowEmpty">*</span>未付余款</ion-avatar>
+	<ion-input type="text" [(ngModel)]="form.$data.wfyk" placeholder="" [disabled]="form.$item.wfyk.disabled" (ngModelChange)="form.fieldChange($event, 'wfyk', form.$item.wfyk)"></ion-input>
+    </ion-item>	
+
+
+<ion-item *ngIf="form?.$item?.xmmc?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.xmmc.allowEmpty">*</span>项目名称</ion-avatar>
+	<ion-input type="text" [(ngModel)]="form.$data.xmmc" placeholder="" [disabled]="form.$item.xmmc.disabled" (ngModelChange)="form.fieldChange($event, 'xmmc', form.$item.xmmc)"></ion-input>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.lxbg?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.lxbg.allowEmpty">*</span>立项报告</ion-avatar>
+	<ion-input type="text" [(ngModel)]="form.$data.lxbg" placeholder="" [disabled]="form.$item.lxbg.disabled" (ngModelChange)="form.fieldChange($event, 'lxbg', form.$item.lxbg)"></ion-input>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.sdzzhbh?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.sdzzhbh.allowEmpty">*</span>上党组织会编号</ion-avatar>
+	<ion-input type="text" [(ngModel)]="form.$data.sdzzhbh" placeholder="" [disabled]="form.$item.sdzzhbh.disabled" (ngModelChange)="form.fieldChange($event, 'sdzzhbh', form.$item.sdzzhbh)"></ion-input>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.syzjwh?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.syzjwh.allowEmpty">*</span>使用资金文号</ion-avatar>
+	<ion-input type="text" [(ngModel)]="form.$data.syzjwh" placeholder="" [disabled]="form.$item.syzjwh.disabled" (ngModelChange)="form.fieldChange($event, 'syzjwh', form.$item.syzjwh)"></ion-input>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.dlgs?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.dlgs.allowEmpty">*</span>代理公司</ion-avatar>
+	<ion-input type="text" [(ngModel)]="form.$data.dlgs" placeholder="" [disabled]="form.$item.dlgs.disabled" (ngModelChange)="form.fieldChange($event, 'dlgs', form.$item.dlgs)"></ion-input>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.zbwjqrqz?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.zbwjqrqz.allowEmpty">*</span>招标文件确认签字</ion-avatar>
+	<ion-input type="text" [(ngModel)]="form.$data.zbwjqrqz" placeholder="" [disabled]="form.$item.zbwjqrqz.disabled" (ngModelChange)="form.fieldChange($event, 'zbwjqrqz', form.$item.zbwjqrqz)"></ion-input>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.zbwjqrdsm?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.zbwjqrdsm.allowEmpty">*</span>招标文件确认单扫描</ion-avatar>
+	<ion-input type="text" [(ngModel)]="form.$data.zbwjqrdsm" placeholder="" [disabled]="form.$item.zbwjqrdsm.disabled" (ngModelChange)="form.fieldChange($event, 'zbwjqrdsm', form.$item.zbwjqrdsm)"></ion-input>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.cgggrq?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.cgggrq.allowEmpty">*</span>采购公告日期</ion-avatar>
+	<ion-datetime displayFormat="YYYY-MM-DD HH:mm:ss" doneText="OK" [(ngModel)]="form.$data.cgggrq" (ngModelChange)="form.fieldChange($event, 'cgggrq', form.$item.cgggrq)"></ion-datetime>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.jcry?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.jcry.allowEmpty">*</span>监察人员</ion-avatar>
+	<ion-input type="text" [(ngModel)]="form.$data.jcry" placeholder="" [disabled]="form.$item.jcry.disabled" (ngModelChange)="form.fieldChange($event, 'jcry', form.$item.jcry)"></ion-input>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.cgjgbgpfrq?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.cgjgbgpfrq.allowEmpty">*</span>采购结果报告批复日期</ion-avatar>
+	<ion-datetime displayFormat="YYYY-MM-DD HH:mm:ss" doneText="OK" [(ngModel)]="form.$data.cgjgbgpfrq" (ngModelChange)="form.fieldChange($event, 'cgjgbgpfrq', form.$item.cgjgbgpfrq)"></ion-datetime>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.cgjgpssm?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.cgjgpssm.allowEmpty">*</span>采购结果批示扫描</ion-avatar>
+	<ion-input type="text" [(ngModel)]="form.$data.cgjgpssm" placeholder="" [disabled]="form.$item.cgjgpssm.disabled" (ngModelChange)="form.fieldChange($event, 'cgjgpssm', form.$item.cgjgpssm)"></ion-input>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.ztbwjcfd?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.ztbwjcfd.allowEmpty">*</span>招投标文件存放地</ion-avatar>
+	<ion-input type="text" [(ngModel)]="form.$data.ztbwjcfd" placeholder="" [disabled]="form.$item.ztbwjcfd.disabled" (ngModelChange)="form.fieldChange($event, 'ztbwjcfd', form.$item.ztbwjcfd)"></ion-input>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.htsm?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.htsm.allowEmpty">*</span>合同扫描</ion-avatar>
+	<ion-input type="text" [(ngModel)]="form.$data.htsm" placeholder="" [disabled]="form.$item.htsm.disabled" (ngModelChange)="form.fieldChange($event, 'htsm', form.$item.htsm)"></ion-input>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.htqdrq?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.htqdrq.allowEmpty">*</span>合同签订日期</ion-avatar>
+	<ion-datetime displayFormat="YYYY-MM-DD HH:mm:ss" doneText="OK" [(ngModel)]="form.$data.htqdrq" (ngModelChange)="form.fieldChange($event, 'htqdrq', form.$item.htqdrq)"></ion-datetime>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.babsm?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.babsm.allowEmpty">*</span>备案表扫描</ion-avatar>
+	<ion-input type="text" [(ngModel)]="form.$data.babsm" placeholder="" [disabled]="form.$item.babsm.disabled" (ngModelChange)="form.fieldChange($event, 'babsm', form.$item.babsm)"></ion-input>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.bhcfdd?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.bhcfdd.allowEmpty">*</span>保函存放地点</ion-avatar>
+	<ion-input type="text" [(ngModel)]="form.$data.bhcfdd" placeholder="" [disabled]="form.$item.bhcfdd.disabled" (ngModelChange)="form.fieldChange($event, 'bhcfdd', form.$item.bhcfdd)"></ion-input>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.ydlxrq?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.ydlxrq.allowEmpty">*</span>约定履行日期</ion-avatar>
+	<ion-input type="text" [(ngModel)]="form.$data.ydlxrq" placeholder="" [disabled]="form.$item.ydlxrq.disabled" (ngModelChange)="form.fieldChange($event, 'ydlxrq', form.$item.ydlxrq)"></ion-input>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.ysbgsn?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.ysbgsn.allowEmpty">*</span>要收报告扫描</ion-avatar>
+	<ion-input type="text" [(ngModel)]="form.$data.ysbgsn" placeholder="" [disabled]="form.$item.ysbgsn.disabled" (ngModelChange)="form.fieldChange($event, 'ysbgsn', form.$item.ysbgsn)"></ion-input>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.jxpg?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.jxpg.allowEmpty">*</span>绩效评估</ion-avatar>
+	<ion-input type="text" [(ngModel)]="form.$data.jxpg" placeholder="" [disabled]="form.$item.jxpg.disabled" (ngModelChange)="form.fieldChange($event, 'jxpg', form.$item.jxpg)"></ion-input>
+    </ion-item>	
+
+
+<ion-item *ngIf="form?.$item?.bz?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.bz.allowEmpty">*</span>备注</ion-avatar>
+	<ion-textarea [(ngModel)]="form.$data.bz" placeholder="" [disabled]="form.$item.bz.disabled" (ngModelChange)="form.fieldChange($event, 'bz', form.$item.bz)"></ion-textarea>
+    </ion-item>	
+
+</ion-item-group>
+
+  
+  </ion-list>
+</ion-content>

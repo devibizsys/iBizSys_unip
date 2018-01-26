@@ -1,0 +1,1 @@
+var WFCustomProcessPickupGridViewController = WFCustomProcessPickupGridViewControllerBase.extend({});

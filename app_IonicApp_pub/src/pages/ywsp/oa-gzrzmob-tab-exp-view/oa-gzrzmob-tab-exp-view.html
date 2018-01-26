@@ -1,0 +1,36 @@
+
+<ion-header>
+  <ion-navbar>
+    <ion-title text-center>未读日志</ion-title>
+    <ion-buttons end>
+    </ion-buttons>
+
+  </ion-navbar>
+  <div class="tab-exp">
+    <ion-segment [(ngModel)]="sement" (ionChange)="segmentChanged($event)">
+      <ion-segment-button value="tab0">我收到的</ion-segment-button>
+      <ion-segment-button value="tab1">我发出的</ion-segment-button>
+    </ion-segment>
+  </div>
+</ion-header>
+
+<ion-content>
+  <ion-refresher (ionRefresh)="doRefresher($event)">
+    <ion-refresher-content pullingIcon="arrow-dropdown" refreshingSpinner="circles" refreshingText="刷新中...">
+    </ion-refresher-content>
+  </ion-refresher>
+
+  <div [ngSwitch]="sement">
+    <ion-list *ngSwitchCase="'tab0'">
+      <oa-rzrymy-receive-mob-mdview9 #tab0></oa-rzrymy-receive-mob-mdview9>
+    </ion-list>
+    <ion-list *ngSwitchCase="'tab1'">
+      <oa-gzrzmy-sender-mob-mdview9 #tab1></oa-gzrzmy-sender-mob-mdview9>
+    </ion-list>
+  </div>
+
+  <ion-infinite-scroll (ionInfinite)="doInfinite($event)">
+    <ion-infinite-scroll-content loadingSpinner="bubbles" loadingText="加载中...">
+    </ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+</ion-content>

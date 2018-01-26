@@ -1,0 +1,1 @@
+var OA_XXRYPickupViewController = OA_XXRYPickupViewControllerBase.extend({});

@@ -1,0 +1,1 @@
+var MsgSendQueueEditView2Controller = MsgSendQueueEditView2ControllerBase.extend({});

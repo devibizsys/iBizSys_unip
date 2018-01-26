@@ -1,0 +1,1 @@
+var OA_NSJGHYSQEditView2Controller = OA_NSJGHYSQEditView2ControllerBase.extend({});

@@ -1,0 +1,1 @@
+var OA_CPMJSQCPMJSQLC_D40_WFGridViewController = OA_CPMJSQCPMJSQLC_D40_WFGridViewControllerBase.extend({});

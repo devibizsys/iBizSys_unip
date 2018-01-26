@@ -1,0 +1,1 @@
+var QueryModelCurDEPickupViewController = QueryModelCurDEPickupViewControllerBase.extend({});

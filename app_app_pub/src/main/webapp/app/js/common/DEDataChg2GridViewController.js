@@ -1,0 +1,1 @@
+var DEDataChg2GridViewController = DEDataChg2GridViewControllerBase.extend({});

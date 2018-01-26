@@ -1,0 +1,1 @@
+var UserDictPickupGridViewController = UserDictPickupGridViewControllerBase.extend({});

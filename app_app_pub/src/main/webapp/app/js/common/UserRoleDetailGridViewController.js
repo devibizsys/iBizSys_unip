@@ -1,0 +1,1 @@
+var UserRoleDetailGridViewController = UserRoleDetailGridViewControllerBase.extend({});

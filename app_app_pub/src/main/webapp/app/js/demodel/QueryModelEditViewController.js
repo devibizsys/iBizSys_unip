@@ -1,0 +1,1 @@
+var QueryModelEditViewController = QueryModelEditViewControllerBase.extend({});

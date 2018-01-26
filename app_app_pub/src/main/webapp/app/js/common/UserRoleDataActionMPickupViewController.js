@@ -1,0 +1,1 @@
+var UserRoleDataActionMPickupViewController = UserRoleDataActionMPickupViewControllerBase.extend({});

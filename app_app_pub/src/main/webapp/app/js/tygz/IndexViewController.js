@@ -1,0 +1,1 @@
+var IndexViewController = IndexViewControllerBase.extend({});

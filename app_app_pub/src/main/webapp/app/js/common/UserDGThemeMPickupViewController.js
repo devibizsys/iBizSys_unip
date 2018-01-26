@@ -1,0 +1,1 @@
+var UserDGThemeMPickupViewController = UserDGThemeMPickupViewControllerBase.extend({});

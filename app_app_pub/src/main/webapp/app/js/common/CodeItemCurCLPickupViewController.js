@@ -1,0 +1,1 @@
+var CodeItemCurCLPickupViewController = CodeItemCurCLPickupViewControllerBase.extend({});

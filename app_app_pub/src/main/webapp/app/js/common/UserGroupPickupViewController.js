@@ -1,0 +1,1 @@
+var UserGroupPickupViewController = UserGroupPickupViewControllerBase.extend({});

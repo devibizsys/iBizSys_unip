@@ -1,0 +1,1 @@
+var UserEditView2Controller = UserEditView2ControllerBase.extend({});

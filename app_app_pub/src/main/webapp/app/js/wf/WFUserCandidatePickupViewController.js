@@ -1,0 +1,1 @@
+var WFUserCandidatePickupViewController = WFUserCandidatePickupViewControllerBase.extend({});

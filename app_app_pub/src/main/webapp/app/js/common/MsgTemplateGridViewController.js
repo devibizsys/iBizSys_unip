@@ -1,0 +1,1 @@
+var MsgTemplateGridViewController = MsgTemplateGridViewControllerBase.extend({});

@@ -1,0 +1,1 @@
+var WXAccessTokenGridViewController = WXAccessTokenGridViewControllerBase.extend({});

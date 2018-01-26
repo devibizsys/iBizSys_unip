@@ -1,0 +1,1 @@
+var UserGroupDetailEditView2Controller = UserGroupDetailEditView2ControllerBase.extend({});

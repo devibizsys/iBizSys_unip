@@ -1,0 +1,1 @@
+var WXOrgSectorEditView2Controller = WXOrgSectorEditView2ControllerBase.extend({});

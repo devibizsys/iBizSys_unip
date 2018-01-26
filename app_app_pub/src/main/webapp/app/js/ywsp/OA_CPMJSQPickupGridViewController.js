@@ -1,0 +1,1 @@
+var OA_CPMJSQPickupGridViewController = OA_CPMJSQPickupGridViewControllerBase.extend({});

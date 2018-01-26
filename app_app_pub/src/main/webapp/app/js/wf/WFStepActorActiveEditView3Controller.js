@@ -1,0 +1,1 @@
+var WFStepActorActiveEditView3Controller = WFStepActorActiveEditView3ControllerBase.extend({});

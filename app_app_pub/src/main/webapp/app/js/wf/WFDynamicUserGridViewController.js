@@ -1,0 +1,1 @@
+var WFDynamicUserGridViewController = WFDynamicUserGridViewControllerBase.extend({});

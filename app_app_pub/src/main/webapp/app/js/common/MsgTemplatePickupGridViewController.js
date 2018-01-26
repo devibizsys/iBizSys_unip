@@ -1,0 +1,1 @@
+var MsgTemplatePickupGridViewController = MsgTemplatePickupGridViewControllerBase.extend({});

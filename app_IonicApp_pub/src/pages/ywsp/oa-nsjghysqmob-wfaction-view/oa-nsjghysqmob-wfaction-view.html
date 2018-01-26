@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-navbar>
+    <ion-buttons start>
+      <button ion-button icon-only (click)="navCtrl.pop()">
+        <ion-icon name="arrow-back"></ion-icon>取消
+      </button>
+    </ion-buttons>
+    <ion-title text-center>内设机构会议申请</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="clickButton('OKButton')">确认</button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+<ion-list>
+<input  type="hidden" [(ngModel)]="form.$data.srfupdatedate" name="srfupdatedate"><input  type="hidden" [(ngModel)]="form.$data.srforikey" name="srforikey"><input  type="hidden" [(ngModel)]="form.$data.srfkey" name="srfkey"><input  type="hidden" [(ngModel)]="form.$data.srfmajortext" name="srfmajortext"><input  type="hidden" [(ngModel)]="form.$data.srftempmode" name="srftempmode"><input  type="hidden" [(ngModel)]="form.$data.srfuf" name="srfuf"><input  type="hidden" [(ngModel)]="form.$data.srfdeid" name="srfdeid"><input  type="hidden" [(ngModel)]="form.$data.srfsourcekey" name="srfsourcekey"><input  type="hidden" [(ngModel)]="form.$data.oa_nsjghysqid" name="oa_nsjghysqid">
+          <ion-item *ngIf="form?.$item?.memo?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.memo.allowEmpty">*</span>审核意见</ion-avatar>
+	<ion-textarea [(ngModel)]="form.$data.memo" placeholder="" [disabled]="form.$item.memo.disabled" (ngModelChange)="form.fieldChange($event, 'memo', form.$item.memo)"></ion-textarea>
+    </ion-item>	
+
+  
+  </ion-list>
+</ion-content>

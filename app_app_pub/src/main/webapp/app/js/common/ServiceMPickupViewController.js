@@ -1,0 +1,1 @@
+var ServiceMPickupViewController = ServiceMPickupViewControllerBase.extend({});

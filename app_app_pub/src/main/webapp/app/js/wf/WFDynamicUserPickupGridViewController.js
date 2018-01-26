@@ -1,0 +1,1 @@
+var WFDynamicUserPickupGridViewController = WFDynamicUserPickupGridViewControllerBase.extend({});

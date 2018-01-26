@@ -1,0 +1,1 @@
+var MsgAccountDetailEditViewController = MsgAccountDetailEditViewControllerBase.extend({});

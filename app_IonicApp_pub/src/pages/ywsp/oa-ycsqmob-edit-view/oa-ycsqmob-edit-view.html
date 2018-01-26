@@ -1,0 +1,66 @@
+<ion-header>
+  <ion-navbar hideBackButton="true">
+        <ion-buttons start *ngIf="!isRootView()">
+            <button ion-button icon-only (click)="backView()">
+                <ion-icon name="arrow-back"></ion-icon>返回
+            </button>
+        </ion-buttons>
+    <ion-title text-center>用餐申请</ion-title>
+    <ion-buttons end>
+          <button class="toolbarBtn" ion-button icon-only (click)="clickButton('SaveAndExit')">保存</button>
+
+    </ion-buttons>
+
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+<input  type="hidden" [(ngModel)]="form.$data.srfupdatedate" name="srfupdatedate"><input  type="hidden" [(ngModel)]="form.$data.srforikey" name="srforikey"><input  type="hidden" [(ngModel)]="form.$data.srfkey" name="srfkey"><input  type="hidden" [(ngModel)]="form.$data.srfmajortext" name="srfmajortext"><input  type="hidden" [(ngModel)]="form.$data.srftempmode" name="srftempmode"><input  type="hidden" [(ngModel)]="form.$data.srfuf" name="srfuf"><input  type="hidden" [(ngModel)]="form.$data.srfdeid" name="srfdeid"><input  type="hidden" [(ngModel)]="form.$data.srfsourcekey" name="srfsourcekey"><input  type="hidden" [(ngModel)]="form.$data.orguserid" name="orguserid"><input  type="hidden" [(ngModel)]="form.$data.orgusername" name="orgusername"><input  type="hidden" [(ngModel)]="form.$data.sqsj" name="sqsj"><input  type="hidden" [(ngModel)]="form.$data.oa_ycsqid" name="oa_ycsqid">
+          <ion-item-group >
+	
+<ion-item *ngIf="form?.$item?.djr?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.djr.allowEmpty">*</span>登记人</ion-avatar>
+	<ion-input type="text" [(ngModel)]="form.$data.djr" placeholder="" [disabled]="form.$item.djr.disabled" (ngModelChange)="form.fieldChange($event, 'djr', form.$item.djr)"></ion-input>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.lkdw?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.lkdw.allowEmpty">*</span>来客单位</ion-avatar>
+	<ion-input type="text" [(ngModel)]="form.$data.lkdw" placeholder="" [disabled]="form.$item.lkdw.disabled" (ngModelChange)="form.fieldChange($event, 'lkdw', form.$item.lkdw)"></ion-input>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.ycdd?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.ycdd.allowEmpty">*</span>用餐地点</ion-avatar>
+	<ion-input type="text" [(ngModel)]="form.$data.ycdd" placeholder="" [disabled]="form.$item.ycdd.disabled" (ngModelChange)="form.fieldChange($event, 'ycdd', form.$item.ycdd)"></ion-input>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.ycsj?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.ycsj.allowEmpty">*</span>用餐时间</ion-avatar>
+	<ion-datetime displayFormat="YYYY-MM-DD HH:mm" doneText="OK" [(ngModel)]="form.$data.ycsj" (ngModelChange)="form.fieldChange($event, 'ycsj', form.$item.ycsj)"></ion-datetime>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.djsj?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.djsj.allowEmpty">*</span>登记时间</ion-avatar>
+	<ion-datetime displayFormat="YYYY-MM-DD HH:mm" doneText="OK" [(ngModel)]="form.$data.djsj" (ngModelChange)="form.fieldChange($event, 'djsj', form.$item.djsj)"></ion-datetime>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.cfsj?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.cfsj.allowEmpty">*</span>出发时间</ion-avatar>
+	<ion-datetime displayFormat="YYYY-MM-DD HH:mm" doneText="OK" [(ngModel)]="form.$data.cfsj" (ngModelChange)="form.fieldChange($event, 'cfsj', form.$item.cfsj)"></ion-datetime>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.fhsj?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.fhsj.allowEmpty">*</span>返回时间</ion-avatar>
+	<ion-datetime displayFormat="YYYY-MM-DD HH:mm" doneText="OK" [(ngModel)]="form.$data.fhsj" (ngModelChange)="form.fieldChange($event, 'fhsj', form.$item.fhsj)"></ion-datetime>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.bz?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.bz.allowEmpty">*</span>备注</ion-avatar>
+	<ion-textarea [(ngModel)]="form.$data.bz" placeholder="" [disabled]="form.$item.bz.disabled" (ngModelChange)="form.fieldChange($event, 'bz', form.$item.bz)"></ion-textarea>
+    </ion-item>	
+
+</ion-item-group>
+
+  
+  </ion-list>
+</ion-content>

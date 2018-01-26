@@ -1,0 +1,1 @@
+var OrgFZPPPickupGridViewController = OrgFZPPPickupGridViewControllerBase.extend({});

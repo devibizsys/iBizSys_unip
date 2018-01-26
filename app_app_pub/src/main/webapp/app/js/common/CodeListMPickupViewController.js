@@ -1,0 +1,1 @@
+var CodeListMPickupViewController = CodeListMPickupViewControllerBase.extend({});

@@ -1,0 +1,1 @@
+var PPModelPickupViewController = PPModelPickupViewControllerBase.extend({});

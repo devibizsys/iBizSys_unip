@@ -1,0 +1,1 @@
+var DataSyncInGridViewController = DataSyncInGridViewControllerBase.extend({});

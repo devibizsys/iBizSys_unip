@@ -1,0 +1,1 @@
+var OA_CPMJSQWFActionViewController = OA_CPMJSQWFActionViewControllerBase.extend({});

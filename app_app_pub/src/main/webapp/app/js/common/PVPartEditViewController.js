@@ -1,0 +1,1 @@
+var PVPartEditViewController = PVPartEditViewControllerBase.extend({});

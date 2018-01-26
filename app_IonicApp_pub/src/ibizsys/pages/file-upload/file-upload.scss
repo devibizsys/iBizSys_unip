@@ -1,0 +1,66 @@
+page-file-upload {
+    .scroll-content {
+        // background: #f4f4f4;
+    }
+    ion-item-group {
+        background-color: #fff;
+    }
+    ion-item-group:nth-child(2) .item{
+        border-bottom: 1px solid #efefef;
+    }
+    ion-item-group:nth-child(2) .item .label {
+        margin: 13px 8px 17px 0;
+    }
+    ion-item-group:nth-child(1) ion-icon{
+        font-size: 2.2rem;
+        color: #999;
+    }
+    ion-item-divider .label {
+        margin: 8px 8px 8px 0 !important;
+        color: #666;
+    }
+    .list {
+        margin: 0;
+    }
+    ion-item-options .icon{
+        font-size: 1.6em;
+        padding-bottom: 0 !important;
+    }
+    .toolbar-btn button:nth-child(2),.toolbar-btn button:nth-child(3){
+        background: #ddd;
+    }
+    .toolbar-btn {
+        margin-left: 0;
+        padding: 0.8rem 16px;
+    }
+    .item-divider {
+        border: 0;
+    }
+    .item.item-block .item-inner {
+        border: 0;
+    }
+    .button {
+        -webkit-box-shadow: initial;
+        box-shadow: initial;
+    }
+    .speed-line {
+        background: #f4f4f4;
+        height: 3px;
+        width: 100%;
+        border-radius: 2px;
+    }
+    .speed-line p{
+        height:100%;
+        border-radius: 2px;
+    }
+    h4 {
+        margin-top: 0px;
+        margin-bottom: 0;
+        padding-top: 1rem;
+        padding-left: 16px;
+    }
+    h5 {
+        font-size: 1.3rem !important;
+        color: #999;
+    }
+}

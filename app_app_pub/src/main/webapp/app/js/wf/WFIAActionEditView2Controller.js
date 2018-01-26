@@ -1,0 +1,1 @@
+var WFIAActionEditView2Controller = WFIAActionEditView2ControllerBase.extend({});

@@ -1,0 +1,1 @@
+var SysAdminMPickupViewController = SysAdminMPickupViewControllerBase.extend({});

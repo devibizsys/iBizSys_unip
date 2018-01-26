@@ -1,0 +1,1 @@
+var OA_YBHYSQZWTCustomViewController = OA_YBHYSQZWTCustomViewControllerBase.extend({});

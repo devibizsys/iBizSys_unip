@@ -1,0 +1,1 @@
+var OrgUserPickupViewController = OrgUserPickupViewControllerBase.extend({});

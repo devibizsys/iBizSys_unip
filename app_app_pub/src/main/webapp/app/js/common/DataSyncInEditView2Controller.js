@@ -1,0 +1,1 @@
+var DataSyncInEditView2Controller = DataSyncInEditView2ControllerBase.extend({});

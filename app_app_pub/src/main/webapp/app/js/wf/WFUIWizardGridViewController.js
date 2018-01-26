@@ -1,0 +1,1 @@
+var WFUIWizardGridViewController = WFUIWizardGridViewControllerBase.extend({});

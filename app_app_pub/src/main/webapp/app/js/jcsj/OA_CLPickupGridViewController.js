@@ -1,0 +1,1 @@
+var OA_CLPickupGridViewController = OA_CLPickupGridViewControllerBase.extend({});

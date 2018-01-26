@@ -1,0 +1,1 @@
+var OA_ZSKGridViewController = OA_ZSKGridViewControllerBase.extend({});

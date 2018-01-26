@@ -1,0 +1,1 @@
+var TSSDItemPickupViewController = TSSDItemPickupViewControllerBase.extend({});

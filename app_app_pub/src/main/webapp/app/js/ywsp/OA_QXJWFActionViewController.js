@@ -1,0 +1,1 @@
+var OA_QXJWFActionViewController = OA_QXJWFActionViewControllerBase.extend({});

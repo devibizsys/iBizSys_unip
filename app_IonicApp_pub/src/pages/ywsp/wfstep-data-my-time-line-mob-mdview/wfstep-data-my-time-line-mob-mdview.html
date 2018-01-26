@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title text-center>工作流步骤数据移动端多数据视图</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+  <ion-refresher (ionRefresh)="doRefresher($event)">
+    <ion-refresher-content pullingIcon="arrow-dropdown" refreshingSpinner="circles" refreshingText="加载中...">
+    </ion-refresher-content>
+  </ion-refresher>
+  <ion-list class="worklinecss">
+    <ion-item-sliding *ngFor="let item of mdctrl.$items">
+      <ion-item  (tap)="mdctrl.clickItem(item)">
+        <ion-avatar item-start *ngIf="(item.iconcls != '' && item.iconcls != undefined) || (item.icon != '' && item.icon != undefined)">
+          <ion-icon *ngIf="item.iconcls != '' && item.iconcls != undefined" name="{{item.iconcls}}"></ion-icon>
+          <img *ngIf="item.iconcls == '' || item.iconcls == undefined" src="/assets/images/'+{{item.icon}}" />
+        </ion-avatar>
+        <ion-avatar class="userIcon" item-start text-center *ngIf="(item.iconcls == '' || item.iconcls == undefined) && (item.icon == '' || item.icon == undefined)">
+            {{ item.actorname?.substring(item.actorname.length-2) }}
+        </ion-avatar>
+        <h2><span>{{ item.actorname }}</span> {{ item.srfmajortext }}</h2>
+        <ion-note item-right>{{ item.actiontimem }}.{{ item.actiontimed }} {{ item.actiontime }}</ion-note>
+        <img class="line-img top" src="../../../assets/images/2x.png">
+        <img class="line-img bottom" src="../../../assets/images/2x.png">        
+      </ion-item>
+    </ion-item-sliding>
+  </ion-list>
+
+  <ion-infinite-scroll enabled="false" (ionInfinite)="doInfinite($event)">
+    <ion-infinite-scroll-content loadingSpinner="bubbles" loadingText="Loading more data...">
+    </ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+</ion-content>

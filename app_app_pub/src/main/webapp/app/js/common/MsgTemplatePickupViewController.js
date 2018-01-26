@@ -1,0 +1,1 @@
+var MsgTemplatePickupViewController = MsgTemplatePickupViewControllerBase.extend({});

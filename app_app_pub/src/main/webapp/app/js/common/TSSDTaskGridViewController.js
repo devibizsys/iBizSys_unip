@@ -1,0 +1,1 @@
+var TSSDTaskGridViewController = TSSDTaskGridViewControllerBase.extend({});

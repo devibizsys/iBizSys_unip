@@ -1,0 +1,1 @@
+var GG_DBGridViewController = GG_DBGridViewControllerBase.extend({});

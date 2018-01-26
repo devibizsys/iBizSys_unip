@@ -1,0 +1,1 @@
+var WFAppSettingEditView2Controller = WFAppSettingEditView2ControllerBase.extend({});

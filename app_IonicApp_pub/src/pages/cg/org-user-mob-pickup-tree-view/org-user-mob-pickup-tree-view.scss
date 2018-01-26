@@ -1,0 +1,70 @@
+org-user-mob-pickup-tree-view {
+    background: #f4f4f4;
+    .ibiz-treenode {
+        margin-bottom: 15px;
+        background: #fff;
+    }
+    .ibiz-treenode .button {
+        padding: 0;
+        font-size: 1.5rem;
+    }
+    .ibiz-treenode .button .icon {
+        margin-right: 0.4rem;
+        font-size: 1.4em;
+        margin-bottom: 1px;
+        color: #ddd;
+    }
+    .ibiz-treenode>.button:nth-child(1) {
+        margin-left: 13px;
+        margin-right: 0;
+    }
+    .ibiz-treenode>.button:nth-last-child(1) {
+        color: #999;
+    }
+    .ibiz-treenode .button-clear.activated {
+        background-color: initial;
+    }
+    .ibiz-tree-content .item-block {
+        min-height: 6rem;
+    }
+    .ibiz-tree-content .item .button {
+        font-size: 1.4rem;
+        border-left: 1px solid #e5e5e5;
+        padding-left: 0.9em;
+        padding-right: 0;
+    }
+    .ibiz-tree-content .item .checkbox {
+        margin: 9px 16px 9px 4px;
+    }
+    .ibiz-tree-content .item .checkbox .checkbox-icon{
+        border-width: 1px;
+    }
+    .ibiz-tree-content .item .checkbox .checkbox-inner{
+        left: 5px;
+        top: 1px;
+    }
+    .ibiz-tree-content .item .item-inner{
+        border-color: #efefef;
+    }
+    .root-note .item ion-avatar{
+        width: 40px;
+        height:40px;
+        line-height: 20px;
+        border-radius:50%;
+        background:#3899fa;
+        position: absolute;
+        z-index: 9999;
+        margin: 0px 16px 8px 35px !important;
+        text-indent: 8px;
+        text-align: center;
+        color:#fff;
+        font-size: 1rem;
+    }
+    .root-note .item h2 {
+        margin-left: 45px;
+    }
+    .checkbox-ios .checkbox-checked .checkbox-inner{
+        left: 7px !important;
+        top: 4px !important;
+    }
+}

@@ -1,0 +1,1 @@
+var DataEntityPickupGridViewController = DataEntityPickupGridViewControllerBase.extend({});

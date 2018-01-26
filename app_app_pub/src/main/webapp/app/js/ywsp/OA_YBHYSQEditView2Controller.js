@@ -1,0 +1,1 @@
+var OA_YBHYSQEditView2Controller = OA_YBHYSQEditView2ControllerBase.extend({});

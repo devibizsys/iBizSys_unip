@@ -1,0 +1,1 @@
+var OA_ZSKEditView2Controller = OA_ZSKEditView2ControllerBase.extend({});

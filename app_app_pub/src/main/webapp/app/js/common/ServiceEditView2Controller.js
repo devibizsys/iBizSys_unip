@@ -1,0 +1,1 @@
+var ServiceEditView2Controller = ServiceEditView2ControllerBase.extend({});

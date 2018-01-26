@@ -1,0 +1,1 @@
+var DataSyncAgentPickupGridViewController = DataSyncAgentPickupGridViewControllerBase.extend({});

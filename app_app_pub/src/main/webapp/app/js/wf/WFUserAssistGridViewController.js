@@ -1,0 +1,1 @@
+var WFUserAssistGridViewController = WFUserAssistGridViewControllerBase.extend({});

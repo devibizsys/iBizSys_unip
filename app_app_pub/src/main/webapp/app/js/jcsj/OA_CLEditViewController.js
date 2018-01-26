@@ -1,0 +1,1 @@
+var OA_CLEditViewController = OA_CLEditViewControllerBase.extend({});

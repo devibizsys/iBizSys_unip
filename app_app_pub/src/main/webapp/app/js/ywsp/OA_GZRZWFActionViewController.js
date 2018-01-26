@@ -1,0 +1,1 @@
+var OA_GZRZWFActionViewController = OA_GZRZWFActionViewControllerBase.extend({});

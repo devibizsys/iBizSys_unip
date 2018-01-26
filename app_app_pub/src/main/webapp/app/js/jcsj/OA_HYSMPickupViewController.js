@@ -1,0 +1,1 @@
+var OA_HYSMPickupViewController = OA_HYSMPickupViewControllerBase.extend({});

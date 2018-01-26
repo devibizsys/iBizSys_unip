@@ -1,0 +1,1 @@
+var MsgSendQueueHisPickupGridViewController = MsgSendQueueHisPickupGridViewControllerBase.extend({});

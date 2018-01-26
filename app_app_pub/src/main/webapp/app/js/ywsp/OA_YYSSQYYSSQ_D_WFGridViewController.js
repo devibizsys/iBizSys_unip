@@ -1,0 +1,1 @@
+var OA_YYSSQYYSSQ_D_WFGridViewController = OA_YYSSQYYSSQ_D_WFGridViewControllerBase.extend({});

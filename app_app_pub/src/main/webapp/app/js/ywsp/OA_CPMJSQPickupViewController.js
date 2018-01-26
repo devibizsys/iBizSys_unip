@@ -1,0 +1,1 @@
+var OA_CPMJSQPickupViewController = OA_CPMJSQPickupViewControllerBase.extend({});

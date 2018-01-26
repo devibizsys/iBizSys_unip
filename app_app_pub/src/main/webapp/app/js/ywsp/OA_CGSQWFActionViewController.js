@@ -1,0 +1,1 @@
+var OA_CGSQWFActionViewController = OA_CGSQWFActionViewControllerBase.extend({});

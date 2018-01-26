@@ -1,0 +1,1 @@
+var WXAccountEditViewController = WXAccountEditViewControllerBase.extend({});

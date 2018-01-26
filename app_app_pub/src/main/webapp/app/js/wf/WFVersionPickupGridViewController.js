@@ -1,0 +1,1 @@
+var WFVersionPickupGridViewController = WFVersionPickupGridViewControllerBase.extend({});

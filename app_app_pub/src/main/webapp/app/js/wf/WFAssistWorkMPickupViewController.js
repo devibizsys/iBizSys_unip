@@ -1,0 +1,1 @@
+var WFAssistWorkMPickupViewController = WFAssistWorkMPickupViewControllerBase.extend({});

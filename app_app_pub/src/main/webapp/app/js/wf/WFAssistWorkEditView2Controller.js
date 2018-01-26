@@ -1,0 +1,1 @@
+var WFAssistWorkEditView2Controller = WFAssistWorkEditView2ControllerBase.extend({});

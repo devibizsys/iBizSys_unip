@@ -1,0 +1,1 @@
+var TSSDTaskTypePickupViewController = TSSDTaskTypePickupViewControllerBase.extend({});

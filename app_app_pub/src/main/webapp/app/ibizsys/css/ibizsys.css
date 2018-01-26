@@ -1,0 +1,489 @@
+body {
+	color: #333333;
+	font-family: "微软雅黑", sans-serif;
+}
+
+.page-container-bg-solid .page-title {
+	color: #666;
+	margin-bottom: 20px;
+	margin-top: 0px;
+}
+
+.page-container-bg-solid .theme-panel {
+	position: absolute;
+	margin-top: 0px;
+	margin-right: 20px;
+	right: 0;
+}
+
+.ibiz-pickupview-action {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+.ibiz-float-toolbar {
+	bottom: 0;
+	top: 10px;
+}
+
+.ibiz-fill {
+	height: 100%;
+}
+
+.ibiz-body-fill {
+	margin: 0px;
+	height: 100%;
+}
+
+/*文本框*/
+.ibiz-field-text {
+	
+}
+/*文本框容器*/
+.ibiz-field-textbox-container {
+	position: relative;
+}
+
+.ibiz-field-textbox-container span {
+	right: 5px;
+	left: auto;
+	margin-top: -8px;
+	position: absolute;
+	top: 50%;
+}
+
+/*日期时间选择*/
+/* .ibiz-field-datepicker {
+	position: relative;
+}
+.ibiz-field-datepicker div {
+	overflow: hidden;
+	text-decoration: none;
+	cursor: pointer;
+	width: 100%;
+}
+.ibiz-field-datepicker span {
+	right: 5px;
+	left: auto;
+	margin-top: -8px;
+	position: absolute;
+	top: 50%;
+} */
+
+/*数据选择控件*/
+.ibiz-field-picker {
+	position: relative;
+}
+
+.ibiz-field-picker div {
+	overflow: hidden;
+	text-decoration: none;
+	cursor: pointer;
+	width: 100%;
+}
+
+.ibiz-field-picker span {
+	right: 5px;
+	left: auto;
+	margin-top: -7px;
+	position: absolute;
+	top: 50%;
+}
+
+/*AC数据选择控件*/
+.ibiz-field-acpicker {
+	position: relative;
+}
+
+.ibiz-field-acpicker div {
+	overflow: hidden;
+	text-decoration: none;
+	cursor: pointer;
+	width: 100%;
+}
+
+.ibiz-field-acpicker span {
+	right: 5px;
+	left: auto;
+	margin-top: -8px;
+	position: absolute;
+	top: 50%;
+}
+
+.ibiz-field-fileuploader {
+	display:inline
+}
+/*文件上传控件*/
+.ibiz-field-fileuploader .input-group-addon {
+	background-color: transparent;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	right: 41px;
+	z-index: 10;
+}
+
+.ibiz-field-addresspickup {
+	display:inline
+}
+
+.ibiz-field-addresspickup .input-group-addon {
+	background-color: transparent;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	right: 41px;
+	z-index: 10;
+}
+
+/*图片上传控件*/
+.ibiz-field-picture {
+	
+}
+
+.ibiz-field-picture .input-group-addon {
+	border-color: transparent;
+	background: transparent;
+}
+/*列表框选择控件*/
+.ibiz-field-listboxpickup {
+	
+}
+
+.ibiz-field-listboxpickup .input-group-addon {
+	border-color: transparent;
+	background: transparent;
+}
+
+.ibiz-field-textarea {
+	width: 100%;
+}
+
+.ibiz-field-textarea .ibiz-id-dropdown {
+	position: absolute;
+	right: 28px;
+}
+
+.ibiz-field-textarea .ibiz-id-dropdown button {
+	background-color: transparent;
+}
+
+.ibiz-wftimeline {
+	
+}
+
+.ibiz-wftimeline .active {
+	background-color: #E26A6A;
+}
+
+.ibiz-jq-datatable {
+	/* width: 100% !important; */
+	margin: 0 !important;
+	background-color: #fff;
+}
+
+.ibiz-ctrl-border {
+	border: 1px solid #e5e5e5;
+}
+
+.form-horizontal .form-group {
+	margin-right: 0px;
+	margin-left: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.form-group {
+	margin-bottom: 0px;
+}
+
+.ibiz-page-content.bg-inverse {
+	background: #F7F7F7;
+}
+
+.ibiz-field-textarea .form-control {
+	/*padding:0px;*/
+	
+}
+
+.note.note-success {
+	margin-bottom: 10px;
+}
+
+@media ( min-width : 992px) {
+	/* 992px */
+	/* Page content */
+	.page-content-wrapper {
+		float: left;
+		width: 100%;
+	}
+	.page-content-wrapper .page-content {
+		margin-left: 235px;
+		margin-top: 0px;
+		min-height: 600px;
+		padding: 8px 8px 0px 8px;
+	}
+}
+
+/* General Element */
+.bg-purple-studio {
+	border-color: #8E44AD !important;
+	background-image: none !important;
+	background-color: #8E44AD !important;
+	color: #FFFFFF !important;
+}
+
+.ibiz-field-picker span.linkEditor {
+	font-size: 16px;
+}
+
+.ibiz-field-picker .form-control[readonly] {
+	cursor: default;
+	background-color: white;
+}
+
+.pq-editor-border span.dropDown, .pq-editor-border span.linkview,
+	.pq-editor-border span.fa-search {
+	position: absolute;
+	top: 30%;
+	right: 4px;
+	font-family: FontAwesome;
+}
+
+.pq-editor-border span.linkview {
+	font-size: 16px;
+}
+
+.pq-editor-border span.dropDown:hover, .pq-editor-border span.linkview:hover,
+	.pq-editor-border span.fa-search:hover {
+	cursor: pointer;
+}
+
+.pq-editor-border input.pq-cell-editor {
+	padding: 0 4px;
+}
+
+.pq-editor-border #selectDown {
+	background: white;
+	border: 1px solid #999;
+	margin-top: -1px;
+	max-height: 150px;
+	overflow: auto;
+}
+
+.pq-editor-border #selectDown .dropOption {
+	padding: 4px 2px;
+}
+
+.pq-editor-border #selectDown .dropOption:hover {
+	cursor: pointer;
+	background: #eaeaea;
+}
+
+.pq-editor-border ::-ms-clear {
+	display: none;
+}
+
+.dataTables_scrollHead {
+	border-top: 1px solid #ddd !important;
+	border-left: 1px solid #ddd !important;
+	border-right: 1px solid #ddd !important;
+	border-bottom: 0px solid #ddd !important
+}
+
+table.dataTable {
+	width: 100%;
+	margin: 0 auto;
+	clear: both;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+table.dataTable tbody>tr {
+	border-top: 1px solid #ddd !important;
+	border-bottom: 1px solid #ddd !important
+}
+
+table.dataTable tbody>tr.odd, table.dataTable tbody>tr>.odd {
+	background-color: #F2F2F2;
+}
+
+table.dataTable tbody>tr.selected, table.dataTable tbody>tr>.selected {
+	background-color: #C9C9C9;
+}
+
+.dataTables_scrollBody {
+	border-bottom: 1px solid #ddd !important;
+	border-left: 1px solid #ddd !important;
+	border-right: 1px solid #ddd !important;
+}
+
+.form-grouppanel-link {
+	position: absolute;
+	top: 15px;
+	right: 25px;
+}
+
+.form-grouppanel-link i {
+	font-size: 20px;
+}
+
+.form-grouppanel-tip {
+	text-align: center;
+	font-size: 20px;
+}
+
+.form-grouppanel-tip:hover {
+	cursor: pointer;;
+}
+
+.ibiz-field-checkboxlist .checkbox-item {
+	padding-top: 5px;
+	padding-right:20px;
+	position: relative;
+	display: inline-block;
+	margin-bottom: 0;
+	font-weight: normal;
+	vertical-align: middle;
+	cursor: pointer;
+}
+.ibiz-field-radiobuttonlist .radio-item{
+	padding-top: 5px;
+	padding-right:20px;
+	position: relative;
+	display: inline-block;
+	margin-bottom: 0;
+	font-weight: normal;
+	vertical-align: middle;
+	cursor: pointer;
+}
+.ibiz-field-radiobuttonlist .radio-item .radio{
+	padding-top: 4px;
+}
+/*扩展*/
+.radio-inline + .radio-inline, .checkbox-inline + .checkbox-inline{
+	margin-left: 0;
+}
+.btn{
+	padding: 4px 10px;
+}
+.ibiz-id-upload{
+	margin-left:0;
+}
+fieldset{
+	padding: 0 5px 4px 5px;
+	margin-bottom: 0 !important;
+	border: 0 !important;
+	background: #fff;
+}
+/*
+fieldset>div:nth-child(2){
+	padding: 0 10px;
+}
+*/
+.panel-success > .panel-heading{
+	background-color: #fff;
+	color: black;
+	border-color: #ddd;
+}
+h5, .h5{
+	font-size: 15px;
+}
+
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{
+	border: 0;
+	background: initial;
+}
+
+.nav-tabs{
+	border-bottom: 0;
+}
+.nav > li > a:hover, .nav > li > a:active, .nav > li > a:focus{
+	background: initial;
+	border-color: transparent;
+}
+.tab_title a{
+	font-size: 14px;
+	display: none;
+}
+.tab_title{
+	padding: 10px 15px;
+	float: left;
+	height: 20px;
+	margin-top: 13px;
+}
+.tab-content,.ibiz-form-formgroup{
+	background: #fff;	 
+}
+.tab-content{
+	margin: 0 15px;
+}
+.panel-text {
+	height: 37px !important;
+}
+.form-body{
+	padding-bottom: 18px;
+	padding-left: 18px;
+	padding-right: 18px;
+}
+.text-blue{
+	color: #3c8dbc;
+	font-size: 25px;
+}
+.edit_header{
+	padding:5px 5px 0 5px;
+	background: #fff;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	border-bottom: 1px solid #bbb;
+	z-index: 200;
+}
+#form_nav{
+	position: fixed;
+    right: 18px;
+    width: 150px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    top: 70px;
+    font-size: 13px;
+    border-left: 1px solid rgba(187, 187, 187, 0.48);
+}
+#form_nav div{
+	cursor: pointer;
+	padding: 3px 0;
+	color: #357ebd;
+}
+#form_nav div.action{
+	border-left:3px solid #f1594e;
+	color: #f1594e;
+	font-weight: 600;
+
+	
+}
+#form_nav div:hover{
+	color: #f1594e;
+}
+.ibiz-form-formitem{
+	margin-bottom: 18px;
+}
+
+#form_nav ul{
+	padding-left: 0;
+}
+#form_nav ul>li{
+	list-style-type: none; 
+}
+.ibiz-id-content{
+	color: blue;
+}
+.ibiz-form-formgroup{
+	padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    margin-top: -15px;
+}

@@ -1,0 +1,1 @@
+var TSSDGroupDetailMPickupViewController = TSSDGroupDetailMPickupViewControllerBase.extend({});

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="description" content="migu"/>
+    <meta name="keywords" content="migu"/>
+    <meta name="author" content="cyleen"/>
+    <meta name="viewport" content="width=device-width initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>咪咕</title>
+    <link rel="stylesheet" type="text/css" href="style/common/set.css"/>
+    <link rel="stylesheet" type="text/css" href="style/plugin/chosen.css"/>
+    <link rel="stylesheet" type="text/css" href="style/page/index.css"/>
+    <script type="text/javascript" src="js/lib/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="js/plugin/chosen.jquery.js"></script>
+    <!--[if lte IE 8]>
+    <script type="text/javascript" src="js/lib/html5-3.7.0.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <header>
+        <div class="mini_nav">
+            <div class="inMain fv-right fc-ab">
+                <span id="timer"></span>
+                <script>
+                    setInterval("timeStr=new Date().toLocaleString();timer.innerText=timeStr;",1000)
+                </script>
+                <span class="mg-lr-ab">王艳</span>
+                <span><a href="javascript:void(0);">退出</a></span>
+            </div>
+        </div>
+        <div class="main_nav">
+            <div class="inMain">
+                <h1><img alt="" src="images/logo_1.png" class="fv-middle"><img alt="" src="images/logo_2.png" class="mg-l-ac fv-middle"></h1>
+                <div class="search">
+                    <div class="search-box">
+                        <div class="search-input-box"><input type="text"><i class="icon icon-search"></i></div>
+                        <select name="search_select" id="search_select" class="dept_select">
+                            <option selected="selected" value="文档">文档</option>
+                            <option value="PDF">PDF</option>
+                        </select>
+                    </div>
+                    <div class="search-keyword "><span class="mg-r-ac fc-ab">最近搜索</span><a href="#">毕肖行</a><a href="#">刘鹏</a><a href="#">王青青</a><a href="#">清空</a></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <div class="inMain">
+            <div class="part1">
+                <div class="part_left tabBox">
+                    <div class="bar">
+                        <strong class="fc-ac fs-ac">我的待办</strong>
+                        <ul class="tabHead tabHead-aa">
+                            <li class="active"><a href="javascript:void(0);">全部(15)</a></li>
+                            <li><a href="javascript:void(0);">公文(9)</a></li>
+                            <li><a href="javascript:void(0);">合同(1)</a></li>
+                            <li><a href="javascript:void(0);">采购(3)</a></li>
+                            <li><a href="javascript:void(0);">报帐(1)</a></li>
+                            <li><a href="javascript:void(0);">项目(7)</a></li>
+                            <li><a href="javascript:void(0);">其他(0)</a></li>
+                        </ul>
+                        <span>
+                            <a href="javascript:void(0);"><i class="icon icon-refresh"></i></a>
+                            <a href="#">更多</a>
+                        </span>
+                    </div>
+                    <div class="tabCont">
+                        <div class="tabSameSty wait_list_a">
+                            <ul>
+                                <li><a href="#"><span>年终总结会准备工作</span><font>肖行</font><time>2014-10-12</time></a></li>
+                                <li><a href="#"><span>下周前向合作伙伴通知工作进度</span><font>刘鹏</font><time>2014-10-12</time></a></li>
+                                <li><a href="#"><span>咪咕音乐网域名切换通知下达</span><font>王庆</font><time>2014-10-12</time></a></li>
+                                <li><a href="#"><span>社区升级维护增派人手名单</span><font>王艳</font><time>2014-10-12</time></a></li>
+                                <li><a href="#"><span>中国移动音乐门户项目启动跟进</span><font>蒋大雄</font><time>2014-10-12</time></a></li>
+                                <li><a href="#"><span>免流量优惠到期通知到相关部门</span><font>建国</font><time>2014-10-12</time></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="part_right tabBox">
+                    <h3 class="bar-aa">公告<a href="#">更多</a></h3>
+                    <ul class="tabHead tabHead-ab mg-t-ab">
+                        <li class="active"><a href="javascript:void(0);">所有</a></li>
+                        <li><a href="javascript:void(0);">集团</a></li>
+                        <li><a href="javascript:void(0);">全市</a></li>
+                        <li><a href="javascript:void(0);">部门</a></li>
+                    </ul>
+                    <div class="tabCont">
+                        <div class="tabSameSty notice_list_a">
+                            <ul>
+                                <li><a href="#"><span>论坛下线公告</span><time>2014-10-12</time></a></li>
+                                <li><a href="#"><span>包月业务升级维护通知</span><time>2014-10-12</time></a></li>
+                                <li><a href="#"><span>咪咕音乐网域名切换通知</span><time>2014-10-12</time></a></li>
+                                <li><a href="#"><span>社区升级维护通知</span><time>2014-10-12</time></a></li>
+                                <li><a href="#"><span>社区升级维护通知</span><time>2014-10-12</time></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="part2 mg-t-ac">
+                <div class="part_left tabBox">
+                    <div class="bar">
+                        <strong class="fc-ac fs-ac">我的待阅</strong>
+                        <ul class="tabHead tabHead-aa">
+                            <li class="active"><a href="javascript:void(0);">全部(15)</a></li>
+                            <li><a href="javascript:void(0);">公文(9)</a></li>
+                            <li><a href="javascript:void(0);">合同(1)</a></li>
+                            <li><a href="javascript:void(0);">采购(3)</a></li>
+                            <li><a href="javascript:void(0);">报帐(1)</a></li>
+                            <li><a href="javascript:void(0);">项目(7)</a></li>
+                            <li><a href="javascript:void(0);">其他(0)</a></li>
+                        </ul>
+                        <span>
+                            <a href="javascript:void(0);"><i class="icon icon-refresh"></i></a>
+                            <a href="#">更多</a>
+                        </span>
+                    </div>
+                    <div class="tabCont">
+                        <div class="tabSameSty read_list_a">
+                            <ul>
+                                <li><a href="#"><small>公文</small><span>咪咕音乐网域名切换通知下达</span><font>肖行</font><time>2014-10-12</time></a></li>
+                                <li><a href="#"><small>公文</small><span>下周前向合作伙伴通知工作进度</span><font>刘鹏</font><time>2014-10-12</time></a></li>
+                                <li><a href="#"><small>公文</small><span>咪咕音乐网域名切换通知下达</span><font>王庆</font><time>2014-10-12</time></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="part_right msg">
+                    <h3>消息提醒</h3>
+                    <ul>
+                        <li><a href="#">你有<span>12</span>封未读邮件<i class="icon icon-look"></i></a></li>
+                        <li><a href="#">未读消息<span>12</span>个<i class="icon icon-look"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="part3 mg-t-ac">
+                <div class="tabBox">
+                    <ul class="tabHead tabHead-ac">
+                        <li class="active"><a href="javascript:void(0);">新闻</a></li>
+                    </ul>
+                    <div class="tabCont">
+                        <div class="news mg-t-ac">
+                            <div class="news_left">
+                                <b><a href="#"><img alt="" src="images/news.jpg"></a></b>
+                                <div class="news_brief">
+                                    <h3 class="fs-ac"><a href="#">咪咕游戏:2015网智会晋级赛智慧上演</a></h3>
+                                    <h6 class="fw-ac fs-aa fc-aa">8小时前</h6>
+                                    <p>这对于探索我国棋牌产业模式升级、转型和重构的方式有着重要意义,同时也意味着咪咕游戏正以自身移动互联网优势构建棋牌数字化产业蓝图,推动棋牌产业数字化快速发展进程...</p>
+                                    <h4 class="fw-ac fs-aa fv-right"><a href="#">查看更多</a></h4>
+                                </div>
+                            </div>
+                            <div class="news_right">
+                                <ul>
+                                    <li><a href="#"><i>•</i><span>“咪咕互娱发行首款网游《全民君... </span><time>2014-10-12</time></a></li>
+                                    <li><a href="#"><i>•</i><span>“咪咕音乐.音为青春”中国大学... </span><time>2014-10-12</time></a></li>
+                                    <li><a href="#"><i>•</i><span>“咪咕音乐 乐动星声” 中国移...</span><time>2014-10-12</time></a></li>
+                                    <li><a href="#"><i>•</i><span>“咪咕音乐.音为青春”中国大学... </span><time>2014-10-12</time></a></li>
+                            </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="part4">
+                <ul>
+                    <li><a href="#"><b><i class="icon icon-aa"></i></b><span>通讯录</span></a></li>
+                    <li><a href="#"><b><i class="icon icon-ab"></i></b><span>邮件</span></a></li>
+                    <li><a href="#"><b><i class="icon icon-ac"></i></b><span>个人办公</span></a></li>
+                    <li><a href="#"><b><i class="icon icon-ad"></i></b><span>人事管理</span></a></li>
+                    <li><a href="#"><b><i class="icon icon-ae"></i></b><span>报帐系统</span></a></li>
+                    <li><a href="#"><b><i class="icon icon-af"></i></b><span>&nbsp;</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer class="fv-center"><p>Copyright © 2015 咪咕文化科技有限公司</p></footer>
+	<!-- END JAVASCRIPTS -->
+    <script type="text/javascript">
+    $(function(){
+        $('.dept_select').chosen(); 
+        $('ul.tabHead li').click(function(){
+            $(this).addClass("active").siblings().removeClass();
+            $(this).parents('.tabBox').find(".tabCont").hide().eq($('ul.tabHead li').index(this)).show();
+        });
+    })
+    </script>
+</body>
+<!-- END BODY -->
+</html>

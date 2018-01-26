@@ -1,0 +1,1 @@
+var UserGridViewController = UserGridViewControllerBase.extend({});

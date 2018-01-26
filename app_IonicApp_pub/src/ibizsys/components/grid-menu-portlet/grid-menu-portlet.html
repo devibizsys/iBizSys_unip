@@ -1,0 +1,11 @@
+<div *ngFor="let items of menu.$items">
+  <ion-grid>
+    <ion-row>
+      <ion-col *ngFor="let item of items" col-4 text-center (tap)="menuTap(item.appfuncid)">
+          <ion-icon *ngIf="item.iconcls != '' && item.iconcls != undefined" name="{{item.iconcls}}"></ion-icon>
+          <img *ngIf="item.iconcls == '' || item.iconcls == undefined" src="{{ (item.icon != '' && item.icon != undefined) ? imagePath+item.icon : imagePath+'contract.png' }}" />
+          <div class="menu-name">{{ item.text }}<span *ngIf="counter && item.counterid && counter?.getData() && counter.getData()[item.counterid]">({{ counter?.getData()[item.counterid] }})</span></div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</div>

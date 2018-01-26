@@ -1,0 +1,1 @@
+var UniResPickupViewController = UniResPickupViewControllerBase.extend({});

@@ -1,0 +1,1 @@
+var PVPartCurPVPickupGridViewController = PVPartCurPVPickupGridViewControllerBase.extend({});

@@ -1,0 +1,278 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+  <display-name>UniPSample</display-name>
+   <filter>
+		<filter-name>encodingFilter</filter-name>
+		<filter-class>
+		org.springframework.web.filter.CharacterEncodingFilter
+		</filter-class>
+		<init-param>
+		<param-name>encoding</param-name>
+		<param-value>UTF-8</param-value>
+		</init-param>
+		<init-param>
+		<param-name>forceEncoding</param-name>
+		<param-value>true</param-value>
+		</init-param>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>encodingFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	 
+    <filter>
+		<filter-name>iBizSysFilter</filter-name>
+		<filter-class>net.ibizsys.paas.web.WebFilter</filter-class>
+		
+		<init-param>
+			<param-name>SYSTEMID</param-name>
+			<param-value>UniPSample</param-value>
+		</init-param>
+		<init-param>
+			<param-name>WEBCONTEXT</param-name>
+			<param-value>com.sa.unip.srv.web.WebContext</param-value>
+		</init-param>
+
+		<init-param>
+			<param-name>AUTHFILTER</param-name>
+			<param-value>FALSE</param-value>
+		</init-param>
+
+		<init-param>
+			<param-name>AUTHPATH</param-name>
+			<param-value>/uacclient/uaclogin.jsp</param-value>
+		</init-param>
+
+		<init-param>
+			<param-name>FILEPATH</param-name>
+			<param-value>C:\SRFEX_FILE\</param-value>
+		</init-param>
+
+		<init-param>
+			<param-name>TEMPPATH</param-name>
+			<param-value>C:\SRFEX_TEMP\</param-value>
+		</init-param>
+				
+	</filter>
+
+
+
+	<filter-mapping>
+		<filter-name>iBizSysFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	
+	
+	<filter>
+		<filter-name>SA UAC Filter</filter-name>
+		<filter-class>net.ibizsys.psuac.web.AuthenticationFilter</filter-class>
+		<init-param>
+			<param-name>UACLOGINURL</param-name>
+			<param-value>http://lionlau-w530:8020/SAUAC/login</param-value>
+		</init-param>
+		<init-param>
+			<param-name>UACSERVER</param-name>
+			<param-value>http://lionlau-w530:8020/SAUAC/</param-value>
+		</init-param>
+		<init-param>
+			<param-name>SERVERNAME</param-name>
+			<param-value>http://lionlau-w530:8050</param-value>
+		</init-param>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>SA UAC Filter</filter-name>
+		<url-pattern>/uacclient/uaclogin2.jsp</url-pattern>
+	</filter-mapping>
+
+	<filter>
+		<filter-name>SA UAC Filter2</filter-name>
+		<filter-class>net.ibizsys.psuac.web.TicketValidationFilter</filter-class>
+		<init-param>
+			<param-name>UACSERVER</param-name>
+			<param-value>http://lionlau-w530:8020/SAUAC/</param-value>
+		</init-param>
+		<init-param>
+			<param-name>SERVERNAME</param-name>
+			<param-value>http://lionlau-w530:8050</param-value>
+		</init-param>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>SA UAC Filter2</filter-name>
+		<url-pattern>/uacclient/uaclogin2.jsp</url-pattern>
+	</filter-mapping>
+
+
+	<filter>
+		<filter-name>SA UAC Filter3</filter-name>
+		<filter-class>net.ibizsys.psuac.web.AuthenticationFilter</filter-class>
+		<init-param>
+			<param-name>UACLOGINURL</param-name>
+			<param-value>http://172.16.100.88:8020/SAUAC/login</param-value>
+		</init-param>
+		<init-param>
+			<param-name>UACSERVER</param-name>
+			<param-value>http://172.16.100.88:8020/SAUAC/</param-value>
+		</init-param>
+		<init-param>
+			<param-name>SERVERNAME</param-name>
+			<param-value>http://172.16.100.88:8050</param-value>
+		</init-param>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>SA UAC Filter3</filter-name>
+		<url-pattern>/uacclient/uaclogin4.jsp</url-pattern>
+	</filter-mapping>
+
+	<filter>
+		<filter-name>SA UAC Filter4</filter-name>
+		<filter-class>net.ibizsys.psuac.web.TicketValidationFilter</filter-class>
+		<init-param>
+			<param-name>UACSERVER</param-name>
+			<param-value>http://172.16.100.88:8020/SAUAC/</param-value>
+		</init-param>
+		<init-param>
+			<param-name>SERVERNAME</param-name>
+			<param-value>http://172.16.100.88:8050</param-value>
+		</init-param>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>SA UAC Filter4</filter-name>
+		<url-pattern>/uacclient/uaclogin4.jsp</url-pattern>
+	</filter-mapping>
+	
+	<filter>    
+        <filter-name>openSessionInViewFilter</filter-name>    
+        <filter-class>org.springframework.orm.hibernate4.support.OpenSessionInViewFilter</filter-class>    
+        <init-param>    
+            <param-name>sessionFactoryBeanName</param-name>    
+            <param-value>sessionFactory</param-value>    
+        </init-param>    
+        <init-param>    
+            <param-name>singleSession</param-name>    
+            <param-value>true</param-value>    
+        </init-param>    
+    </filter>    
+    <filter-mapping>    
+        <filter-name>openSessionInViewFilter</filter-name>    
+        <url-pattern>*.do</url-pattern>    
+    </filter-mapping>
+    
+  <context-param>
+    <param-name>contextConfigLocation</param-name>
+    <param-value>classpath:/applicationContext*.xml</param-value>
+  </context-param>
+  <listener>
+    <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+  </listener>
+  <!-- 定义DispatcherServlet -->
+  <servlet>
+    <servlet-name>ibizsys-dispatcher</servlet-name>
+    <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+    <init-param>
+      <!-- 默认/WEB-INF/[servlet名字]-servlet.xml加载上下文， 
+          如果配置了contextConfigLocation参数，
+          将使用classpath:/ibizsys-dispatcher-servlet.xml加载上下文
+      -->
+      <param-name>contextConfigLocation</param-name>
+      <param-value>classpath:/ibizsys-dispatcher-servlet.xml</param-value>
+    </init-param>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <!-- 拦截匹配的请求，这里所有请求采用名字为ibizsys-dispatcher的DispatcherServlet处理 -->
+  <servlet-mapping>
+    <servlet-name>ibizsys-dispatcher</servlet-name>
+    <url-pattern>*.do</url-pattern>
+  </servlet-mapping>
+   <!-- 系统API -->
+  <servlet>
+		<servlet-name>RemoteLoginServlet</servlet-name>
+		<servlet-class>
+			net.ibizsys.paas.web.util.RemoteLoginServlet
+		</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RemoteLoginServlet</servlet-name>
+		<url-pattern>/api/login</url-pattern>
+	</servlet-mapping>
+	
+	 <servlet>
+		<servlet-name>CoreAPIServlet</servlet-name>
+		<servlet-class>
+			net.ibizsys.paas.web.util.CoreAPIServlet
+		</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CoreAPIServlet</servlet-name>
+		<url-pattern>/api/core</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>WFAPIServlet</servlet-name>
+		<servlet-class>
+			net.ibizsys.pswf.web.util.WFAPIServlet
+		</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>WFAPIServlet</servlet-name>
+		<url-pattern>/api/wf</url-pattern>
+	</servlet-mapping>
+
+        <servlet>
+		<servlet-name>AppLoginServlet</servlet-name>
+		<servlet-class>
+			net.ibizsys.paas.web.util.LoginServlet
+		</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AppLoginServlet</servlet-name>
+		<url-pattern>/app/ibizutil/login.do</url-pattern>
+	</servlet-mapping>
+        <servlet>
+		<servlet-name>PDFPrintServlet</servlet-name>
+		<servlet-class>
+			net.ibizsys.paas.web.util.PrintServlet
+		</servlet-class>
+                <init-param>
+			<param-name>CONTENTTYPE</param-name>
+			<param-value>PDF</param-value>
+		</init-param>
+                <init-param>
+			<param-name>FILEFOLDER</param-name>
+			<param-value>/ionicapp/print/</param-value>
+		</init-param>    
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>PDFPrintServlet</servlet-name>
+		<url-pattern>/ionicapp/ibizutil/print.pdf</url-pattern>
+	</servlet-mapping>
+        <servlet>
+		<servlet-name>PDFReportServlet</servlet-name>
+		<servlet-class>
+			net.ibizsys.paas.web.util.ReportServlet
+		</servlet-class>
+                <init-param>
+			<param-name>CONTENTTYPE</param-name>
+			<param-value>PDF</param-value>
+		</init-param>
+                <init-param>
+			<param-name>FILEFOLDER</param-name>
+			<param-value>/ionicapp/report/</param-value>
+		</init-param>    
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>PDFReportServlet</servlet-name>
+		<url-pattern>/ionicapp/ibizutil/report.pdf</url-pattern>
+	</servlet-mapping>
+
+</web-app>

@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar>
+    <ion-buttons start>
+      <button ion-button icon-only (click)="clickButton('Back')">
+        <ion-icon name="arrow-back"></ion-icon>取消
+      </button>
+    </ion-buttons>
+    <ion-title text-center>组织人员</ion-title>
+    <ion-buttons end>
+      <button class="toolbarBtn" ion-button icon-only (click)="clickButton('Save')">确认</button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <org-user-mob-pickup-tree-view [deleteData]="$deleteData" [currentValue]="$currentValue" [(ngModel)]="$values" [multiselect]="true" (selectChange)="nodeChange($event)"></org-user-mob-pickup-tree-view>
+</ion-content>
+
+<ion-footer class="ibiz-footer-sum">
+  <button small ion-button (click)="deleteCheckedData()" [disabled]="$values.length === 0"><h2>已选择</h2> <h1>{{ $values.length }}</h1></button>
+</ion-footer>

@@ -1,0 +1,1 @@
+var OA_GZRZRZTJLC_W10_WFGridViewController = OA_GZRZRZTJLC_W10_WFGridViewControllerBase.extend({});

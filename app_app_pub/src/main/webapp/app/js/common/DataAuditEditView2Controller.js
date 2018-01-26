@@ -1,0 +1,1 @@
+var DataAuditEditView2Controller = DataAuditEditView2ControllerBase.extend({});

@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-navbar hideBackButton="true">
+        <ion-buttons start *ngIf="!isRootView()">
+            <button ion-button icon-only (click)="backView()">
+                <ion-icon name="arrow-back"></ion-icon>返回
+            </button>
+        </ion-buttons>
+    <ion-title text-center>通知公告</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+<input  type="hidden" [(ngModel)]="form.$data.srfupdatedate" name="srfupdatedate"><input  type="hidden" [(ngModel)]="form.$data.srforikey" name="srforikey"><input  type="hidden" [(ngModel)]="form.$data.srfkey" name="srfkey"><input  type="hidden" [(ngModel)]="form.$data.srfmajortext" name="srfmajortext"><input  type="hidden" [(ngModel)]="form.$data.srftempmode" name="srftempmode"><input  type="hidden" [(ngModel)]="form.$data.srfuf" name="srfuf"><input  type="hidden" [(ngModel)]="form.$data.srfdeid" name="srfdeid"><input  type="hidden" [(ngModel)]="form.$data.srfsourcekey" name="srfsourcekey"><input  type="hidden" [(ngModel)]="form.$data.srfusername" name="srfusername"><input  type="hidden" [(ngModel)]="form.$data.srfobj" name="srfobj"><input  type="hidden" [(ngModel)]="form.$data.srfobj3" name="srfobj3"><input  type="hidden" [(ngModel)]="form.$data.oa_tzggid" name="oa_tzggid"><input  type="hidden" [(ngModel)]="form.$data.orguserid" name="orguserid">
+          <ion-item-group class="editzs-top">
+	
+<ion-card>
+    <ion-card-header>
+        <ion-avatar item-start *ngIf="(form.$data.iconcls != '' && form.$data.iconcls != undefined) || (form.$data.icon != '' && form.$data.icon != undefined)">
+            <ion-icon *ngIf="form.$data.iconcls != '' && form.$data.iconcls != undefined" name="{{form.$data.iconcls}}"></ion-icon>
+        </ion-avatar>
+        <ion-avatar class="userIcon" item-start *ngIf="(form.$data.iconcls == '' || form.$data.iconcls == undefined) && (form.$data.icon == '' || form.$data.icon == undefined)">
+               {{ form.$data.srfusername?.substring(form.$data.srfusername.length-2) }}
+        </ion-avatar>
+        <h2 class="font-bold">{{form.$data.srfusername}}</h2>
+        <p>{{form.$data.srfobj}} {{form.$data.srfobj2}}</p>
+    </ion-card-header>
+    <img *ngIf="form.$data.srfobj3==1 && form.$data.srfobj3 != ''" src="{{$IBizApp.imagePath+'agree.png'}}">
+    <img *ngIf="form.$data.srfobj3==0 && form.$data.srfobj3 != ''" src="{{$IBizApp.imagePath+'disagree.png'}}">
+</ion-card>
+
+</ion-item-group>
+
+      <ion-item-group class="wfspcss">
+	
+<ion-item *ngIf="form?.$item?.oa_tzggname?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.oa_tzggname.allowEmpty">*</span>通知公告标题</ion-avatar>
+	<ion-avatar>{{form.$data.oa_tzggname}}</ion-avatar>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.content?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.content.allowEmpty">*</span>通知公告内容</ion-avatar>
+	<ion-avatar>{{form.$data.content}}</ion-avatar>
+    </ion-item>	
+
+</ion-item-group>
+
+  
+  </ion-list>
+</ion-content>

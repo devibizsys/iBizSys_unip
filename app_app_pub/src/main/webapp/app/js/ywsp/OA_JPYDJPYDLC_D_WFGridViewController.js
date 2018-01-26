@@ -1,0 +1,1 @@
+var OA_JPYDJPYDLC_D_WFGridViewController = OA_JPYDJPYDLC_D_WFGridViewControllerBase.extend({});

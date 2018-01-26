@@ -1,0 +1,1 @@
+var WFUIWizardEditViewController = WFUIWizardEditViewControllerBase.extend({});

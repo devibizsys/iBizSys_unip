@@ -1,0 +1,1 @@
+var WFUCPolicyPickupGridViewController = WFUCPolicyPickupGridViewControllerBase.extend({});

@@ -1,0 +1,1 @@
+var WXEntAppMPickupViewController = WXEntAppMPickupViewControllerBase.extend({});

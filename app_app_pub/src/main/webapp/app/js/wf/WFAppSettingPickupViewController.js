@@ -1,0 +1,1 @@
+var WFAppSettingPickupViewController = WFAppSettingPickupViewControllerBase.extend({});

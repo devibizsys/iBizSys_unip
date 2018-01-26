@@ -1,0 +1,1 @@
+var LoginAccountEditViewController = LoginAccountEditViewControllerBase.extend({});

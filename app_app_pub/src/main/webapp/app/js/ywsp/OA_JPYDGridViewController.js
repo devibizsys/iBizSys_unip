@@ -1,0 +1,1 @@
+var OA_JPYDGridViewController = OA_JPYDGridViewControllerBase.extend({});

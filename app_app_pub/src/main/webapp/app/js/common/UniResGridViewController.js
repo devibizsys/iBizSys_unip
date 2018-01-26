@@ -1,0 +1,1 @@
+var UniResGridViewController = UniResGridViewControllerBase.extend({});

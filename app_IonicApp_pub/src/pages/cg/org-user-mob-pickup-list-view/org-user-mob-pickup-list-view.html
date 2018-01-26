@@ -1,0 +1,15 @@
+<ion-list radio-group *ngIf="!multiselect">
+  <ion-item *ngFor="let item of mdctrl.$items,let index = index" (tap)="selectedChange(item)">
+    <ion-label>{{ item.srfmajortext }}</ion-label>
+	  <ion-label *ngIf="item.srfsubtitle">{{ item.srfsubtitle }}</ion-label>
+    <ion-radio checked="{{item.checked}}" ></ion-radio>
+  </ion-item>
+</ion-list>
+
+<ion-list *ngIf="multiselect">
+  <ion-item *ngFor="let item of mdctrl.$items">
+    <ion-label>{{ item.srfmajortext }}</ion-label>
+	  <ion-label *ngIf="item.srfsubtitle">{{ item.srfsubtitle }}</ion-label>
+    <ion-checkbox color="blue" [(ngModel)]="item.checked" (ionChange)="selectedChanges(item)"></ion-checkbox>
+  </ion-item>
+</ion-list>

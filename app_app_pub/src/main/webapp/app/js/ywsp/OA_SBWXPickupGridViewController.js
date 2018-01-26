@@ -1,0 +1,1 @@
+var OA_SBWXPickupGridViewController = OA_SBWXPickupGridViewControllerBase.extend({});

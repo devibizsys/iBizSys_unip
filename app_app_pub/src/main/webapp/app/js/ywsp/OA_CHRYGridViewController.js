@@ -1,0 +1,1 @@
+var OA_CHRYGridViewController = OA_CHRYGridViewControllerBase.extend({});

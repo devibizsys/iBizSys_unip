@@ -1,0 +1,1 @@
+var OA_JPYDEditViewController = OA_JPYDEditViewControllerBase.extend({});

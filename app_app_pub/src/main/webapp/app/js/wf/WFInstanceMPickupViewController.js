@@ -1,0 +1,1 @@
+var WFInstanceMPickupViewController = WFInstanceMPickupViewControllerBase.extend({});

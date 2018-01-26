@@ -1,0 +1,1 @@
+var TSSDTaskLogEditView2Controller = TSSDTaskLogEditView2ControllerBase.extend({});

@@ -1,0 +1,1 @@
+var WFAssistWorkEditViewController = WFAssistWorkEditViewControllerBase.extend({});

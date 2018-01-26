@@ -1,0 +1,1 @@
+var TSSDItemEditViewController = TSSDItemEditViewControllerBase.extend({});

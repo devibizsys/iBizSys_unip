@@ -1,0 +1,1 @@
+var CodeItemEditView2Controller = CodeItemEditView2ControllerBase.extend({});

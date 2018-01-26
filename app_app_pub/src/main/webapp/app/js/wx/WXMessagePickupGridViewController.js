@@ -1,0 +1,1 @@
+var WXMessagePickupGridViewController = WXMessagePickupGridViewControllerBase.extend({});

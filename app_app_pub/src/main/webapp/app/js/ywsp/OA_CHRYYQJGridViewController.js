@@ -1,0 +1,1 @@
+var OA_CHRYYQJGridViewController = OA_CHRYYQJGridViewControllerBase.extend({});

@@ -1,0 +1,68 @@
+<ion-header>
+  <ion-navbar hideBackButton="true">
+        <ion-buttons start *ngIf="!isRootView()">
+            <button ion-button icon-only (click)="backView()">
+                <ion-icon name="arrow-back"></ion-icon>返回
+            </button>
+        </ion-buttons>
+    <ion-title text-center>食堂外卖订购</ion-title>
+    <ion-buttons end>
+          <button ion-button icon-only (click)="presentActionSheet({'title': '', 'opts': [{'text':'查看记录','tag':'CKJL'}]})">
+        <ion-icon name="more"></ion-icon>
+      </button>
+
+    </ion-buttons>
+
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <div [ngSwitch]="segment">
+    <div *ngSwitchCase="'form'">
+      	<ion-list>
+<input  type="hidden" [(ngModel)]="form.$data.srfupdatedate" name="srfupdatedate"><input  type="hidden" [(ngModel)]="form.$data.srforikey" name="srforikey"><input  type="hidden" [(ngModel)]="form.$data.srfkey" name="srfkey"><input  type="hidden" [(ngModel)]="form.$data.srfmajortext" name="srfmajortext"><input  type="hidden" [(ngModel)]="form.$data.srftempmode" name="srftempmode"><input  type="hidden" [(ngModel)]="form.$data.srfuf" name="srfuf"><input  type="hidden" [(ngModel)]="form.$data.srfdeid" name="srfdeid"><input  type="hidden" [(ngModel)]="form.$data.srfsourcekey" name="srfsourcekey"><input  type="hidden" [(ngModel)]="form.$data.orguserid" name="orguserid"><input  type="hidden" [(ngModel)]="form.$data.orgusername" name="orgusername"><input  type="hidden" [(ngModel)]="form.$data.oa_stwmdgid" name="oa_stwmdgid">
+          <ion-item-group >
+	
+<ion-item *ngIf="form?.$item?.scsj?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.scsj.allowEmpty">*</span>送餐时间</ion-avatar>
+	<ion-datetime displayFormat="YYYY-MM-DD HH:mm" doneText="OK" [(ngModel)]="form.$data.scsj" (ngModelChange)="form.fieldChange($event, 'scsj', form.$item.scsj)"></ion-datetime>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.ycrs?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.ycrs.allowEmpty">*</span>用餐人数</ion-avatar>
+	<ion-input type="text" [(ngModel)]="form.$data.ycrs" placeholder="" [disabled]="form.$item.ycrs.disabled" (ngModelChange)="form.fieldChange($event, 'ycrs', form.$item.ycrs)"></ion-input>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.ycdd?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.ycdd.allowEmpty">*</span>用餐地点</ion-avatar>
+	<ion-input type="text" [(ngModel)]="form.$data.ycdd" placeholder="" [disabled]="form.$item.ycdd.disabled" (ngModelChange)="form.fieldChange($event, 'ycdd', form.$item.ycdd)"></ion-input>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.sy?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.sy.allowEmpty">*</span>事由</ion-avatar>
+	<ion-textarea [(ngModel)]="form.$data.sy" placeholder="" [disabled]="form.$item.sy.disabled" (ngModelChange)="form.fieldChange($event, 'sy', form.$item.sy)"></ion-textarea>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.bz?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.bz.allowEmpty">*</span>备注</ion-avatar>
+	<ion-textarea [(ngModel)]="form.$data.bz" placeholder="" [disabled]="form.$item.bz.disabled" (ngModelChange)="form.fieldChange($event, 'bz', form.$item.bz)"></ion-textarea>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.fj?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.fj.allowEmpty">*</span>附件</ion-avatar>
+	<file-upload-picker [(ngModel)]="form.$data.fj"></file-upload-picker>
+    </ion-item>	
+
+</ion-item-group>
+
+  
+  </ion-list>
+		<ion-footer>
+        <button ion-button block (click)="clickButton('SaveAndStart')">提交</button>
+
+</ion-footer>
+
+    </div>
+
+  </div>
+</ion-content>

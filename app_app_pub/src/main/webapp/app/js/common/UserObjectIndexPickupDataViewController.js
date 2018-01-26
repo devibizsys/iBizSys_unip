@@ -1,0 +1,1 @@
+var UserObjectIndexPickupDataViewController = UserObjectIndexPickupDataViewControllerBase.extend({});

@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-navbar hideBackButton="true">
+        <ion-buttons start *ngIf="!isRootView()">
+            <button ion-button icon-only (click)="backView()">
+                <ion-icon name="arrow-back"></ion-icon>返回
+            </button>
+        </ion-buttons>
+    <ion-title text-center>通知公告</ion-title>
+    <ion-buttons end>
+    </ion-buttons>
+
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <div [ngSwitch]="segment">
+    <div *ngSwitchCase="'form'">
+      	<ion-list>
+<input  type="hidden" [(ngModel)]="form.$data.srfupdatedate" name="srfupdatedate"><input  type="hidden" [(ngModel)]="form.$data.srforikey" name="srforikey"><input  type="hidden" [(ngModel)]="form.$data.srfkey" name="srfkey"><input  type="hidden" [(ngModel)]="form.$data.srfmajortext" name="srfmajortext"><input  type="hidden" [(ngModel)]="form.$data.srftempmode" name="srftempmode"><input  type="hidden" [(ngModel)]="form.$data.srfuf" name="srfuf"><input  type="hidden" [(ngModel)]="form.$data.srfdeid" name="srfdeid"><input  type="hidden" [(ngModel)]="form.$data.srfsourcekey" name="srfsourcekey"><input  type="hidden" [(ngModel)]="form.$data.oa_tzggid" name="oa_tzggid"><input  type="hidden" [(ngModel)]="form.$data.orguserid" name="orguserid"><input  type="hidden" [(ngModel)]="form.$data.orgusername" name="orgusername">
+          <ion-item *ngIf="form?.$item?.oa_tzggname?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.oa_tzggname.allowEmpty">*</span>通知公告标题</ion-avatar>
+	<ion-input type="text" [(ngModel)]="form.$data.oa_tzggname" placeholder="" [disabled]="form.$item.oa_tzggname.disabled" (ngModelChange)="form.fieldChange($event, 'oa_tzggname', form.$item.oa_tzggname)"></ion-input>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.fssj?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.fssj.allowEmpty">*</span>发送时间</ion-avatar>
+	<ion-datetime displayFormat="YYYY-MM-DD HH:mm:ss" doneText="OK" [(ngModel)]="form.$data.fssj" (ngModelChange)="form.fieldChange($event, 'fssj', form.$item.fssj)"></ion-datetime>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.content?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.content.allowEmpty">*</span>通知公告内容</ion-avatar>
+	<ion-input type="text" [(ngModel)]="form.$data.content" placeholder="" [disabled]="form.$item.content.disabled" (ngModelChange)="form.fieldChange($event, 'content', form.$item.content)"></ion-input>
+    </ion-item>	
+
+
+  
+  </ion-list>
+		<ion-footer>
+        <button ion-button block (click)="clickButton('SaveAndStart')">提交</button>
+
+</ion-footer>
+
+    </div>
+
+  </div>
+</ion-content>

@@ -1,0 +1,1 @@
+var OrgSectorCurOrgPickupGridViewController = OrgSectorCurOrgPickupGridViewControllerBase.extend({});

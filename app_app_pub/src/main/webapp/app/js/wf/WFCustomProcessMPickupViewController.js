@@ -1,0 +1,1 @@
+var WFCustomProcessMPickupViewController = WFCustomProcessMPickupViewControllerBase.extend({});

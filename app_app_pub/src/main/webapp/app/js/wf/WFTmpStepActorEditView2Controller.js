@@ -1,0 +1,1 @@
+var WFTmpStepActorEditView2Controller = WFTmpStepActorEditView2ControllerBase.extend({});

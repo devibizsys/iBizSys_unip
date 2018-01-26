@@ -1,0 +1,1 @@
+var MsgTemplateEditViewController = MsgTemplateEditViewControllerBase.extend({});

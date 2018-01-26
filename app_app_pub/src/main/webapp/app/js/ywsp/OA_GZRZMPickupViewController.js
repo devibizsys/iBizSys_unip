@@ -1,0 +1,1 @@
+var OA_GZRZMPickupViewController = OA_GZRZMPickupViewControllerBase.extend({});

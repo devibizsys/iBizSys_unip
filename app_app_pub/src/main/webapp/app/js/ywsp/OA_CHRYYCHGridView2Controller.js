@@ -1,0 +1,1 @@
+var OA_CHRYYCHGridView2Controller = OA_CHRYYCHGridView2ControllerBase.extend({});

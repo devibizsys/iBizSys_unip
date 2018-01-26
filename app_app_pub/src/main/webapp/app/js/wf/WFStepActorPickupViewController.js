@@ -1,0 +1,1 @@
+var WFStepActorPickupViewController = WFStepActorPickupViewControllerBase.extend({});

@@ -1,0 +1,1 @@
+var WFInstanceGridViewController = WFInstanceGridViewControllerBase.extend({});

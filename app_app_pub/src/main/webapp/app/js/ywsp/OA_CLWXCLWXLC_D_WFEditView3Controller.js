@@ -1,0 +1,1 @@
+var OA_CLWXCLWXLC_D_WFEditView3Controller = OA_CLWXCLWXLC_D_WFEditView3ControllerBase.extend({});

@@ -1,0 +1,20 @@
+    <ion-list>
+    <ion-item-sliding *ngFor="let item of mdctrl.$items">
+      <ion-item (tap)="mdctrl.clickItem(item)">
+        <ion-card>
+          <ion-card-header>
+            <ion-avatar item-start *ngIf="(item.iconcls != '' && item.iconcls != undefined) || (item.icon != '' && item.icon != undefined)">
+              <ion-icon *ngIf="item.iconcls != '' && item.iconcls != undefined" name="{{item.iconcls}}"></ion-icon>
+              <img *ngIf="item.iconcls == '' || item.iconcls == undefined" src="/assets/images/'+{{item.icon}}" />
+            </ion-avatar>
+            <h2>{{ item.srfmajortext }}</h2>
+            <p>{{ item.srfsubtitle }} {{item.srftype}}</p>
+            <ion-note item-right>{{ item.srftime }}</ion-note>
+            </ion-card-header>
+        </ion-card>
+      </ion-item>
+        <ion-item-options side="right">
+          <button ion-button color="danger" (click)="mdctrl.doRemove(item)">删除</button>
+        </ion-item-options>
+      </ion-item-sliding>
+  </ion-list>

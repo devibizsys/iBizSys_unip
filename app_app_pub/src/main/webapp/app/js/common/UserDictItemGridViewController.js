@@ -1,0 +1,1 @@
+var UserDictItemGridViewController = UserDictItemGridViewControllerBase.extend({});

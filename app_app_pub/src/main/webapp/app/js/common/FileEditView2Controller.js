@@ -1,0 +1,1 @@
+var FileEditView2Controller = FileEditView2ControllerBase.extend({});

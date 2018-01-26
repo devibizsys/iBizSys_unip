@@ -1,0 +1,1 @@
+var OA_BGYPSQGridViewController = OA_BGYPSQGridViewControllerBase.extend({});

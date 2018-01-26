@@ -1,0 +1,1 @@
+var SysAdminFuncEditView2Controller = SysAdminFuncEditView2ControllerBase.extend({});

@@ -1,0 +1,42 @@
+oa-rzrymob-tab-exp-view {
+    .tab-exp{
+        padding: 3px  0 0 0;
+    }
+    .scroll-content{
+        margin-top: 101px !important;
+        background-color: #f4f4f4 !important;
+    }
+    ion-segment {
+        background-color: #f4f4f4;
+        border-top: 1px solid #d0d0d0;
+    }
+    .segment .segment-button{
+        font-size: 1.6rem;
+        color: #666;
+        border-bottom-color: transparent;
+    }
+    .has-refresher > .scroll-content {
+        border-top: 1px solid #efefef;
+    }
+    .segment .segment-button.activated, .segment .segment-button.segment-activated{
+        border-color: #5094f3;
+        color: #5094f3;
+    }
+    .header-ios{
+        .segment-ios .segment-activated{
+            border-bottom: solid 3px #488aff !important;
+        }
+        .segment-ios .segment-button{
+            height: 4.5rem;
+            line-height: 4rem;
+            background-color: #f4f4f4;
+            border-top: initial !important;
+            border-left: initial !important;
+            border-right: initial !important;
+        }
+        .toolbar-title-ios{
+            font-weight: initial;
+            font-size:2rem;
+        }
+    }
+}

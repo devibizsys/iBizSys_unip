@@ -1,0 +1,1 @@
+var OA_XXPickupViewController = OA_XXPickupViewControllerBase.extend({});

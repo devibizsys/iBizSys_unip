@@ -1,0 +1,1 @@
+var OA_PCSQWFActionViewController = OA_PCSQWFActionViewControllerBase.extend({});

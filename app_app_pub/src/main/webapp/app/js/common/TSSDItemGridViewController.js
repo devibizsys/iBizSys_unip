@@ -1,0 +1,1 @@
+var TSSDItemGridViewController = TSSDItemGridViewControllerBase.extend({});

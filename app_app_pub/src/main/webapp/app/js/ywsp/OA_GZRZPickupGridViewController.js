@@ -1,0 +1,1 @@
+var OA_GZRZPickupGridViewController = OA_GZRZPickupGridViewControllerBase.extend({});

@@ -1,0 +1,1 @@
+var WFDynamicUserEditViewController = WFDynamicUserEditViewControllerBase.extend({});

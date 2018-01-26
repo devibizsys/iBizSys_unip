@@ -1,0 +1,1 @@
+var UserObjectMPickupViewController = UserObjectMPickupViewControllerBase.extend({});

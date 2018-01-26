@@ -1,0 +1,1 @@
+var OA_PCSQPickupViewController = OA_PCSQPickupViewControllerBase.extend({});

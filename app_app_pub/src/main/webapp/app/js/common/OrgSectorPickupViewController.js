@@ -1,0 +1,1 @@
+var OrgSectorPickupViewController = OrgSectorPickupViewControllerBase.extend({});

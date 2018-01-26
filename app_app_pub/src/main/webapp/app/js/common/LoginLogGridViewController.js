@@ -1,0 +1,1 @@
+var LoginLogGridViewController = LoginLogGridViewControllerBase.extend({});

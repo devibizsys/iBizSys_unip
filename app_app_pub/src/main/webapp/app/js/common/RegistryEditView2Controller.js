@@ -1,0 +1,1 @@
+var RegistryEditView2Controller = RegistryEditView2ControllerBase.extend({});

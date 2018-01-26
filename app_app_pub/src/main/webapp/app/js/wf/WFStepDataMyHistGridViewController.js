@@ -1,0 +1,1 @@
+var WFStepDataMyHistGridViewController = WFStepDataMyHistGridViewControllerBase.extend({});

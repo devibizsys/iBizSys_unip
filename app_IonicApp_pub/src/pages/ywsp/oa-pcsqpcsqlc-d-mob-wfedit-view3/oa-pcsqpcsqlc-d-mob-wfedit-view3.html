@@ -1,0 +1,93 @@
+<ion-header>
+  <ion-navbar hideBackButton="true">
+        <ion-buttons start *ngIf="!isRootView()">
+            <button ion-button icon-only (click)="backView()">
+                <ion-icon name="arrow-back"></ion-icon>返回
+            </button>
+        </ion-buttons>
+    <ion-title text-center>派车申请</ion-title>
+    <ion-buttons end>
+          <button ion-button icon-only (click)="presentActionSheet({'title': '', 'opts': [{'text':'查看记录','tag':'CKJL'}]})">
+        <ion-icon name="more"></ion-icon>
+      </button>
+
+    </ion-buttons>
+
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <div [ngSwitch]="segment">
+    <div *ngSwitchCase="'form'">
+      	<ion-list>
+<input  type="hidden" [(ngModel)]="form.$data.srfupdatedate" name="srfupdatedate"><input  type="hidden" [(ngModel)]="form.$data.srforikey" name="srforikey"><input  type="hidden" [(ngModel)]="form.$data.srfkey" name="srfkey"><input  type="hidden" [(ngModel)]="form.$data.srfmajortext" name="srfmajortext"><input  type="hidden" [(ngModel)]="form.$data.srftempmode" name="srftempmode"><input  type="hidden" [(ngModel)]="form.$data.srfuf" name="srfuf"><input  type="hidden" [(ngModel)]="form.$data.srfdeid" name="srfdeid"><input  type="hidden" [(ngModel)]="form.$data.srfsourcekey" name="srfsourcekey"><input  type="hidden" [(ngModel)]="form.$data.orguserid" name="orguserid"><input  type="hidden" [(ngModel)]="form.$data.orgusername" name="orgusername"><input  type="hidden" [(ngModel)]="form.$data.oa_clid" name="oa_clid"><input  type="hidden" [(ngModel)]="form.$data.orgsectorid" name="orgsectorid"><input  type="hidden" [(ngModel)]="form.$data.oa_pcsqid" name="oa_pcsqid">
+          <ion-item-group >
+	
+<ion-item *ngIf="form?.$item?.oa_clname?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.oa_clname.allowEmpty">*</span>车辆名称</ion-avatar>
+	<picker [(ngModel)]="form.$data.oa_clname" textItem="customname" valueItem="oa_clid" [formService]="form" pickupView='{"view":"OA_CLMobPickupView"}' (ngModelChange)="form.fieldChange($event, 'oa_clname', form.$item.oa_clname)"></picker>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.orgsectorname?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.orgsectorname.allowEmpty">*</span>部门名称</ion-avatar>
+	<picker [(ngModel)]="form.$data.orgsectorname" textItem="customname" valueItem="orgsectorid" [formService]="form" pickupView='{"view":"OrgSectorMobPickupView"}' (ngModelChange)="form.fieldChange($event, 'orgsectorname', form.$item.orgsectorname)"></picker>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.cph?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.cph.allowEmpty">*</span>车牌号</ion-avatar>
+	<ion-input type="text" [(ngModel)]="form.$data.cph" placeholder="" [disabled]="form.$item.cph.disabled" (ngModelChange)="form.fieldChange($event, 'cph', form.$item.cph)"></ion-input>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.je?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.je.allowEmpty">*</span>金额</ion-avatar>
+	<ion-input type="text" [(ngModel)]="form.$data.je" placeholder="" [disabled]="form.$item.je.disabled" (ngModelChange)="form.fieldChange($event, 'je', form.$item.je)"></ion-input>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.dz?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.dz.allowEmpty">*</span>地址</ion-avatar>
+	<ion-input type="text" [(ngModel)]="form.$data.dz" placeholder="" [disabled]="form.$item.dz.disabled" (ngModelChange)="form.fieldChange($event, 'dz', form.$item.dz)"></ion-input>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.yclx?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.yclx.allowEmpty">*</span>用车类型</ion-avatar>
+	<ion-input type="text" [(ngModel)]="form.$data.yclx" placeholder="" [disabled]="form.$item.yclx.disabled" (ngModelChange)="form.fieldChange($event, 'yclx', form.$item.yclx)"></ion-input>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.clpp?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.clpp.allowEmpty">*</span>车辆品牌</ion-avatar>
+	<ion-input type="text" [(ngModel)]="form.$data.clpp" placeholder="" [disabled]="form.$item.clpp.disabled" (ngModelChange)="form.fieldChange($event, 'clpp', form.$item.clpp)"></ion-input>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.cfsj?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.cfsj.allowEmpty">*</span>出发时间</ion-avatar>
+	<ion-datetime displayFormat="YYYY-MM-DD HH:mm" doneText="OK" [(ngModel)]="form.$data.cfsj" (ngModelChange)="form.fieldChange($event, 'cfsj', form.$item.cfsj)"></ion-datetime>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.fcsj?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.fcsj.allowEmpty">*</span>返程时间</ion-avatar>
+	<ion-datetime displayFormat="YYYY-MM-DD HH:mm" doneText="OK" [(ngModel)]="form.$data.fcsj" (ngModelChange)="form.fieldChange($event, 'fcsj', form.$item.fcsj)"></ion-datetime>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.sy?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.sy.allowEmpty">*</span>事由</ion-avatar>
+	<ion-input type="text" [(ngModel)]="form.$data.sy" placeholder="" [disabled]="form.$item.sy.disabled" (ngModelChange)="form.fieldChange($event, 'sy', form.$item.sy)"></ion-input>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.fj?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.fj.allowEmpty">*</span>附件</ion-avatar>
+	<file-upload-picker [(ngModel)]="form.$data.fj"></file-upload-picker>
+    </ion-item>	
+
+</ion-item-group>
+
+  
+  </ion-list>
+		<ion-footer>
+        <button ion-button block (click)="clickButton('SaveAndStart')">提交</button>
+
+</ion-footer>
+
+    </div>
+
+  </div>
+</ion-content>

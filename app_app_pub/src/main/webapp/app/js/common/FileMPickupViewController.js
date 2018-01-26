@@ -1,0 +1,1 @@
+var FileMPickupViewController = FileMPickupViewControllerBase.extend({});

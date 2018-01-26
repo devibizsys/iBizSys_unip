@@ -1,0 +1,1 @@
+var WFStepInstGridViewController = WFStepInstGridViewControllerBase.extend({});

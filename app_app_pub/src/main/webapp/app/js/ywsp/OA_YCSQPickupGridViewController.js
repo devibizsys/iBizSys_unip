@@ -1,0 +1,1 @@
+var OA_YCSQPickupGridViewController = OA_YCSQPickupGridViewControllerBase.extend({});

@@ -1,0 +1,1 @@
+var DALogGridViewController = DALogGridViewControllerBase.extend({});

@@ -1,0 +1,1 @@
+var OA_BGYPSQWFActionViewController = OA_BGYPSQWFActionViewControllerBase.extend({});

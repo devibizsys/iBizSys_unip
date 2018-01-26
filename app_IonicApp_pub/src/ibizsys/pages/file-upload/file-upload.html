@@ -1,0 +1,67 @@
+<ion-header>
+  <ion-navbar>
+    <ion-buttons start>
+      <button ion-button icon-only (click)="navCtrl.pop()">
+        <ion-icon name="arrow-back"></ion-icon>取消
+      </button>
+    </ion-buttons>
+    <ion-title text-center>文件上传</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="closeView()">确认</button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-item-group>
+    <ion-item (click)="fileSelect()">
+      选择文件
+      <input #fileUpload hidden=true type="file" ng2FileSelect [uploader]="uploader" multiple />
+      <ion-icon name="arrow-forward" item-end md="ios-arrow-forward"></ion-icon>
+    </ion-item>
+  </ion-item-group>
+  <ion-item-group>
+    <ion-item-divider color="light">已选择：{{ uploader?.queue?.length }}&nbsp;个</ion-item-divider>
+    <ion-list>
+      <ion-item-sliding *ngFor="let item of uploader.queue">
+        <ion-item>
+          <h3>{{ item?.file?.name }}</h3>
+          <h3 *ngIf="item.isSuccess">上传成功</h3>
+          <h3 *ngIf="item.isCancel">上传取消</h3>
+          <h3 *ngIf="item.isError">上传失败</h3>
+          <h5>{{ item?.file?.size/1024/1024 | number:'.2' }} MB</h5>
+          <div class="speed-line">
+            <p style="background-color: #5094f3;" [ngStyle]="{ 'width': item.progress + '%' }"></p>
+          </div>
+          <button ion-button item-end (click)="item.upload()" [disabled]="item.isReady || item.isUploading || item.isSuccess">上传</button>
+          <button ion-button item-end color="light" (click)="item.cancel()" [disabled]="!item.isUploading">取消上传</button>
+        </ion-item>
+        <ion-item-options side="right">
+          <button ion-button color="danger" (click)="item.remove()">
+            <ion-icon name="trash"></ion-icon>
+          </button>
+        </ion-item-options>
+      </ion-item-sliding>
+    </ion-list>
+  </ion-item-group>
+  <ion-item-group>
+    <h4>总进度：{{ uploader.progress }}%</h4>
+    <ion-buttons class="toolbar-btn">
+      <button ion-button small (click)="uploader.uploadAll()" [disabled]="!uploader.getNotUploadedItems().length">上传全部</button>
+      <button ion-button small (click)="uploader.cancelAll()" [disabled]="!uploader.isUploading">全部取消</button>
+      <button ion-button small (click)="uploader.clearQueue()" [disabled]="!uploader.queue.length">清空列表</button>
+    </ion-buttons>
+  </ion-item-group>
+  <ion-item-group>
+      <ion-item-divider color="light">已上传：{{ files?.length }}&nbsp;个</ion-item-divider>
+      <ion-item *ngFor="let item of files;let i = index;">
+        <ion-label>
+          {{ item.name }}
+        </ion-label>
+        <button ion-button color="danger" item-end (click)="deleteFile(i , item)">删除</button>
+      </ion-item>
+      <ion-buttons class="toolbar-btn">
+        <button ion-button small color="danger" (click)="deleteAllFile()" [disabled]="!files.length">全部删除</button>
+      </ion-buttons>
+  </ion-item-group>
+</ion-content>

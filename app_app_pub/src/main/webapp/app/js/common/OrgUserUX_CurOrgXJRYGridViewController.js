@@ -1,0 +1,1 @@
+var OrgUserUX_CurOrgXJRYGridViewController = OrgUserUX_CurOrgXJRYGridViewControllerBase.extend({});

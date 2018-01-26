@@ -1,0 +1,1 @@
+var OrgUnitCatPickupViewController = OrgUnitCatPickupViewControllerBase.extend({});

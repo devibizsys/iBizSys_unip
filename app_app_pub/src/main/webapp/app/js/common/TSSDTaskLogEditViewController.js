@@ -1,0 +1,1 @@
+var TSSDTaskLogEditViewController = TSSDTaskLogEditViewControllerBase.extend({});

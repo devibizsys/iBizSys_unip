@@ -1,0 +1,1 @@
+var SystemGridViewController = SystemGridViewControllerBase.extend({});

@@ -1,0 +1,1 @@
+var WFVersionEditView2Controller = WFVersionEditView2ControllerBase.extend({});

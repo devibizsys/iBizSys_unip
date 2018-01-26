@@ -1,0 +1,1 @@
+var OA_YCSQWFActionViewController = OA_YCSQWFActionViewControllerBase.extend({});

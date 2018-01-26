@@ -1,0 +1,1 @@
+var DALogPickupViewController = DALogPickupViewControllerBase.extend({});

@@ -1,0 +1,1 @@
+var WFReminderPickupGridViewController = WFReminderPickupGridViewControllerBase.extend({});

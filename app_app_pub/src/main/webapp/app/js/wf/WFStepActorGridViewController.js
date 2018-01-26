@@ -1,0 +1,1 @@
+var WFStepActorGridViewController = WFStepActorGridViewControllerBase.extend({});

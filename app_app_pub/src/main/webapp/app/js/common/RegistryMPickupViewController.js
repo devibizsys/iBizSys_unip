@@ -1,0 +1,1 @@
+var RegistryMPickupViewController = RegistryMPickupViewControllerBase.extend({});

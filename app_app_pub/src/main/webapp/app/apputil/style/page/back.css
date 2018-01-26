@@ -1,0 +1,60 @@
+/* CSS Document */
+/*
+ * Site:
+ * Author:Created by cyleen on 2015-11-30
+*/
+/* CSS Document */
+header { width: 100%;}
+.inMain { width: 1200px; margin: 0 auto;}
+.main_nav { width: 100%; height: 46px; 
+	filter:alpha(opacity=100 finishopacity=50 style=1 startx=0,starty=100,finishx=0,finishy=0) progid:DXImageTransform.Microsoft.gradient(startcolorstr="#55adf9",endcolorstr="#4ea1e8",gradientType=0);
+    background:-webkit-linear-gradient(#55adf9,#4ea1e8,#55adf9);
+    background:-moz-linear-gradient(#55adf9,#4ea1e8,#55adf9);
+    background:-ms-linear-gradient(#55adf9,#4ea1e8,#55adf9);
+    background:-o-linear-gradient(#55adf9,#4ea1e8,#55adf9);
+    background:linear-gradient(#55adf9,#4ea1e8,#55adf9);
+}
+.main_nav h1 { width: 30%; float: left;}
+.userInfo { float: right;}
+.userInfo ul {float: left;}
+.userInfo li { line-height: 45px; padding: 0 15px; cursor: pointer;}
+.userInfo li:hover { background: #999;}
+.userInfo li a { display: block; position: relative; }
+.userInfo li span { position: absolute; width: 20px; height: 14px; line-height: 14px; top: 5px; left: -10px; background: #ff0000; color: #fff; border-radius: 5px; text-align: center;}
+.userHeader {overflow: hidden;}
+.userHeader b { display: block; width: 40px; height: 40px; border: 2px #ccc solid; border-radius: 22px; float: left;}
+.userHeader b img { border-radius: 22px;}
+.userHeader font {display: block; float: left; font-size: 12px; font-weight: normal; color: #fff; line-height: 20px; margin-top: 3px;}
+.main { width: 100%; background: #f2f2f2;overflow: hidden;}
+.menu { width: 20%; float: left; background: #e1f0fc;}
+.menu p { height: 30px; line-height: 30px; position: relative; padding: 5px 0;}
+.menu p input { border-top: 0; border-right: 0; border-left:0; width: 85%; background: transparent;}
+.menu p .icon-search2 { position: absolute; right: 20px; top: 8px;}
+.menu ul { width: 100%; }
+.menu ul>li { width: 100%; }
+.menu ul>li>a { display: block; height: 45px; line-height: 45px; border-bottom: 1px #ccc solid; color: #666; }
+.menu ul>li>a:hover { background: #e0e0e0;}
+.menu ul>li i { margin: 0 5px 0 20px;}
+.menu ul>li>ol { width: 100%; background: #f1f3fa; display: none;}
+.menu ul>li>ol>li { width: 80%; padding-left: 20%;  height: 30px; line-height: 30px; }
+.menu ul>li>ol>li>a { color: #666;}
+.menu ul>li>ol>li.active { background: #c1dffa;}
+.menu .on { display: block;}
+
+.cont { float: left; width: 77%; margin: 5px 0 0 5px; background: #fff; padding: 1%;}
+.cont h3 { line-height: 60px; color: #0067bd;}
+.operateBox { width: 100%; overflow: hidden;}
+.operateBox ul { float: left;}
+.operateBox ul li { margin-right: 2px;}
+.operateBox ul li button { width: 80px; height: 30px; line-height: 30px; text-align: center; font-size: 14px;}
+.operateBox ul li button i { margin-right: 5px;}
+.operateBox .other {float: right;}
+.operateBox .other input { width: 160px;}
+.operateBox .other button { width: 50px; height: 30px; line-height: 30px; text-align: center; background: #26a69a;}
+.operateBox .other a { background: #ccc; padding: 12px 10px; color: #fff; font-size: 14px;}
+.operateBox button:hover { background: #50a4ec;}
+
+table tr th { text-align: left; padding: 10px 0; border-bottom: 2px #ccc solid;}
+table tr th i { margin-left: 20px;}
+table tr td { padding: 10px 0;}
+table tr:hover { background: #dae9fb;}

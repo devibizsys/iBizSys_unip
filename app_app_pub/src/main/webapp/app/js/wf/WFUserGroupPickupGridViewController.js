@@ -1,0 +1,1 @@
+var WFUserGroupPickupGridViewController = WFUserGroupPickupGridViewControllerBase.extend({});

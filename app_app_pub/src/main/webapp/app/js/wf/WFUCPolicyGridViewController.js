@@ -1,0 +1,1 @@
+var WFUCPolicyGridViewController = WFUCPolicyGridViewControllerBase.extend({});

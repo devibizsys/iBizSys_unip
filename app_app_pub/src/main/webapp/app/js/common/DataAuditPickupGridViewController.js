@@ -1,0 +1,1 @@
+var DataAuditPickupGridViewController = DataAuditPickupGridViewControllerBase.extend({});

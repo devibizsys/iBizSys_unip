@@ -1,0 +1,65 @@
+/* CSS Document */
+/*
+ * Site:
+ * Author:Created by cyleen on 2015-11-30
+*/
+/* CSS Document 
+ * f(字)s(字号)-aa(值的分类)
+ * f(字)w(字宽)-aa(值的分类)
+ * f(字)f(字体)-aa(值的分类)
+ * f(字)c(颜色)-aa(值的分类)
+ * f(字)t(样式)-aa(值的分类)
+ * f(字)v(对齐)-aa(值的分类)
+ * fonts
+*/
+
+/* 字号 S */
+.fs-aa { font-size: 12px; }
+.fs-ab { font-size: 14px; }
+.fs-ac { font-size: 16px; }
+.fs-ad { font-size: 18px; }
+.fs-ae { font-size: 24px; }
+.fs-af { font-size: 30px; }
+.fs-ag { font-size: 48px; }
+.fs-ah { font-size: 60px; }
+/* 字号 E */
+
+/* 字宽 S */
+.fw-aa { font-weight: bold; }
+.fw-ab { font-weight: bolder; }
+.fw-ac { font-weight: normal; }
+/* 字宽 E */
+
+/* 字体 S */
+.ff-aa { font-family: Arial;}
+.ff-ab { font-family: '宋体' Arial, sans-serif; } /* 宋体 */
+.ff-ac { font-family: '微软雅黑', Arial, sans-serif; } /* 微软雅黑 */
+.ff-ad { font-family: '黑体' Arial, sans-serif; } /* 黑体 */
+.ff-ae { font-family: '华文行楷' Arial, sans-serif; } /* 华文行楷 */
+/* 字体 E */
+
+/* 字色 S */
+.fc-aa { color: #999999;}
+.fc-ab { color: #ffffff;}
+.fc-ac { color: #458fce;}
+.fc-ad { color: #f37800;}
+.fc-ae { color: #666666;}
+.fc-af { color: #53a000; }
+.fc-ag { color: #ff0000; }
+.fc-ah { color: #3588d4; }
+/* 字色 E */
+
+/* 样式 S */
+.ft-aa { font-style: normal; }
+.ft-ab { font-style: italic; }
+/* 样式 E */
+
+/* 对齐 S */
+.fv-top { vertical-align: top; }
+.fv-middle{vertical-align: middle;}
+.fv-bottom { vertical-align: bottom; }
+.fv-center { text-align: center;}
+.fv-left { text-align: left;}
+.fv-right { text-align: right;}
+.fv-textBottom { vertical-align: text-bottom;}
+/* 对齐 E */

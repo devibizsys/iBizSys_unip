@@ -1,0 +1,1 @@
+var OA_XXRYEditView2Controller = OA_XXRYEditView2ControllerBase.extend({});

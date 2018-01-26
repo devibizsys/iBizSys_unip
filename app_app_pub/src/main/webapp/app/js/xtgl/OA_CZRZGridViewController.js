@@ -1,0 +1,1 @@
+var OA_CZRZGridViewController = OA_CZRZGridViewControllerBase.extend({});

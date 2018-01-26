@@ -1,0 +1,1 @@
+var TSSDPolicyGridViewController = TSSDPolicyGridViewControllerBase.extend({});

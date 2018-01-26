@@ -1,0 +1,1 @@
+var OrgSecUserEditViewController = OrgSecUserEditViewControllerBase.extend({});

@@ -1,0 +1,1 @@
+var WFTmpStepActorPickupGridViewController = WFTmpStepActorPickupGridViewControllerBase.extend({});

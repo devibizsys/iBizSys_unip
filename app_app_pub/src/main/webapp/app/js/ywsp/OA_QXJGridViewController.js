@@ -1,0 +1,1 @@
+var OA_QXJGridViewController = OA_QXJGridViewControllerBase.extend({});

@@ -1,0 +1,269 @@
+.md-list {
+  	h2.font-bold{
+        font-weight: bold;
+    }
+    ion-card-content>p {
+        color: #333 !important;
+        font-size: 1.5rem !important;
+        line-height: 1.5em !important;
+        letter-spacing: 2px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 4;
+        overflow: hidden !important;
+    }
+    ion-card-content>p>span {
+        color: #666 !important;
+    }
+    ion-card-content h3 {
+        margin-bottom: 5px !important;
+        font-size: 1.6rem !important; 
+    }
+    ion-card-content>div {
+        color: #5094f3;
+        padding: 5px 0;
+        font-size: 1.3rem;
+    }
+    .card .userIcon{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: #5094f3;
+        color: #fff;
+        font-size: 1rem;
+        float: left;
+        padding: 17px 0;
+        text-align: center;
+        margin: 0 10px 0 0;
+    }
+}
+.menu-group-right {
+      .menu-counter {
+        position: relative;
+        top: -3.4em;
+        left: 1.2em;
+        margin: 0 auto;
+        color: red;
+        width: 20px;
+        border-radius: 50%;
+        background:#f4f4f4;
+    }
+}
+.ibiz-drtab {
+  .segment{
+    border: solid 1px #488aff;
+    border-radius: 7px;
+}
+.segment-button{
+    border:none;
+    font-size: 1.5rem;
+    height: 3.5rem;
+    line-height: 3.5rem;
+    border-right: solid 1px #1466f3;
+}
+.segment-button:last-child{
+  border-right:none;
+}
+.segment-button.segment-activated{
+    background-color: #488aff;
+    color: #fff;
+}
+    .list-ios .item-block .item-inner{
+    border-bottom: none !important;
+}
+.footer-ios .toolbar-ios .segment-ios{
+    position: relative;
+}
+.toolbar-ios .segment-button{
+    max-width: inherit;
+}
+.segment-ios .segment-button.segment-activated{
+    background-color: none !important;
+}
+.segment-ios .segment-button{
+    border: solid 1px #488aff;
+}
+.segment-ios .segment-button:last-of-type{
+    border-radius:none; 
+}
+.toolbar-content-ios .segment-button:last-child{
+    border: solid 1px #488aff;
+}
+.toolbar-content-ios .segment{
+    border:none;
+}
+
+}
+.worklinecss {
+  .item{
+    border: 0;
+}
+.item ion-avatar {
+    min-width: 34px;
+    min-height: 34px;
+}
+.userIcon {
+    margin: 8px 12px 8px 16px !important;
+    text-align: center;
+    background: #5094f3;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 1rem;
+    padding: 13px 0 0 0;
+}
+.line-img {
+    position: absolute;
+    height: 35px;
+    left: 32px;
+    z-index: -1;
+}
+ion-note {
+    position: initial;
+}
+.line-img.top {
+    top: 0;
+}
+.line-img.bottom {
+    bottom: 0;
+}
+.item h2 {
+    font-size: 1.5rem;
+}
+.item h2>span {
+    color: #666;
+    margin-right: 2px;
+}
+ion-item-sliding:nth-child(1) .line-img.top {
+    display: none;
+}
+ion-item-sliding:nth-last-child(1) .line-img.bottom {
+    display: none;
+}
+ion-item-sliding:nth-child(1) .item {
+    padding-top: 8px !important;
+}
+ion-item-sliding:nth-last-child(1) .item {
+    padding-bottom: 8px !important;
+}
+}
+.ibiz-footer-twobtn {
+      padding-left: 1px;
+    .button-block {
+        display: inline-block;
+        width: calc(50% - 2px);
+    }
+}
+.editzs-bottom {
+      margin-top: 0;
+    .ibiz-formitem:nth-last-child(1){
+        padding-bottom: 30px;
+    }
+	.item {
+		border: 0;
+	}
+	.ibiz-formitem.top .ibiz-formitem-label {
+		font-size: 1.4rem;
+	}
+	.ibiz-formitem.top ion-list .item-block {
+		min-height: initial;
+	}
+	.ibiz-formitem.top ion-list ion-avatar {
+		padding: 0;
+		min-height: 16px;
+		letter-spacing: 2px;
+		line-height: 18px;
+    } 
+    .ibiz-formitem.top .ibiz-formitem-label {
+        padding: 12px 8px 0px 0;
+    }
+	.ibiz-formitem.top .label {
+		margin-bottom: 0 !important;
+		margin-top: 4px !important;
+	}
+	    .list-ios .item-block .item-inner{
+        border:none;
+    }
+    .label-ios .ibiz-formitem-label{
+        border:none;
+    }
+    .list-ios > .item-block:first-child{
+        border:none;
+    }
+}
+.editzs-top {
+  	.card {
+		margin: 0;
+		width: 100%;
+		box-shadow: initial;
+		-webkit-box-shadow: initial;
+	}
+	.card ion-card-header p{
+		font-size: 1.3rem;
+		color: #aaa;
+	}
+	.card ion-card-header {
+		border-bottom: 1px solid #efefef !important;
+        padding-bottom: 10px !important;
+	}
+	.card ion-card-header .userIcon {
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		background: #5094f3;
+		color: #fff;
+		font-size: 1rem;
+		float: left;
+		padding: 17px 0;
+		text-align: center;
+		margin-right: 10px;
+	}
+	.card > img {
+	    width: 35%;
+        position: absolute;
+        z-index: 1;
+        right: 16px;
+        top: 30px;
+	}
+}
+.menu-group-img {
+        .menu-counter {
+        color: #fff;
+        margin: 0 auto;
+        height: 2em;
+        width: 2em;
+        line-height: 2em;
+        border-radius:5px;
+        background:rgb(214, 30, 30);
+        text-align: center;
+        font-size: 2rem;
+    }
+    .menu-icon {
+        display: none;
+    }
+}
+.hidden {
+      display: none;
+}
+.wfspcss {
+      margin-top: 0;
+	.item {
+        border: 0;
+    }
+    .item-block {
+        min-height: 0;
+    }
+    .ibiz-formitem-label {
+        color: #999;
+        margin: 4px 0px 4px 0 !important;
+    }
+    ion-avatar {
+        padding: 4px 8px 4px 0;
+        min-height: 0 !important;
+    }
+    ion-item.ibiz-formitem:nth-child(1){
+        padding-top: 10px;
+    }
+    ion-item.ibiz-formitem:nth-last-child(1){
+		padding-bottom: 20px;
+	}
+}

@@ -1,0 +1,1 @@
+var TSSDTaskEditView2Controller = TSSDTaskEditView2ControllerBase.extend({});

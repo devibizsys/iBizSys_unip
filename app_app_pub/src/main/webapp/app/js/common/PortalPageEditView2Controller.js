@@ -1,0 +1,1 @@
+var PortalPageEditView2Controller = PortalPageEditView2ControllerBase.extend({});

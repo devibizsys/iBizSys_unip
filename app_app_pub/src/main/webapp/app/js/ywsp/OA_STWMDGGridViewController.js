@@ -1,0 +1,1 @@
+var OA_STWMDGGridViewController = OA_STWMDGGridViewControllerBase.extend({});

@@ -1,0 +1,1 @@
+var DEDataChg2PickupGridViewController = DEDataChg2PickupGridViewControllerBase.extend({});

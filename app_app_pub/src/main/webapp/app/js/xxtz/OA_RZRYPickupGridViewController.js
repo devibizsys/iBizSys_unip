@@ -1,0 +1,1 @@
+var OA_RZRYPickupGridViewController = OA_RZRYPickupGridViewControllerBase.extend({});

@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-navbar hideBackButton="true">
+        <ion-buttons start *ngIf="!isRootView()">
+            <button ion-button icon-only (click)="backView()">
+                <ion-icon name="arrow-back"></ion-icon>返回
+            </button>
+        </ion-buttons>
+    <ion-title text-center>法律法规</ion-title>
+    <ion-buttons end>
+          <button class="toolbarBtn" ion-button icon-only (click)="clickButton('SaveAndExit')">保存</button>
+
+    </ion-buttons>
+
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+<input  type="hidden" [(ngModel)]="form.$data.srfupdatedate" name="srfupdatedate"><input  type="hidden" [(ngModel)]="form.$data.srforikey" name="srforikey"><input  type="hidden" [(ngModel)]="form.$data.srfkey" name="srfkey"><input  type="hidden" [(ngModel)]="form.$data.srfmajortext" name="srfmajortext"><input  type="hidden" [(ngModel)]="form.$data.srftempmode" name="srftempmode"><input  type="hidden" [(ngModel)]="form.$data.srfuf" name="srfuf"><input  type="hidden" [(ngModel)]="form.$data.srfdeid" name="srfdeid"><input  type="hidden" [(ngModel)]="form.$data.srfsourcekey" name="srfsourcekey"><input  type="hidden" [(ngModel)]="form.$data.oa_flfgid" name="oa_flfgid">
+          <ion-item-group >
+	
+<ion-item *ngIf="form?.$item?.oa_flfgname?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.oa_flfgname.allowEmpty">*</span>标题</ion-avatar>
+	<ion-input type="text" [(ngModel)]="form.$data.oa_flfgname" placeholder="" [disabled]="form.$item.oa_flfgname.disabled" (ngModelChange)="form.fieldChange($event, 'oa_flfgname', form.$item.oa_flfgname)"></ion-input>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.zy?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.zy.allowEmpty">*</span>摘要</ion-avatar>
+	<ion-textarea [(ngModel)]="form.$data.zy" placeholder="" [disabled]="form.$item.zy.disabled" (ngModelChange)="form.fieldChange($event, 'zy', form.$item.zy)"></ion-textarea>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.memo?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.memo.allowEmpty">*</span>备注</ion-avatar>
+	<ion-textarea [(ngModel)]="form.$data.memo" placeholder="" [disabled]="form.$item.memo.disabled" (ngModelChange)="form.fieldChange($event, 'memo', form.$item.memo)"></ion-textarea>
+    </ion-item>	
+
+</ion-item-group>
+
+  
+  </ion-list>
+</ion-content>

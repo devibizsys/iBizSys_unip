@@ -1,0 +1,1 @@
+var UserRolePickupViewController = UserRolePickupViewControllerBase.extend({});

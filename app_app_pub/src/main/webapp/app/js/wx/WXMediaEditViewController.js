@@ -1,0 +1,1 @@
+var WXMediaEditViewController = WXMediaEditViewControllerBase.extend({});

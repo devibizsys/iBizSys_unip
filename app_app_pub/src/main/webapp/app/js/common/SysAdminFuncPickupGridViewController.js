@@ -1,0 +1,1 @@
+var SysAdminFuncPickupGridViewController = SysAdminFuncPickupGridViewControllerBase.extend({});

@@ -1,0 +1,1 @@
+var OA_CHRYWCHGridViewController = OA_CHRYWCHGridViewControllerBase.extend({});

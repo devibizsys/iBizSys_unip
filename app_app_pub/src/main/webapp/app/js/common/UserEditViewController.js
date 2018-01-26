@@ -1,0 +1,1 @@
+var UserEditViewController = UserEditViewControllerBase.extend({});

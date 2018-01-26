@@ -1,0 +1,1 @@
+var OA_CLWXGridViewController = OA_CLWXGridViewControllerBase.extend({});

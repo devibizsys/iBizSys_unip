@@ -1,0 +1,1 @@
+var UserDictEditView3Controller = UserDictEditView3ControllerBase.extend({});

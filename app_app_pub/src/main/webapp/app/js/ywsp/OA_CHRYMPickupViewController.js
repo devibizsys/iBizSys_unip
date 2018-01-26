@@ -1,0 +1,1 @@
+var OA_CHRYMPickupViewController = OA_CHRYMPickupViewControllerBase.extend({});

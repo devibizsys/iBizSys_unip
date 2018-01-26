@@ -1,0 +1,1 @@
+var OA_NSJGHYSQMPickupViewController = OA_NSJGHYSQMPickupViewControllerBase.extend({});

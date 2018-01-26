@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-navbar>
+    <ion-buttons start>
+      <button ion-button icon-only (click)="clickButton('Back')">
+        <ion-icon name="arrow-back"></ion-icon>取消
+      </button>
+    </ion-buttons>
+    <ion-title text-center>院办会议申请</ion-title>
+    <ion-buttons end>
+      <button class="toolbarBtn" ion-button icon-only (click)="clickButton('Save')">确认</button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <oa-ybhysqmob-pickup-list-view [currentValue]="$currentValue" [(ngModel)]="$value" [multiselect]="false" (selectChange)="closeView()"></oa-ybhysqmob-pickup-list-view>
+</ion-content>

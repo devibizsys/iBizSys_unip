@@ -1,0 +1,118 @@
+oa-yyssqyyssq-w10-mob-wfedit-view3 {
+    textarea.text-input {
+        height: 5em;
+        margin: 16px 8px;
+    }
+    .datetime {
+        width: 100%;
+        text-align: right;
+    }
+    .text-input{
+        text-align: right;
+    }
+    textarea {
+        text-align: left !important;
+    }
+    .span-stars {
+        color: red;
+        padding-right: 3px;
+        position: absolute;
+        left: 8px;
+    }
+    .scroll-content{
+        background-color: #f4f4f4;
+    }
+    ion-item-group{
+        margin-top: 15px;
+    }
+    .list-md .item-block .item-inner{
+        border: 0;
+    }
+    ion-item-divider{
+        margin-top: -15px;
+    }
+    .item-divider{
+        border: 0;
+        background-color: transparent;
+    }
+    .item{
+        border-bottom: 1px solid #f4f4f4;
+    }
+    ion-item-group ion-label {
+        margin: 8px 4px !important;
+    }
+    .fab {
+        width: 48px;
+        height: 48px;
+    }
+    .fab-close-icon {
+        line-height: 48px;
+    }
+    ion-fab-list[side=left] {
+        margin: 0 56px;
+    }
+    ion-fab-list {
+        top: -5px;
+    }
+    .select .select-icon .select-icon-inner {
+        margin-top: 0px;
+    }
+    ion-select.select-empty {
+        color: #666;
+    }
+    ion-label {
+        margin: 0 !important;
+        white-space: initial;
+    }
+    .item-md.item-input.ng-valid.item-input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner, .item-md.item-input.ng-valid.input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner {
+        border: 0;
+        box-shadow: initial;
+        -webkit-box-shadow: initial;
+    }
+    .list-md .item-input.ng-valid.item-input-has-value:not(.input-has-focus):not(.item-input-has-focus):last-child, .list-md .item-input.ng-valid.input-has-value:not(.input-has-focus):not(.item-input-has-focus):last-child {
+        border: 0;
+        box-shadow: initial;
+        -webkit-box-shadow: initial;
+    }
+    ion-content ion-footer {
+        position: relative;
+    }
+    .ibiz-formitem.top ion-list .item .text-input {
+        text-align: left;
+        margin-left: 0;
+    }
+    .ibiz-formitem.top .ibiz-formitem-label {
+        color: #999;
+        padding: 8px 8px 0px 0;
+        min-height: 28px;
+    }
+    .ibiz-formitem.top ion-list .item .datetime-text {
+        text-align: left;
+    }  
+    .ibiz-formitem.top ion-list ion-datetime {
+        padding-left: 0;
+    }  
+    .ibiz-formitem.top ion-list ion-select {
+        padding-left: 0;
+        width: 100%;
+    }
+    .ibiz-formitem.top .label {
+        margin: 4px 0 !important;
+    }
+    .ibiz-formitem.top ion-list .item {
+        padding-left: 0;
+        border-bottom: 0;
+    }
+    .ibiz-formitem.top ion-list {
+        margin: 0;
+    }
+    .ibiz-formitem.top ion-list pickup {
+        width: 100%;
+    }
+    .ibiz-formitem.top ion-list pickup .pickup-icon {
+        float: right;
+    }
+    .ibiz-formitem.top ion-list .item-block {
+        min-height: 3.4rem;
+    }
+}

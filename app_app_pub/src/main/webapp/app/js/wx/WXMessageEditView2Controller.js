@@ -1,0 +1,1 @@
+var WXMessageEditView2Controller = WXMessageEditView2ControllerBase.extend({});

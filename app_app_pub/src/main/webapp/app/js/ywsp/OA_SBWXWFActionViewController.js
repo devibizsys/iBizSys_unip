@@ -1,0 +1,1 @@
+var OA_SBWXWFActionViewController = OA_SBWXWFActionViewControllerBase.extend({});

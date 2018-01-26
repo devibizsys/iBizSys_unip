@@ -1,0 +1,1 @@
+var PortalPageGridViewController = PortalPageGridViewControllerBase.extend({});

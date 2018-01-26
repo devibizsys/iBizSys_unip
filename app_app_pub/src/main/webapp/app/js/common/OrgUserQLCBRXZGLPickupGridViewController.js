@@ -1,0 +1,1 @@
+var OrgUserQLCBRXZGLPickupGridViewController = OrgUserQLCBRXZGLPickupGridViewControllerBase.extend({});

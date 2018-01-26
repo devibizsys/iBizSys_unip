@@ -1,0 +1,1 @@
+var QueryModelEditView2Controller = QueryModelEditView2ControllerBase.extend({});

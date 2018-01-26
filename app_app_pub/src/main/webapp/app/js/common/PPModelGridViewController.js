@@ -1,0 +1,1 @@
+var PPModelGridViewController = PPModelGridViewControllerBase.extend({});

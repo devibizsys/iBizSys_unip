@@ -1,0 +1,1 @@
+var OrgSectorCurOrgXJBMGridViewController = OrgSectorCurOrgXJBMGridViewControllerBase.extend({});

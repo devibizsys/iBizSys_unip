@@ -1,0 +1,1 @@
+var WFSystemUserGridViewController = WFSystemUserGridViewControllerBase.extend({});

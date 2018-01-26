@@ -1,0 +1,1 @@
+var TSSDGroupDetailEditViewController = TSSDGroupDetailEditViewControllerBase.extend({});

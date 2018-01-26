@@ -1,0 +1,1 @@
+var PortalPageMPickupViewController = PortalPageMPickupViewControllerBase.extend({});

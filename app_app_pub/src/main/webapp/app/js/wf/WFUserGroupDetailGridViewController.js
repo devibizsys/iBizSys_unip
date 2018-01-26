@@ -1,0 +1,1 @@
+var WFUserGroupDetailGridViewController = WFUserGroupDetailGridViewControllerBase.extend({});

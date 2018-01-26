@@ -1,0 +1,103 @@
+<ion-header>
+  <ion-navbar hideBackButton="true">
+        <ion-buttons start *ngIf="!isRootView()">
+            <button ion-button icon-only (click)="backView()">
+                <ion-icon name="arrow-back"></ion-icon>返回
+            </button>
+        </ion-buttons>
+    <ion-title text-center>演示</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <div [ngSwitch]="segment">
+    <div *ngSwitchCase="'form'">
+      	<ion-list>
+<input  type="hidden" [(ngModel)]="form.$data.srfupdatedate" name="srfupdatedate"><input  type="hidden" [(ngModel)]="form.$data.srforikey" name="srforikey"><input  type="hidden" [(ngModel)]="form.$data.srfkey" name="srfkey"><input  type="hidden" [(ngModel)]="form.$data.srfmajortext" name="srfmajortext"><input  type="hidden" [(ngModel)]="form.$data.srftempmode" name="srftempmode"><input  type="hidden" [(ngModel)]="form.$data.srfuf" name="srfuf"><input  type="hidden" [(ngModel)]="form.$data.srfdeid" name="srfdeid"><input  type="hidden" [(ngModel)]="form.$data.srfsourcekey" name="srfsourcekey"><input  type="hidden" [(ngModel)]="form.$data.demoid" name="demoid">
+          <ion-item-group >
+	<ion-item-divider>演示基本信息</ion-item-divider>
+<ion-item *ngIf="form?.$item?.demoname?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.demoname.allowEmpty">*</span>演示名称</ion-avatar>
+	<ion-input type="text" [(ngModel)]="form.$data.demoname" placeholder="" [disabled]="form.$item.demoname.disabled" (ngModelChange)="form.fieldChange($event, 'demoname', form.$item.demoname)"></ion-input>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.bkbjdemo?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.bkbjdemo.allowEmpty">*</span>不可编辑演示</ion-avatar>
+	<ion-avatar>{{form.$data.bkbjdemo}}</ion-avatar>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.wbkdemo?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.wbkdemo.allowEmpty">*</span>文本框演示</ion-avatar>
+	<ion-input type="text" [(ngModel)]="form.$data.wbkdemo" placeholder="" [disabled]="form.$item.wbkdemo.disabled" (ngModelChange)="form.fieldChange($event, 'wbkdemo', form.$item.wbkdemo)"></ion-input>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.dhwbkdemo?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.dhwbkdemo.allowEmpty">*</span>多行文本框演示</ion-avatar>
+	<ion-textarea [(ngModel)]="form.$data.dhwbkdemo" placeholder="" [disabled]="form.$item.dhwbkdemo.disabled" (ngModelChange)="form.fieldChange($event, 'dhwbkdemo', form.$item.dhwbkdemo)"></ion-textarea>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.sjdemo?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.sjdemo.allowEmpty">*</span>时间控件演示</ion-avatar>
+	<ion-datetime displayFormat="YYYY-MM-DD HH:mm:ss" doneText="OK" [(ngModel)]="form.$data.sjdemo" (ngModelChange)="form.fieldChange($event, 'sjdemo', form.$item.sjdemo)"></ion-datetime>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.dxlbdemo?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.dxlbdemo.allowEmpty">*</span>单选列表演示</ion-avatar>
+	<ion-select [(ngModel)]="form.$data.dxlbdemo" *ngIf="form.$config.dxlbdemo" interface="popover" (ngModelChange)="form.fieldChange($event, 'dxlbdemo', form.$item.dxlbdemo)">
+        <ion-option value="">请选择</ion-option>
+        <ion-option *ngFor="let item of form.$config.dxlbdemo.items" value="{{ item.value }}">{{item.text}}</ion-option>
+      </ion-select>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.xllbdemo?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.xllbdemo.allowEmpty">*</span>下拉列表演示</ion-avatar>
+	<ion-select text-right [(ngModel)]="form.$data.xllbdemo" *ngIf="form.$item.xllbdemo.config" interface="popover" (ngModelChange)="form.fieldChange($event, 'xllbdemo', form.$item.xllbdemo)">
+        <ion-option value="">请选择</ion-option>
+        <ion-option *ngFor="let item of form.$item.xllbdemo.config.items" value="{{ item.value }}">{{item.text}}</ion-option>
+      </ion-select>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.xxklbdemo?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.xxklbdemo.allowEmpty">*</span>选项框演示</ion-avatar>
+	<ion-select [selectOptions]="{title:'选项框演示',cssClass:'ibiz-select-alert'}" cancelText="取消" okText="确定" [(ngModel)]="form.$data.xxklbdemo" *ngIf="form.$item.xxklbdemo.config" multiple=true (ngModelChange)="form.fieldChange($event, 'xxklbdemo', form.$item.xxklbdemo)">
+        <ion-option *ngFor="let item of form.$item.xxklbdemo.config.items" value="{{ item.value }}">{{item.text}}</ion-option>
+      </ion-select>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.tpdemo?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.tpdemo.allowEmpty">*</span>图片上传演示</ion-avatar>
+	<image-upload [(ngModel)]="form.$data.tpdemo"></image-upload>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.tplbdemo?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.tplbdemo.allowEmpty">*</span>图片列表上传演示</ion-avatar>
+	<ion-input type="text" [(ngModel)]="form.$data.tplbdemo"></ion-input>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.wjdemo?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.wjdemo.allowEmpty">*</span>文件上传演示</ion-avatar>
+	<file-upload-picker [(ngModel)]="form.$data.wjdemo"></file-upload-picker>
+    </ion-item>	
+
+</ion-item-group>
+
+  
+  </ion-list>
+		<ion-footer>
+        <button ion-button block (click)="clickButton('AC1010')">提交</button>
+
+</ion-footer>
+
+    </div>
+
+  </div>
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <div padding>
+      <ion-segment [(ngModel)]="segment" (ionChange)="segmentChanged($event)">
+        <ion-segment-button value="form">表单</ion-segment-button>
+      </ion-segment>
+    </div>
+  </ion-toolbar>
+</ion-footer>

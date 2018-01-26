@@ -1,0 +1,84 @@
+<ion-header>
+  <ion-navbar hideBackButton="true">
+        <ion-buttons start *ngIf="!isRootView()">
+            <button ion-button icon-only (click)="backView()">
+                <ion-icon name="arrow-back"></ion-icon>返回
+            </button>
+        </ion-buttons>
+    <ion-title text-center>采购申请</ion-title>
+    <ion-buttons end>
+          <button ion-button icon-only (click)="presentActionSheet({'title': '', 'opts': [{'text':'查看记录','tag':'CKJL'}]})">
+        <ion-icon name="more"></ion-icon>
+      </button>
+
+    </ion-buttons>
+
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <div [ngSwitch]="segment">
+    <div *ngSwitchCase="'form'">
+      	<ion-list>
+<input  type="hidden" [(ngModel)]="form.$data.srfupdatedate" name="srfupdatedate"><input  type="hidden" [(ngModel)]="form.$data.srforikey" name="srforikey"><input  type="hidden" [(ngModel)]="form.$data.srfkey" name="srfkey"><input  type="hidden" [(ngModel)]="form.$data.srfmajortext" name="srfmajortext"><input  type="hidden" [(ngModel)]="form.$data.srftempmode" name="srftempmode"><input  type="hidden" [(ngModel)]="form.$data.srfuf" name="srfuf"><input  type="hidden" [(ngModel)]="form.$data.srfdeid" name="srfdeid"><input  type="hidden" [(ngModel)]="form.$data.srfsourcekey" name="srfsourcekey"><input  type="hidden" [(ngModel)]="form.$data.orguserid" name="orguserid"><input  type="hidden" [(ngModel)]="form.$data.orgusername" name="orgusername"><input  type="hidden" [(ngModel)]="form.$data.orgsectorid" name="orgsectorid"><input  type="hidden" [(ngModel)]="form.$data.oa_cgsqid" name="oa_cgsqid">
+          <ion-item-group >
+	
+<ion-item *ngIf="form?.$item?.orgsectorname?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.orgsectorname.allowEmpty">*</span>部门名称</ion-avatar>
+	<picker [(ngModel)]="form.$data.orgsectorname" textItem="customname" valueItem="orgsectorid" [formService]="form" pickupView='{"view":"OrgSectorMobPickupView"}' (ngModelChange)="form.fieldChange($event, 'orgsectorname', form.$item.orgsectorname)"></picker>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.sl?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.sl.allowEmpty">*</span>数量</ion-avatar>
+	<ion-input type="text" [(ngModel)]="form.$data.sl" placeholder="" [disabled]="form.$item.sl.disabled" (ngModelChange)="form.fieldChange($event, 'sl', form.$item.sl)"></ion-input>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.jg?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.jg.allowEmpty">*</span>价格</ion-avatar>
+	<ion-input type="text" [(ngModel)]="form.$data.jg" placeholder="" [disabled]="form.$item.jg.disabled" (ngModelChange)="form.fieldChange($event, 'jg', form.$item.jg)"></ion-input>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.cglx?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.cglx.allowEmpty">*</span>采购类型</ion-avatar>
+	<ion-select text-right [(ngModel)]="form.$data.cglx" *ngIf="form.$item.cglx.config" interface="popover" (ngModelChange)="form.fieldChange($event, 'cglx', form.$item.cglx)">
+        <ion-option value="">请选择</ion-option>
+        <ion-option *ngFor="let item of form.$item.cglx.config.items" value="{{ item.value }}">{{item.text}}</ion-option>
+      </ion-select>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.zffs?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.zffs.allowEmpty">*</span>支付方式</ion-avatar>
+	<ion-select text-right [(ngModel)]="form.$data.zffs" *ngIf="form.$item.zffs.config" interface="popover" (ngModelChange)="form.fieldChange($event, 'zffs', form.$item.zffs)">
+        <ion-option value="">请选择</ion-option>
+        <ion-option *ngFor="let item of form.$item.zffs.config.items" value="{{ item.value }}">{{item.text}}</ion-option>
+      </ion-select>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.gg?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.gg.allowEmpty">*</span>规格</ion-avatar>
+	<ion-input type="text" [(ngModel)]="form.$data.gg" placeholder="" [disabled]="form.$item.gg.disabled" (ngModelChange)="form.fieldChange($event, 'gg', form.$item.gg)"></ion-input>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.sqsy?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.sqsy.allowEmpty">*</span>申请事由</ion-avatar>
+	<ion-textarea [(ngModel)]="form.$data.sqsy" placeholder="" [disabled]="form.$item.sqsy.disabled" (ngModelChange)="form.fieldChange($event, 'sqsy', form.$item.sqsy)"></ion-textarea>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.bz?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.bz.allowEmpty">*</span>备注</ion-avatar>
+	<ion-textarea [(ngModel)]="form.$data.bz" placeholder="" [disabled]="form.$item.bz.disabled" (ngModelChange)="form.fieldChange($event, 'bz', form.$item.bz)"></ion-textarea>
+    </ion-item>	
+
+</ion-item-group>
+
+  
+  </ion-list>
+		<ion-footer>
+        <button ion-button block (click)="clickButton('SaveAndStart')">提交</button>
+
+</ion-footer>
+
+    </div>
+
+  </div>
+</ion-content>

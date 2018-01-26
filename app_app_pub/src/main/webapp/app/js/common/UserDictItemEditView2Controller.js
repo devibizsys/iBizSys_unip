@@ -1,0 +1,1 @@
+var UserDictItemEditView2Controller = UserDictItemEditView2ControllerBase.extend({});

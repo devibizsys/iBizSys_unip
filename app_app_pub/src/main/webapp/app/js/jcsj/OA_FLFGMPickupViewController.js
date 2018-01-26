@@ -1,0 +1,1 @@
+var OA_FLFGMPickupViewController = OA_FLFGMPickupViewControllerBase.extend({});

@@ -1,0 +1,1 @@
+var UserDictCatPickupViewController = UserDictCatPickupViewControllerBase.extend({});

@@ -1,0 +1,1 @@
+var WXOrgSectorMPickupViewController = WXOrgSectorMPickupViewControllerBase.extend({});

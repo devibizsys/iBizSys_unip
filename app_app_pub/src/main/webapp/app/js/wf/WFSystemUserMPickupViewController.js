@@ -1,0 +1,1 @@
+var WFSystemUserMPickupViewController = WFSystemUserMPickupViewControllerBase.extend({});

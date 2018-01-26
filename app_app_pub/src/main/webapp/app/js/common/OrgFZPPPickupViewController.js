@@ -1,0 +1,1 @@
+var OrgFZPPPickupViewController = OrgFZPPPickupViewControllerBase.extend({});

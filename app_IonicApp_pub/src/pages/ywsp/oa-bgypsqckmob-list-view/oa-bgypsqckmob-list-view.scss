@@ -1,0 +1,123 @@
+oa-bgypsqckmob-list-view {
+    .scroll-content {
+        background: #f4f4f4 !important;
+    }
+    .note {
+        font-size: 0.8em;
+        margin: 16px 16px 9px 0 !important;
+    }
+    .card {
+        margin: 0;
+        width: 100%;
+        -webkit-box-shadow: initial;
+        box-shadow: initial;
+    }
+    .searchbar {
+        padding-bottom: 0;
+    }
+    .searchbar .searchbar-input {
+        -webkit-box-shadow: initial;
+        box-shadow: initial;
+        background: #ededee;
+        line-height: 2.5rem;
+    }
+    .label {
+        margin: 0;
+    }
+    .item{
+        padding-left: 1em;
+        border-bottom: 1px solid #efefef;
+    }
+    .item p {
+        padding: 6px 0;
+    }
+    .list .item-block .item-inner{
+        border: 0;
+        padding: 16px 16px 8px 0;
+    }
+    .scroll-content {
+        margin-top: 108px;
+    }
+    .header::after {
+        height: 0px !important;
+    }
+    .has-refresher > .scroll-content {
+        border-top: 0;
+    }
+    ion-note {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+    }
+    .ibiz-remove {
+        background: #fff;
+    }
+    .ibiz-remove button:nth-last-child(1) {
+        float: right;
+    }
+    .ibiz-list-check {
+        float: left;
+        margin-right: 10px;
+        height: 4.4rem;
+        padding-top: 4px;
+    }
+    .card-header {
+        padding-left: 0; 
+    }
+    .ibiz-searchform>.item{
+        min-height: 3.6rem;
+    }
+    .ibiz-searchform ion-segment {
+        background: #fff;
+    }
+    .ibiz-searchform .segment .segment-button {
+        border: 0;
+        font-size: 1.4rem;        
+        height: 3.5rem;
+        line-height: 3.5rem;      
+    }   
+    .ibiz-searchbtn {
+        margin: 0 0.3rem;
+        width: calc(50% - 0.8rem);
+        margin-top: 20px;
+        box-shadow: initial;
+        -webkit-box-shadow: initial;
+    }
+    .ibiz-searchform-content{
+        background: #fff;
+        padding-bottom: 10px;
+        .ibiz-searchform-label {
+            padding: 18px 16px 0px 16px;
+            margin: 5px 16px 8px 0;
+        }
+        .text-input{
+            margin: 10px 0px 6px 10px;
+        }
+        .select-icon-inner{
+            margin-top: -1px !important;
+        }
+        .select{
+            width: 100%;
+            padding: 21px 8px 13px 0px;
+        }
+        .item.item-input.input-has-focus .item-inner {
+            border-bottom: 0;
+            box-shadow: initial;
+        }
+    }
+    .ibiz-searchform{
+        .segment-ios .segment-button{
+            line-height:4rem !important;
+        }
+        .segment-ios .segment-activated{
+            background-color: initial !important;
+        }
+        .input-ios{
+            margin-top: 8px !important;
+        }
+        .text-input{
+            margin: 10px 0px 6px -5px;
+            text-align: right;
+        }
+    }
+}

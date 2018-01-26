@@ -1,0 +1,1 @@
+var PVPartGridViewController = PVPartGridViewControllerBase.extend({});

@@ -1,0 +1,1 @@
+var OA_BGYPSQBGYPSQLC_W20_WFEditView3Controller = OA_BGYPSQBGYPSQLC_W20_WFEditView3ControllerBase.extend({});

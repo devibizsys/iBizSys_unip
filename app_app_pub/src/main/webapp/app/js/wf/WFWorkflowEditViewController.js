@@ -1,0 +1,1 @@
+var WFWorkflowEditViewController = WFWorkflowEditViewControllerBase.extend({});

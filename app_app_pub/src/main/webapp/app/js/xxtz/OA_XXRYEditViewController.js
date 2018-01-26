@@ -1,0 +1,1 @@
+var OA_XXRYEditViewController = OA_XXRYEditViewControllerBase.extend({});

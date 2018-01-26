@@ -1,0 +1,1 @@
+var MsgAccountDetailPickupGridViewController = MsgAccountDetailPickupGridViewControllerBase.extend({});

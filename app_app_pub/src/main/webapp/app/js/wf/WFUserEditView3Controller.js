@@ -1,0 +1,1 @@
+var WFUserEditView3Controller = WFUserEditView3ControllerBase.extend({});

@@ -1,0 +1,1 @@
+var DEDataChg2EditView2Controller = DEDataChg2EditView2ControllerBase.extend({});

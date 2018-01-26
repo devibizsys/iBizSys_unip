@@ -1,0 +1,1 @@
+var DEDataChg2PickupViewController = DEDataChg2PickupViewControllerBase.extend({});

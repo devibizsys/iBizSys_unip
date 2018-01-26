@@ -1,0 +1,1 @@
+var TSSDTaskPolicyEditViewController = TSSDTaskPolicyEditViewControllerBase.extend({});

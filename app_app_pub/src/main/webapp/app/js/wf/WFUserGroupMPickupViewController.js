@@ -1,0 +1,1 @@
+var WFUserGroupMPickupViewController = WFUserGroupMPickupViewControllerBase.extend({});

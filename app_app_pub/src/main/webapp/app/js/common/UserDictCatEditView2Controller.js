@@ -1,0 +1,1 @@
+var UserDictCatEditView2Controller = UserDictCatEditView2ControllerBase.extend({});

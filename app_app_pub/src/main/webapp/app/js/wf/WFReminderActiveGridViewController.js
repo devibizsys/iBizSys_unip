@@ -1,0 +1,1 @@
+var WFReminderActiveGridViewController = WFReminderActiveGridViewControllerBase.extend({});

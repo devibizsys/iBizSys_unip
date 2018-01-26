@@ -1,0 +1,1 @@
+var OA_XMJDMPickupViewController = OA_XMJDMPickupViewControllerBase.extend({});

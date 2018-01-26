@@ -1,0 +1,1 @@
+var OrgUserLoginController = OrgUserLoginControllerBase.extend({});

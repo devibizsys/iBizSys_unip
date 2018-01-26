@@ -1,0 +1,1 @@
+var MsgAccountGridViewController = MsgAccountGridViewControllerBase.extend({});

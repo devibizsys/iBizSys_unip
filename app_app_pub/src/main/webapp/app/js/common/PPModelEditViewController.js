@@ -1,0 +1,1 @@
+var PPModelEditViewController = PPModelEditViewControllerBase.extend({});

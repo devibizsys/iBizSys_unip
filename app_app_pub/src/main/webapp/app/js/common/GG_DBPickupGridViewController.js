@@ -1,0 +1,1 @@
+var GG_DBPickupGridViewController = GG_DBPickupGridViewControllerBase.extend({});

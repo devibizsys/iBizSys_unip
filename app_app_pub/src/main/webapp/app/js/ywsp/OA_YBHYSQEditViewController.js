@@ -1,0 +1,1 @@
+var OA_YBHYSQEditViewController = OA_YBHYSQEditViewControllerBase.extend({});

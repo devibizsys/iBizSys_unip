@@ -1,0 +1,1 @@
+var OA_CGSQCGSQLC_WFExpViewController = OA_CGSQCGSQLC_WFExpViewControllerBase.extend({});

@@ -1,0 +1,1 @@
+var GG_DBPickupViewController = GG_DBPickupViewControllerBase.extend({});

@@ -1,0 +1,1 @@
+var DataEntityGridViewController = DataEntityGridViewControllerBase.extend({});

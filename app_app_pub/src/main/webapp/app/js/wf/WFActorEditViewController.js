@@ -1,0 +1,1 @@
+var WFActorEditViewController = WFActorEditViewControllerBase.extend({});

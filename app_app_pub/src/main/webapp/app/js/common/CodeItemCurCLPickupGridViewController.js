@@ -1,0 +1,1 @@
+var CodeItemCurCLPickupGridViewController = CodeItemCurCLPickupGridViewControllerBase.extend({});

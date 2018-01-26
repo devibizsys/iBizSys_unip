@@ -1,0 +1,1 @@
+var TSSDPolicyOwnerEditViewController = TSSDPolicyOwnerEditViewControllerBase.extend({});

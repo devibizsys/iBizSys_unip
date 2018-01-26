@@ -1,0 +1,1 @@
+var WFReminderEditView2Controller = WFReminderEditView2ControllerBase.extend({});

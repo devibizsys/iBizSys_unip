@@ -1,0 +1,1 @@
+var OA_SBWXEditViewController = OA_SBWXEditViewControllerBase.extend({});

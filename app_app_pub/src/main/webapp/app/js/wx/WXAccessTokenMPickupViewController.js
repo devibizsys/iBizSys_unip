@@ -1,0 +1,1 @@
+var WXAccessTokenMPickupViewController = WXAccessTokenMPickupViewControllerBase.extend({});

@@ -1,0 +1,1 @@
+var DataEntityPickupViewController = DataEntityPickupViewControllerBase.extend({});

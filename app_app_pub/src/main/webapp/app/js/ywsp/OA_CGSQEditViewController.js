@@ -1,0 +1,1 @@
+var OA_CGSQEditViewController = OA_CGSQEditViewControllerBase.extend({});

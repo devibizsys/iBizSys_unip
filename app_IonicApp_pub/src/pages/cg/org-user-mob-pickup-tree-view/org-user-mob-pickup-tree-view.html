@@ -1,0 +1,31 @@
+
+<div class="ibiz-treenode">
+  <button ion-button (tap)="needTreeChange()" clear> 组织人员 </button>
+  <button ion-button *ngFor="let item of $treeNodeList;let i = index;" (tap)="needTreeChange(item,i)" clear>
+    <ion-icon name="arrow-forward" md="ios-arrow-forward"></ion-icon>
+    {{ item.srfmajortext }}
+  </button>
+</div>
+<div *ngIf="tree?.$trunks.length > 0">
+  <ion-list class="ibiz-tree-content">
+    <ion-item *ngFor="let item of tree?.$trunks">
+      <ion-checkbox color="blue" [(ngModel)]="item.checked" (ionChange)="selectedChange(item)"></ion-checkbox>
+      <ion-label>
+        {{ item.srfmajortext }}
+      </ion-label>
+      <button ion-button item-end clear  (tap)="checkboxChange(item)">下级</button>
+    </ion-item>
+  </ion-list>
+</div>
+<div *ngIf="tree?.$leafy.length > 0">
+  <ion-list class="ibiz-tree-content root-note">
+    <ion-item *ngFor="let item of tree?.$leafy">
+      <ion-checkbox color="blue" [(ngModel)]="item.checked" (ionChange)="selectedChange(item)"></ion-checkbox>
+      <ion-avatar item-start *ngIf="(item.iconcls != '' && item.iconcls != undefined) || (item.icon != '' && item.icon != undefined)">
+        <ion-icon *ngIf="item.iconcls != '' && item.iconcls != undefined" name="{{item.iconcls}}"></ion-icon>
+      </ion-avatar>
+      <ion-avatar item-start>{{ item.srfmajortext?.substring(item.srfmajortext.length-2) }}</ion-avatar>
+      <h2 item-start>{{ item.srfmajortext }}</h2>
+    </ion-item>
+  </ion-list>
+</div>

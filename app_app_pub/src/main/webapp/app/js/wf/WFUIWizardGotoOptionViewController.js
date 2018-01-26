@@ -1,0 +1,1 @@
+var WFUIWizardGotoOptionViewController = WFUIWizardGotoOptionViewControllerBase.extend({});

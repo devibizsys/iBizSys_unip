@@ -1,0 +1,1 @@
+var WFStepInstEditView2Controller = WFStepInstEditView2ControllerBase.extend({});

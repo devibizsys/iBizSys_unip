@@ -1,0 +1,64 @@
+<ion-header>
+  <ion-navbar hideBackButton="true">
+        <ion-buttons start *ngIf="!isRootView()">
+            <button ion-button icon-only (click)="backView()">
+                <ion-icon name="arrow-back"></ion-icon>返回
+            </button>
+        </ion-buttons>
+    <ion-title text-center>请假</ion-title>
+    <ion-buttons end>
+          <button class="toolbarBtn" ion-button icon-only (click)="clickButton('SaveAndExit')">保存</button>
+
+    </ion-buttons>
+
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+<input  type="hidden" [(ngModel)]="form.$data.srfupdatedate" name="srfupdatedate"><input  type="hidden" [(ngModel)]="form.$data.srforikey" name="srforikey"><input  type="hidden" [(ngModel)]="form.$data.srfkey" name="srfkey"><input  type="hidden" [(ngModel)]="form.$data.srfmajortext" name="srfmajortext"><input  type="hidden" [(ngModel)]="form.$data.srftempmode" name="srftempmode"><input  type="hidden" [(ngModel)]="form.$data.srfuf" name="srfuf"><input  type="hidden" [(ngModel)]="form.$data.srfdeid" name="srfdeid"><input  type="hidden" [(ngModel)]="form.$data.srfsourcekey" name="srfsourcekey"><input  type="hidden" [(ngModel)]="form.$data.ybhysqid" name="ybhysqid"><input  type="hidden" [(ngModel)]="form.$data.orguserid" name="orguserid"><input  type="hidden" [(ngModel)]="form.$data.orgusername" name="orgusername"><input  type="hidden" [(ngModel)]="form.$data.oa_qxjid" name="oa_qxjid">
+          <ion-item-group >
+	
+<ion-item *ngIf="form?.$item?.qxjlx?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.qxjlx.allowEmpty">*</span>请休假类型</ion-avatar>
+	<ion-select text-right [(ngModel)]="form.$data.qxjlx" *ngIf="form.$item.qxjlx.config" interface="popover" (ngModelChange)="form.fieldChange($event, 'qxjlx', form.$item.qxjlx)">
+        <ion-option value="">请选择</ion-option>
+        <ion-option *ngFor="let item of form.$item.qxjlx.config.items" value="{{ item.value }}">{{item.text}}</ion-option>
+      </ion-select>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.sc?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.sc.allowEmpty">*</span>请假时长（天）</ion-avatar>
+	<ion-input type="text" [(ngModel)]="form.$data.sc" placeholder="" [disabled]="form.$item.sc.disabled" (ngModelChange)="form.fieldChange($event, 'sc', form.$item.sc)"></ion-input>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.kssj?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.kssj.allowEmpty">*</span>开始时间</ion-avatar>
+	<ion-datetime displayFormat="YYYY-MM-DD HH:mm" doneText="OK" [(ngModel)]="form.$data.kssj" (ngModelChange)="form.fieldChange($event, 'kssj', form.$item.kssj)"></ion-datetime>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.jssj?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.jssj.allowEmpty">*</span>结束时间</ion-avatar>
+	<ion-datetime displayFormat="YYYY-MM-DD HH:mm" doneText="OK" [(ngModel)]="form.$data.jssj" (ngModelChange)="form.fieldChange($event, 'jssj', form.$item.jssj)"></ion-datetime>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.cjgzsj?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.cjgzsj.allowEmpty">*</span>参加工作时间</ion-avatar>
+	<ion-datetime displayFormat="YYYY-MM-DD" doneText="OK" [(ngModel)]="form.$data.cjgzsj" (ngModelChange)="form.fieldChange($event, 'cjgzsj', form.$item.cjgzsj)"></ion-datetime>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.qxjsy?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.qxjsy.allowEmpty">*</span>请休假事由</ion-avatar>
+	<ion-textarea [(ngModel)]="form.$data.qxjsy" placeholder="" [disabled]="form.$item.qxjsy.disabled" (ngModelChange)="form.fieldChange($event, 'qxjsy', form.$item.qxjsy)"></ion-textarea>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.fj?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.fj.allowEmpty">*</span>附件</ion-avatar>
+	<file-upload-picker [(ngModel)]="form.$data.fj"></file-upload-picker>
+    </ion-item>	
+
+</ion-item-group>
+
+  
+  </ion-list>
+</ion-content>

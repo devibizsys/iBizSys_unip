@@ -1,0 +1,1 @@
+var OA_TZGGRYEditView2Controller = OA_TZGGRYEditView2ControllerBase.extend({});

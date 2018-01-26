@@ -1,0 +1,1 @@
+var TSSDTaskLogPickupGridViewController = TSSDTaskLogPickupGridViewControllerBase.extend({});

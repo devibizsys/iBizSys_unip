@@ -1,0 +1,1 @@
+var DataAuditGridViewController = DataAuditGridViewControllerBase.extend({});

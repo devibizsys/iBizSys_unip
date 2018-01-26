@@ -1,0 +1,32 @@
+image-upload {
+    .ibiz-file-image {
+        width: 7rem;
+        height: 7rem;
+        margin-right: 5px;
+    }
+    .delete-image {
+        position: absolute;
+        right: 5px;
+        font-size: 1.5em;
+        margin-top: -10px;
+        margin-right: -7px;
+        background: #fff;
+        border-radius: 10px;
+        height: 20px;
+    }
+    .image-plus{
+        font-size:2rem;
+        color:#bbb;
+        margin-right: 10px;
+    }
+    .image-plus-list{
+        position: absolute !important;
+        margin-top: -13px !important;
+        right: 0 !important;
+    }
+    .grid{
+        padding: 10px !important;
+    }
+
+
+}

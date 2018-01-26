@@ -1,0 +1,124 @@
+<ion-header>
+  <ion-navbar hideBackButton="true">
+        <ion-buttons start *ngIf="!isRootView()">
+            <button ion-button icon-only (click)="backView()">
+                <ion-icon name="arrow-back"></ion-icon>返回
+            </button>
+        </ion-buttons>
+    <ion-title text-center>车牌门禁申请</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <div [ngSwitch]="segment">
+    <div *ngSwitchCase="'form'">
+      	<ion-list>
+<input  type="hidden" [(ngModel)]="form.$data.srfupdatedate" name="srfupdatedate"><input  type="hidden" [(ngModel)]="form.$data.srforikey" name="srforikey"><input  type="hidden" [(ngModel)]="form.$data.srfkey" name="srfkey"><input  type="hidden" [(ngModel)]="form.$data.srfmajortext" name="srfmajortext"><input  type="hidden" [(ngModel)]="form.$data.srftempmode" name="srftempmode"><input  type="hidden" [(ngModel)]="form.$data.srfuf" name="srfuf"><input  type="hidden" [(ngModel)]="form.$data.srfdeid" name="srfdeid"><input  type="hidden" [(ngModel)]="form.$data.srfsourcekey" name="srfsourcekey"><input  type="hidden" [(ngModel)]="form.$data.srfusername" name="srfusername"><input  type="hidden" [(ngModel)]="form.$data.srfobj3" name="srfobj3"><input  type="hidden" [(ngModel)]="form.$data.orguserid" name="orguserid"><input  type="hidden" [(ngModel)]="form.$data.orgsectorid" name="orgsectorid"><input  type="hidden" [(ngModel)]="form.$data.oa_clid" name="oa_clid"><input  type="hidden" [(ngModel)]="form.$data.oa_cpmjsqid" name="oa_cpmjsqid">
+          <ion-item-group class="hidden">
+	
+<ion-item *ngIf="form?.$item?.srfobj?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.srfobj.allowEmpty">*</span>车牌门禁申请步骤</ion-avatar>
+	<ion-avatar>{{form.$data.srfobj}}</ion-avatar>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.srfobj2?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.srfobj2.allowEmpty">*</span>车牌门禁申请状态</ion-avatar>
+	<ion-avatar>{{form.$data.srfobj2}}</ion-avatar>
+    </ion-item>	
+
+</ion-item-group>
+
+      <ion-item-group class="editzs-top">
+	
+<ion-card>
+    <ion-card-header>
+        <ion-avatar item-start *ngIf="(form.$data.iconcls != '' && form.$data.iconcls != undefined) || (form.$data.icon != '' && form.$data.icon != undefined)">
+            <ion-icon *ngIf="form.$data.iconcls != '' && form.$data.iconcls != undefined" name="{{form.$data.iconcls}}"></ion-icon>
+        </ion-avatar>
+        <ion-avatar class="userIcon" item-start *ngIf="(form.$data.iconcls == '' || form.$data.iconcls == undefined) && (form.$data.icon == '' || form.$data.icon == undefined)">
+               {{ form.$data.srfusername?.substring(form.$data.srfusername.length-2) }}
+        </ion-avatar>
+        <h2 class="font-bold">{{form.$data.srfusername}}</h2>
+        <p>{{form.$data.srfobj}} {{form.$data.srfobj2}}</p>
+    </ion-card-header>
+    <img *ngIf="form.$data.srfobj3==1 && form.$data.srfobj3 != ''" src="{{$IBizApp.imagePath+'agree.png'}}">
+    <img *ngIf="form.$data.srfobj3==0 && form.$data.srfobj3 != ''" src="{{$IBizApp.imagePath+'disagree.png'}}">
+</ion-card>
+
+</ion-item-group>
+
+      <ion-item-group class="wfspcss">
+	
+<ion-item *ngIf="form?.$item?.orgsectorname?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.orgsectorname.allowEmpty">*</span>部门名称</ion-avatar>
+	<ion-avatar>{{form.$data.orgsectorname}}</ion-avatar>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.oa_clname?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.oa_clname.allowEmpty">*</span>车辆名称</ion-avatar>
+	<ion-avatar>{{form.$data.oa_clname}}</ion-avatar>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.zw?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.zw.allowEmpty">*</span>职务</ion-avatar>
+	<ion-avatar>{{form.$data.zw}}</ion-avatar>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.cph?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.cph.allowEmpty">*</span>车牌号</ion-avatar>
+	<ion-avatar>{{form.$data.cph}}</ion-avatar>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.lxfs?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.lxfs.allowEmpty">*</span>联系方式</ion-avatar>
+	<ion-avatar>{{form.$data.lxfs}}</ion-avatar>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.clpp?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.clpp.allowEmpty">*</span>车辆品牌</ion-avatar>
+	<ion-avatar>{{form.$data.clpp}}</ion-avatar>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.color?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.color.allowEmpty">*</span>颜色</ion-avatar>
+	<ion-avatar>{{form.$data.color}}</ion-avatar>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.bz?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.bz.allowEmpty">*</span>备注</ion-avatar>
+	<ion-avatar>{{form.$data.bz}}</ion-avatar>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.fj?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.fj.allowEmpty">*</span>附件</ion-avatar>
+	<ion-avatar>{{form.$data.fj}}</ion-avatar>
+    </ion-item>	
+
+</ion-item-group>
+
+  
+  </ion-list>
+		<ion-footer class="ibiz-footer-twobtn">
+        <button ion-button block (click)="clickButton('AC2020')">拒绝</button>
+
+        <button ion-button block (click)="clickButton('AC2010')">确认</button>
+
+</ion-footer>
+
+    </div>
+    <div *ngSwitchCase="'dritem1'">
+      <wfstep-data-mob-mdview9 [parentData]="getEditData()"  #dritem1></wfstep-data-mob-mdview9>
+    </div>
+
+  </div>
+</ion-content>
+<ion-footer class="ibiz-drtab">
+  <ion-toolbar>
+    <div padding>
+      <ion-segment [(ngModel)]="segment" (ionChange)="segmentChanged($event)">
+        <ion-segment-button value="form">表单</ion-segment-button>
+        <ion-segment-button value="dritem1">流程处理</ion-segment-button>
+      </ion-segment>
+    </div>
+  </ion-toolbar>
+</ion-footer>

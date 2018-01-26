@@ -1,0 +1,1 @@
+var OA_BGYPSQEditView2Controller = OA_BGYPSQEditView2ControllerBase.extend({});

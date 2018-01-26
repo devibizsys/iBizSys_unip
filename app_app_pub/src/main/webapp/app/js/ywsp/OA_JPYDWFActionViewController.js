@@ -1,0 +1,1 @@
+var OA_JPYDWFActionViewController = OA_JPYDWFActionViewControllerBase.extend({});

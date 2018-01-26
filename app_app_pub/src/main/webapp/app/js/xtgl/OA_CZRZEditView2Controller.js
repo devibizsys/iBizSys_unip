@@ -1,0 +1,1 @@
+var OA_CZRZEditView2Controller = OA_CZRZEditView2ControllerBase.extend({});

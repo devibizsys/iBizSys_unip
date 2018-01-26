@@ -1,0 +1,1 @@
+var OA_CLWXWFActionViewController = OA_CLWXWFActionViewControllerBase.extend({});

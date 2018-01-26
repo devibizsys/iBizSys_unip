@@ -1,0 +1,1 @@
+var WXEntAppPickupGridViewController = WXEntAppPickupGridViewControllerBase.extend({});

@@ -1,0 +1,1 @@
+var OA_TZGGWFActionViewController = OA_TZGGWFActionViewControllerBase.extend({});

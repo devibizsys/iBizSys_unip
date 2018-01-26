@@ -1,0 +1,1 @@
+var WFDynamicUserPickupViewController = WFDynamicUserPickupViewControllerBase.extend({});

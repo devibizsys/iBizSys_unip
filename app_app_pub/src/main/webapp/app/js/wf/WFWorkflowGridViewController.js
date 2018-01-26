@@ -1,0 +1,1 @@
+var WFWorkflowGridViewController = WFWorkflowGridViewControllerBase.extend({});

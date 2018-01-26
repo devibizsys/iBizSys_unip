@@ -1,0 +1,1 @@
+var WFUIWizardMPickupViewController = WFUIWizardMPickupViewControllerBase.extend({});

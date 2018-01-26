@@ -1,0 +1,1 @@
+var WFAssistWorkPickupGridViewController = WFAssistWorkPickupGridViewControllerBase.extend({});

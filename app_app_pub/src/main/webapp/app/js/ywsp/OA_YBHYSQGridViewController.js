@@ -1,0 +1,1 @@
+var OA_YBHYSQGridViewController = OA_YBHYSQGridViewControllerBase.extend({});

@@ -1,0 +1,1 @@
+var UserDGThemeEditViewController = UserDGThemeEditViewControllerBase.extend({});

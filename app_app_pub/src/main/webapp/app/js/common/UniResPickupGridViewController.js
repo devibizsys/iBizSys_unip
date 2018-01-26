@@ -1,0 +1,1 @@
+var UniResPickupGridViewController = UniResPickupGridViewControllerBase.extend({});

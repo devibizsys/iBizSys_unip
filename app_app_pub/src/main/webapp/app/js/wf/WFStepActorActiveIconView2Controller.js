@@ -1,0 +1,1 @@
+var WFStepActorActiveIconView2Controller = WFStepActorActiveIconView2ControllerBase.extend({});

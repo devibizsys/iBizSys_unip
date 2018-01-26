@@ -1,0 +1,1 @@
+var DataSyncAgentPickupViewController = DataSyncAgentPickupViewControllerBase.extend({});

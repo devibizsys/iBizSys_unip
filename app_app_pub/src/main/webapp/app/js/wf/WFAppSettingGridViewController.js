@@ -1,0 +1,1 @@
+var WFAppSettingGridViewController = WFAppSettingGridViewControllerBase.extend({});

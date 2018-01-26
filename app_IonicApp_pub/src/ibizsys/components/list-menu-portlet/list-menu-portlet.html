@@ -1,0 +1,8 @@
+<ion-list *ngFor="let items of menu.$items" no-lines>
+    <button ion-item *ngFor="let item of items" (tap)="menuTap(item.appfuncid)">
+        <img item-start *ngIf="item.iconcls == '' || item.iconcls == undefined" src="{{ (item.icon != '' && item.icon != undefined) ? imagePath+item.icon : imagePath+'contract.png' }}" />
+        {{ item.text }}<span *ngIf="counter && item.counterid && counter?.getData() && counter.getData()[item.counterid]">({{ counter?.getData()[item.counterid] }})</span>
+        <ion-icon ios="ios-arrow-forward" md="ios-arrow-forward" showWhen="android" item-end></ion-icon>
+        
+    </button> 
+</ion-list>

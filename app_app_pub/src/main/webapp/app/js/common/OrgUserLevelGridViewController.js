@@ -1,0 +1,1 @@
+var OrgUserLevelGridViewController = OrgUserLevelGridViewControllerBase.extend({});

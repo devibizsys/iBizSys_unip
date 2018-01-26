@@ -1,0 +1,1 @@
+var MsgAccountPickupViewController = MsgAccountPickupViewControllerBase.extend({});

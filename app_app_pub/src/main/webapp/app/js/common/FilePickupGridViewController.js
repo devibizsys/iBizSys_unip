@@ -1,0 +1,1 @@
+var FilePickupGridViewController = FilePickupGridViewControllerBase.extend({});

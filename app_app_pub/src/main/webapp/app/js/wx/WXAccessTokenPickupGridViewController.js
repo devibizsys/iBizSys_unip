@@ -1,0 +1,1 @@
+var WXAccessTokenPickupGridViewController = WXAccessTokenPickupGridViewControllerBase.extend({});

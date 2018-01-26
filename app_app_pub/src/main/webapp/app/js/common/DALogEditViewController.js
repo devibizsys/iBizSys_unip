@@ -1,0 +1,1 @@
+var DALogEditViewController = DALogEditViewControllerBase.extend({});

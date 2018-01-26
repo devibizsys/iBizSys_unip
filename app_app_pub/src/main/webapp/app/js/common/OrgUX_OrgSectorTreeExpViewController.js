@@ -1,0 +1,1 @@
+var OrgUX_OrgSectorTreeExpViewController = OrgUX_OrgSectorTreeExpViewControllerBase.extend({});

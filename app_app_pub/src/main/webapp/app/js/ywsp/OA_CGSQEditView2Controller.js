@@ -1,0 +1,1 @@
+var OA_CGSQEditView2Controller = OA_CGSQEditView2ControllerBase.extend({});

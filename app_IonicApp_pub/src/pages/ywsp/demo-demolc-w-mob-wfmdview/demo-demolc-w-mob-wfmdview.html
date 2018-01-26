@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title text-center>演示</ion-title>
+    <ion-buttons end>
+    </ion-buttons>
+
+  </ion-navbar>
+<ion-searchbar [(ngModel)]="$searchValue" showCancelButton="true" (ionInput)="onInput($event)" (ionCancel)="onCancel($event)"></ion-searchbar>
+</ion-header>
+<ion-content>
+  <ion-refresher (ionRefresh)="doRefresher($event)">
+    <ion-refresher-content pullingIcon="arrow-dropdown" refreshingSpinner="circles" refreshingText="加载中...">
+    </ion-refresher-content>
+  </ion-refresher>
+  <ion-list (press)="mdctrl.isOpenMultiselectChange()" class="ibiz-list">
+    <ion-item-sliding *ngFor="let item of mdctrl.$items">
+      <ion-item (tap)="!mdctrl.$isOpenMultiselect? item.checked=!item.checked : mdctrl.clickItem(item)">
+        <div class="ibiz-list-check">
+          <input type="checkbox" [(ngModel)]="item.checked" (change)="mdctrl.selectedChange(item)" *ngIf="!mdctrl.$isOpenMultiselect">
+        </div>
+        <ion-avatar item-start *ngIf="(item.iconcls != '' && item.iconcls != undefined) || (item.icon != '' && item.icon != undefined)">
+          <ion-icon *ngIf="item.iconcls != '' && item.iconcls != undefined" name="{{item.iconcls}}"></ion-icon>
+          <img *ngIf="item.iconcls == '' || item.iconcls == undefined" src="assets/images/'+{{item.icon}}" />
+        </ion-avatar>
+        <h2>{{ item.srfmajortext }}</h2>
+        <p>{{ item.srfsubtitle }}</p>
+        <ion-note item-right>{{ item.srftime }}</ion-note>
+      </ion-item>
+      <ion-item-options side="right">
+        <button ion-button color="danger" (click)="mdctrl.doRemove(item)">删除</button>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+  <ion-infinite-scroll enabled="false" (ionInfinite)="doInfinite($event)">
+    <ion-infinite-scroll-content loadingSpinner="bubbles" loadingText="Loading more data...">
+    </ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+</ion-content>

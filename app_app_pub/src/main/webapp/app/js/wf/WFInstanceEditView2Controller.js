@@ -1,0 +1,1 @@
+var WFInstanceEditView2Controller = WFInstanceEditView2ControllerBase.extend({});

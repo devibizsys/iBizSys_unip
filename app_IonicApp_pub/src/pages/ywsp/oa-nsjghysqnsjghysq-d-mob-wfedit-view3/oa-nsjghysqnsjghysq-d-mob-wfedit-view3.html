@@ -1,0 +1,88 @@
+<ion-header>
+  <ion-navbar hideBackButton="true">
+        <ion-buttons start *ngIf="!isRootView()">
+            <button ion-button icon-only (click)="backView()">
+                <ion-icon name="arrow-back"></ion-icon>返回
+            </button>
+        </ion-buttons>
+    <ion-title text-center>内设机构会议申请</ion-title>
+    <ion-buttons end>
+          <button ion-button icon-only (click)="presentActionSheet({'title': '', 'opts': [{'text':'查看记录','tag':'CKJL'}]})">
+        <ion-icon name="more"></ion-icon>
+      </button>
+
+    </ion-buttons>
+
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <div [ngSwitch]="segment">
+    <div *ngSwitchCase="'form'">
+      	<ion-list>
+<input  type="hidden" [(ngModel)]="form.$data.srfupdatedate" name="srfupdatedate"><input  type="hidden" [(ngModel)]="form.$data.srforikey" name="srforikey"><input  type="hidden" [(ngModel)]="form.$data.srfkey" name="srfkey"><input  type="hidden" [(ngModel)]="form.$data.srfmajortext" name="srfmajortext"><input  type="hidden" [(ngModel)]="form.$data.srftempmode" name="srftempmode"><input  type="hidden" [(ngModel)]="form.$data.srfuf" name="srfuf"><input  type="hidden" [(ngModel)]="form.$data.srfdeid" name="srfdeid"><input  type="hidden" [(ngModel)]="form.$data.srfsourcekey" name="srfsourcekey"><input  type="hidden" [(ngModel)]="form.$data.oa_nsjghysqid" name="oa_nsjghysqid"><input  type="hidden" [(ngModel)]="form.$data.orguserid" name="orguserid"><input  type="hidden" [(ngModel)]="form.$data.orgusername" name="orgusername"><input  type="hidden" [(ngModel)]="form.$data.orgsectorid" name="orgsectorid"><input  type="hidden" [(ngModel)]="form.$data.hysid" name="hysid">
+          <ion-item-group >
+	
+<ion-item *ngIf="form?.$item?.oa_nsjghysqname?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.oa_nsjghysqname.allowEmpty">*</span>会议名称</ion-avatar>
+	<ion-input type="text" [(ngModel)]="form.$data.oa_nsjghysqname" placeholder="" [disabled]="form.$item.oa_nsjghysqname.disabled" (ngModelChange)="form.fieldChange($event, 'oa_nsjghysqname', form.$item.oa_nsjghysqname)"></ion-input>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.orgsectorname?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.orgsectorname.allowEmpty">*</span>组织部门名称</ion-avatar>
+	<picker [(ngModel)]="form.$data.orgsectorname" textItem="customname" valueItem="orgsectorid" [formService]="form" pickupView='{"view":"OrgSectorMobPickupView"}' (ngModelChange)="form.fieldChange($event, 'orgsectorname', form.$item.orgsectorname)"></picker>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.hysj?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.hysj.allowEmpty">*</span>会议时间</ion-avatar>
+	<ion-datetime displayFormat="YYYY-MM-DD HH:mm" doneText="OK" [(ngModel)]="form.$data.hysj" (ngModelChange)="form.fieldChange($event, 'hysj', form.$item.hysj)"></ion-datetime>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.hysname?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.hysname.allowEmpty">*</span>会议室</ion-avatar>
+	<picker [(ngModel)]="form.$data.hysname" textItem="customname" valueItem="hysid" [formService]="form" pickupView='{"view":"OA_HYSMobPickupView"}' (ngModelChange)="form.fieldChange($event, 'hysname', form.$item.hysname)"></picker>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.hyyq?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.hyyq.allowEmpty">*</span>会议要求</ion-avatar>
+	<ion-input type="text" [(ngModel)]="form.$data.hyyq" placeholder="" [disabled]="form.$item.hyyq.disabled" (ngModelChange)="form.fieldChange($event, 'hyyq', form.$item.hyyq)"></ion-input>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.chld?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.chld.allowEmpty">*</span>参会领导</ion-avatar>
+	<ion-input type="text" [(ngModel)]="form.$data.chld" placeholder="" [disabled]="form.$item.chld.disabled" (ngModelChange)="form.fieldChange($event, 'chld', form.$item.chld)"></ion-input>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.cbcsfzryj?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.cbcsfzryj.allowEmpty">*</span>承办处室负责人意见</ion-avatar>
+	<ion-textarea [(ngModel)]="form.$data.cbcsfzryj" placeholder="" [disabled]="form.$item.cbcsfzryj.disabled" (ngModelChange)="form.fieldChange($event, 'cbcsfzryj', form.$item.cbcsfzryj)"></ion-textarea>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.mscyj?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.mscyj.allowEmpty">*</span>秘书处意见</ion-avatar>
+	<ion-textarea [(ngModel)]="form.$data.mscyj" placeholder="" [disabled]="form.$item.mscyj.disabled" (ngModelChange)="form.fieldChange($event, 'mscyj', form.$item.mscyj)"></ion-textarea>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.ybfzryj?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.ybfzryj.allowEmpty">*</span>院办负责人意见</ion-avatar>
+	<ion-textarea [(ngModel)]="form.$data.ybfzryj" placeholder="" [disabled]="form.$item.ybfzryj.disabled" (ngModelChange)="form.fieldChange($event, 'ybfzryj', form.$item.ybfzryj)"></ion-textarea>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.bz?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.bz.allowEmpty">*</span>备注</ion-avatar>
+	<ion-textarea [(ngModel)]="form.$data.bz" placeholder="" [disabled]="form.$item.bz.disabled" (ngModelChange)="form.fieldChange($event, 'bz', form.$item.bz)"></ion-textarea>
+    </ion-item>	
+
+</ion-item-group>
+
+  
+  </ion-list>
+		<ion-footer>
+        <button ion-button block (click)="clickButton('SaveAndStart')">提交</button>
+
+</ion-footer>
+
+    </div>
+
+  </div>
+</ion-content>

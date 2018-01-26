@@ -1,0 +1,1 @@
+var UserRoleDataActionEditViewController = UserRoleDataActionEditViewControllerBase.extend({});

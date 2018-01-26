@@ -1,0 +1,1 @@
+var OA_CLWXPickupGridViewController = OA_CLWXPickupGridViewControllerBase.extend({});

@@ -1,0 +1,1 @@
+var OA_NSJGHYSQGridViewController = OA_NSJGHYSQGridViewControllerBase.extend({});

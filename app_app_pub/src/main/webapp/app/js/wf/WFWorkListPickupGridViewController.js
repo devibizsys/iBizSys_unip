@@ -1,0 +1,1 @@
+var WFWorkListPickupGridViewController = WFWorkListPickupGridViewControllerBase.extend({});

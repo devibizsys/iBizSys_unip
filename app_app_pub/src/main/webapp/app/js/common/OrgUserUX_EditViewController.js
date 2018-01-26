@@ -1,0 +1,1 @@
+var OrgUserUX_EditViewController = OrgUserUX_EditViewControllerBase.extend({});

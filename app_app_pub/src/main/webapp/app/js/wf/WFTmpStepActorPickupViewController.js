@@ -1,0 +1,1 @@
+var WFTmpStepActorPickupViewController = WFTmpStepActorPickupViewControllerBase.extend({});

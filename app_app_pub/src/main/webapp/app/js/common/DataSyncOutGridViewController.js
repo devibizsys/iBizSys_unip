@@ -1,0 +1,1 @@
+var DataSyncOutGridViewController = DataSyncOutGridViewControllerBase.extend({});

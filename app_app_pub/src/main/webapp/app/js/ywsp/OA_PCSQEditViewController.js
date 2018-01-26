@@ -1,0 +1,1 @@
+var OA_PCSQEditViewController = OA_PCSQEditViewControllerBase.extend({});

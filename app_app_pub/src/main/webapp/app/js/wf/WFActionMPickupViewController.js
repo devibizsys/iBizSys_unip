@@ -1,0 +1,1 @@
+var WFActionMPickupViewController = WFActionMPickupViewControllerBase.extend({});

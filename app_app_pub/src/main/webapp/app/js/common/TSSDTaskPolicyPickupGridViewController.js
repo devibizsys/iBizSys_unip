@@ -1,0 +1,1 @@
+var TSSDTaskPolicyPickupGridViewController = TSSDTaskPolicyPickupGridViewControllerBase.extend({});

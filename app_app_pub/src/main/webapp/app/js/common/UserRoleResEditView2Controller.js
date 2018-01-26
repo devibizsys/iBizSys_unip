@@ -1,0 +1,1 @@
+var UserRoleResEditView2Controller = UserRoleResEditView2ControllerBase.extend({});

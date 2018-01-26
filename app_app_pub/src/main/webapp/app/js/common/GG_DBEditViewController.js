@@ -1,0 +1,1 @@
+var GG_DBEditViewController = GG_DBEditViewControllerBase.extend({});

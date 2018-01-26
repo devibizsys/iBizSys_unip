@@ -1,0 +1,1 @@
+var OA_XMJDEditView2Controller = OA_XMJDEditView2ControllerBase.extend({});

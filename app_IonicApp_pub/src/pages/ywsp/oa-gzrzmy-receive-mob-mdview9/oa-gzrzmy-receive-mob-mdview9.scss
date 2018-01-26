@@ -1,0 +1,89 @@
+oa-gzrzmy-receive-mob-mdview9 {
+    ion-note {
+        position: absolute;
+        top: 7px;
+        right: 8px;
+        font-size: 1.3rem;
+    }
+    .item {
+        padding-left: 0;
+    }
+    .item.item-block .item-inner {
+        padding-right: 0;    
+    }
+    .card {
+        margin: 0;
+        width: 100%;
+    }
+    .card-header {
+        padding-bottom: 8px;
+    }
+    ion-card-header>p {
+        font-size: 1.3rem !important;
+        color: #999 !important;
+        padding: 6px 0;
+    }
+    ion-label{
+        margin: 0 !important;
+        white-space: initial;
+    }
+    .item h2 {
+        margin: 2px 0 0 0;
+    }
+    .ibiz-searchform>.item{
+        min-height: 3.6rem;
+    }
+    .ibiz-searchform ion-segment {
+        background: #fff;
+    }
+    .ibiz-searchform .segment .segment-button {
+        border: 0;
+        font-size: 1.4rem;        
+        height: 3.5rem;
+        line-height: 4.5rem;      
+    }   
+    .ibiz-searchbtn {
+        margin: 0 0.3rem;
+        width: calc(50% - 0.8rem);
+        margin-top: 20px;
+        box-shadow: initial;
+        -webkit-box-shadow: initial;
+    }
+    .ibiz-searchform-content{
+        background: #fff;
+        padding-bottom: 10px;
+        .ibiz-searchform-label {
+            padding: 18px 16px 0px 16px;
+            margin: 5px 16px 8px 0;
+        }
+        .text-input{
+            margin: 10px 0px 6px 10px;
+        }
+        .select-icon-inner{
+            margin-top: -1px !important;
+        }
+        .select{
+            width: 100%;
+            padding: 21px 8px 13px 0px;
+        }
+        .item.item-input.input-has-focus .item-inner {
+            border-bottom: 0;
+            box-shadow: initial;
+        }
+    }
+    .ibiz-searchform{
+        .segment-ios .segment-button{
+            line-height:4rem !important;
+        }
+        .segment-ios .segment-activated{
+            background-color: initial !important;
+        }
+        .input-ios{
+            margin-top: 8px !important;
+        }
+        .text-input{
+            margin: 10px 0px 6px -5px;
+            text-align: right;
+        }
+    }
+}

@@ -1,0 +1,1 @@
+var UserRoleDEFieldEditView2Controller = UserRoleDEFieldEditView2ControllerBase.extend({});

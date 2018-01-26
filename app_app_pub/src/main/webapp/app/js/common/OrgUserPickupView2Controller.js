@@ -1,0 +1,1 @@
+var OrgUserPickupView2Controller = OrgUserPickupView2ControllerBase.extend({});

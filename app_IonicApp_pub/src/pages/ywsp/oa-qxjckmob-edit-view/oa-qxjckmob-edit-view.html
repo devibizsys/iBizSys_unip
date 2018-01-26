@@ -1,0 +1,95 @@
+<ion-header>
+  <ion-navbar hideBackButton="true">
+        <ion-buttons start *ngIf="!isRootView()">
+            <button ion-button icon-only (click)="backView()">
+                <ion-icon name="arrow-back"></ion-icon>返回
+            </button>
+        </ion-buttons>
+    <ion-title text-center>请休假</ion-title>
+    <ion-buttons end>
+    </ion-buttons>
+
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+<input  type="hidden" [(ngModel)]="form.$data.srfupdatedate" name="srfupdatedate"><input  type="hidden" [(ngModel)]="form.$data.srforikey" name="srforikey"><input  type="hidden" [(ngModel)]="form.$data.srfkey" name="srfkey"><input  type="hidden" [(ngModel)]="form.$data.srfmajortext" name="srfmajortext"><input  type="hidden" [(ngModel)]="form.$data.srftempmode" name="srftempmode"><input  type="hidden" [(ngModel)]="form.$data.srfuf" name="srfuf"><input  type="hidden" [(ngModel)]="form.$data.srfdeid" name="srfdeid"><input  type="hidden" [(ngModel)]="form.$data.srfsourcekey" name="srfsourcekey"><input  type="hidden" [(ngModel)]="form.$data.srfusername" name="srfusername"><input  type="hidden" [(ngModel)]="form.$data.orguserid" name="orguserid"><input  type="hidden" [(ngModel)]="form.$data.oa_qxjid" name="oa_qxjid">
+          <ion-item-group class="hidden">
+	
+<ion-item *ngIf="form?.$item?.srfobj?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.srfobj.allowEmpty">*</span>请休假步骤</ion-avatar>
+	<ion-avatar>{{form.$data.srfobj}}</ion-avatar>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.srfobj2?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.srfobj2.allowEmpty">*</span>请休假状态</ion-avatar>
+	<ion-avatar>{{form.$data.srfobj2}}</ion-avatar>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.srfobj3?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.srfobj3.allowEmpty">*</span>请休假是否审核通过</ion-avatar>
+	<ion-select text-right [(ngModel)]="form.$data.srfobj3" *ngIf="form.$item.srfobj3.config" interface="popover" (ngModelChange)="form.fieldChange($event, 'srfobj3', form.$item.srfobj3)">
+        <ion-option value="">请选择</ion-option>
+        <ion-option *ngFor="let item of form.$item.srfobj3.config.items" value="{{ item.value }}">{{item.text}}</ion-option>
+      </ion-select>
+    </ion-item>	
+
+</ion-item-group>
+
+      <ion-item-group class="editzs-top">
+	
+<ion-card>
+    <ion-card-header>
+        <ion-avatar item-start *ngIf="(form.$data.iconcls != '' && form.$data.iconcls != undefined) || (form.$data.icon != '' && form.$data.icon != undefined)">
+            <ion-icon *ngIf="form.$data.iconcls != '' && form.$data.iconcls != undefined" name="{{form.$data.iconcls}}"></ion-icon>
+        </ion-avatar>
+        <ion-avatar class="userIcon" item-start *ngIf="(form.$data.iconcls == '' || form.$data.iconcls == undefined) && (form.$data.icon == '' || form.$data.icon == undefined)">
+               {{ form.$data.srfusername?.substring(form.$data.srfusername.length-2) }}
+        </ion-avatar>
+        <h2 class="font-bold">{{form.$data.srfusername}}</h2>
+        <p>{{form.$data.srfobj}} {{form.$data.srfobj2}}</p>
+    </ion-card-header>
+    <img *ngIf="form.$data.srfobj3==1 && form.$data.srfobj3 != ''" src="{{$IBizApp.imagePath+'agree.png'}}">
+    <img *ngIf="form.$data.srfobj3==0 && form.$data.srfobj3 != ''" src="{{$IBizApp.imagePath+'disagree.png'}}">
+</ion-card>
+
+</ion-item-group>
+
+      <ion-item-group class="wfspcss">
+	
+<ion-item *ngIf="form?.$item?.qxjlx?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.qxjlx.allowEmpty">*</span>请休假类型</ion-avatar>
+	<ion-avatar>{{form.$data.qxjlx}}</ion-avatar>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.sc?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.sc.allowEmpty">*</span>请假时长（天）</ion-avatar>
+	<ion-avatar>{{form.$data.sc}}</ion-avatar>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.kssj?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.kssj.allowEmpty">*</span>开始时间</ion-avatar>
+	<ion-avatar>{{form.$data.kssj}}</ion-avatar>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.jssj?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.jssj.allowEmpty">*</span>结束时间</ion-avatar>
+	<ion-avatar>{{form.$data.jssj}}</ion-avatar>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.cjgzsj?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.cjgzsj.allowEmpty">*</span>参加工作时间</ion-avatar>
+	<ion-avatar>{{form.$data.cjgzsj}}</ion-avatar>
+    </ion-item>	
+
+<ion-item *ngIf="form?.$item?.qxjsy?.visible" class="ibiz-formitem left">
+        <ion-avatar class="ibiz-formitem-label" item-start><span class="span-stars" *ngIf="form.$item.qxjsy.allowEmpty">*</span>请休假事由</ion-avatar>
+	<ion-avatar>{{form.$data.qxjsy}}</ion-avatar>
+    </ion-item>	
+
+</ion-item-group>
+
+  
+  </ion-list>
+</ion-content>

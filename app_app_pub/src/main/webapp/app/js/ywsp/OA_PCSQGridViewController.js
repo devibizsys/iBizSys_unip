@@ -1,0 +1,1 @@
+var OA_PCSQGridViewController = OA_PCSQGridViewControllerBase.extend({});

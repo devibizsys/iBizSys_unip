@@ -1,0 +1,30 @@
+mywork {
+    .menu-group-right {
+            .menu-counter {
+        position: relative;
+        top: -3.4em;
+        left: 1.2em;
+        margin: 0 auto;
+        color: red;
+        width: 20px;
+        border-radius: 50%;
+        background:#f4f4f4;
+    }
+    }
+    .menu-group-img {
+              .menu-counter {
+        color: #fff;
+        margin: 0 auto;
+        height: 2em;
+        width: 2em;
+        line-height: 2em;
+        border-radius:5px;
+        background:rgb(214, 30, 30);
+        text-align: center;
+        font-size: 2rem;
+    }
+    .menu-icon {
+        display: none;
+    }
+    }
+}

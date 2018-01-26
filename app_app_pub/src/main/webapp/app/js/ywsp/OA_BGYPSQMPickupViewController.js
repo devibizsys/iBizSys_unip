@@ -1,0 +1,1 @@
+var OA_BGYPSQMPickupViewController = OA_BGYPSQMPickupViewControllerBase.extend({});

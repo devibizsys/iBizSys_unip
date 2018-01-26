@@ -1,0 +1,1 @@
+var OA_CHRYEditViewController = OA_CHRYEditViewControllerBase.extend({});

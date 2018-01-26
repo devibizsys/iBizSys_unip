@@ -1,0 +1,1 @@
+var WFWorkListEditView2Controller = WFWorkListEditView2ControllerBase.extend({});

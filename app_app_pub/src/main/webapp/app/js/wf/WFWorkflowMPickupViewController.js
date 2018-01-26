@@ -1,0 +1,1 @@
+var WFWorkflowMPickupViewController = WFWorkflowMPickupViewControllerBase.extend({});

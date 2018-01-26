@@ -1,0 +1,1 @@
+var OA_XMJDGridViewController = OA_XMJDGridViewControllerBase.extend({});

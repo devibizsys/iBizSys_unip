@@ -1,0 +1,1 @@
+var WXAccountPickupViewController = WXAccountPickupViewControllerBase.extend({});

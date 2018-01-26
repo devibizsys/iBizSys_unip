@@ -1,0 +1,1 @@
+var TSSDGroupGridViewController = TSSDGroupGridViewControllerBase.extend({});

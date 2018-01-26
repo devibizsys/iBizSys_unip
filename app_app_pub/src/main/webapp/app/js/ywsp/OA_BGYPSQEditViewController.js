@@ -1,0 +1,1 @@
+var OA_BGYPSQEditViewController = OA_BGYPSQEditViewControllerBase.extend({});

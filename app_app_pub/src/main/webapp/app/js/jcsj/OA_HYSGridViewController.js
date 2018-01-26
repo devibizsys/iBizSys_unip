@@ -1,0 +1,1 @@
+var OA_HYSGridViewController = OA_HYSGridViewControllerBase.extend({});

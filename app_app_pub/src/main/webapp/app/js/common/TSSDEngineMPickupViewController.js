@@ -1,0 +1,1 @@
+var TSSDEngineMPickupViewController = TSSDEngineMPickupViewControllerBase.extend({});

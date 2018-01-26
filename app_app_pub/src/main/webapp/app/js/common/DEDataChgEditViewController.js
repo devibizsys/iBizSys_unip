@@ -1,0 +1,1 @@
+var DEDataChgEditViewController = DEDataChgEditViewControllerBase.extend({});

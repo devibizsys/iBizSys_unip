@@ -1,0 +1,30 @@
+picker {
+    float: right;
+    .label{
+        float: left;
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 0;
+        white-space: initial;
+    }
+
+    .icon{
+        color: #bbb;
+        float: right;
+        font-size: 1.5em;
+        margin-top: 6px !important;
+        margin-bottom: 0 !important;
+    }
+    ion-badge {
+        padding: 8px 8px 3px 8px;
+        font-weight: initial;
+    }
+    .badge .icon {
+        margin: -3px 0 0 5px !important;
+    }
+    .badge {
+        color: #333;
+        background-color: #e7f2fb;
+        margin: 3px 5px 3px 0;
+    }
+}

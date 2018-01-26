@@ -1,0 +1,1 @@
+var OA_CGSQPickupViewController = OA_CGSQPickupViewControllerBase.extend({});

@@ -1,0 +1,1 @@
+var SysAdminEditViewController = SysAdminEditViewControllerBase.extend({});

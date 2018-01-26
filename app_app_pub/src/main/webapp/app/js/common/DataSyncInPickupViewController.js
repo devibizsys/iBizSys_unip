@@ -1,0 +1,1 @@
+var DataSyncInPickupViewController = DataSyncInPickupViewControllerBase.extend({});

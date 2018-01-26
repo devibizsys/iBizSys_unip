@@ -1,0 +1,1 @@
+var WFTmpStepActorGridViewController = WFTmpStepActorGridViewControllerBase.extend({});

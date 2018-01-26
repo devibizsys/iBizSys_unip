@@ -1,0 +1,1 @@
+var SystemPickupViewController = SystemPickupViewControllerBase.extend({});

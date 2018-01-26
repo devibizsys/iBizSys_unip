@@ -1,0 +1,1 @@
+var UserGroupDetailPickupGridViewController = UserGroupDetailPickupGridViewControllerBase.extend({});

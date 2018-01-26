@@ -1,0 +1,1 @@
+var OA_FLFGGridViewController = OA_FLFGGridViewControllerBase.extend({});

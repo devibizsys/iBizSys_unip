@@ -1,0 +1,1 @@
+var OrgUX_UserMgrViewController = OrgUX_UserMgrViewControllerBase.extend({});

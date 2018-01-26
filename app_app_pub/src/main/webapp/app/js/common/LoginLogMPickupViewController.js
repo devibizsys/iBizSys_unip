@@ -1,0 +1,1 @@
+var LoginLogMPickupViewController = LoginLogMPickupViewControllerBase.extend({});

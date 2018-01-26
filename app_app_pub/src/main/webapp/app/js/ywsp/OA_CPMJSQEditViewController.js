@@ -1,0 +1,1 @@
+var OA_CPMJSQEditViewController = OA_CPMJSQEditViewControllerBase.extend({});

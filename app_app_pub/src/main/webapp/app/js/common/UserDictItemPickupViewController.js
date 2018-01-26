@@ -1,0 +1,1 @@
+var UserDictItemPickupViewController = UserDictItemPickupViewControllerBase.extend({});

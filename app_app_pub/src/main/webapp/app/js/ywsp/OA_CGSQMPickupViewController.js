@@ -1,0 +1,1 @@
+var OA_CGSQMPickupViewController = OA_CGSQMPickupViewControllerBase.extend({});

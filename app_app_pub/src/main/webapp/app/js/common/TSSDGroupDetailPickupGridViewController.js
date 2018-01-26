@@ -1,0 +1,1 @@
+var TSSDGroupDetailPickupGridViewController = TSSDGroupDetailPickupGridViewControllerBase.extend({});

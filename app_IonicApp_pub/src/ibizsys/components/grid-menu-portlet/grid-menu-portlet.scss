@@ -1,0 +1,22 @@
+grid-menu-portlet {
+  .slide-zoom,
+  .grid,
+  .row {
+    height: 100%;
+  }
+  .col {
+    height: 50%;
+    padding: 11px;
+    padding-top: 16px;
+  }
+  .col img {
+    height: 2.5em;
+    width: 2.5em;
+  }
+  .icon {
+    font-size: 2em;
+  }
+  .menu-name {
+    font-size: 0.9em;
+  }
+}

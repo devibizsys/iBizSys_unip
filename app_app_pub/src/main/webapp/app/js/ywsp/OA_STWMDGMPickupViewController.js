@@ -1,0 +1,1 @@
+var OA_STWMDGMPickupViewController = OA_STWMDGMPickupViewControllerBase.extend({});

@@ -1,0 +1,1 @@
+var OA_CPMJSQEditView2Controller = OA_CPMJSQEditView2ControllerBase.extend({});

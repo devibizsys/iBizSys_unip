@@ -1,0 +1,1 @@
+var WFActionPickupGridViewController = WFActionPickupGridViewControllerBase.extend({});

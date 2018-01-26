@@ -1,0 +1,1 @@
+var WFActionGridViewController = WFActionGridViewControllerBase.extend({});

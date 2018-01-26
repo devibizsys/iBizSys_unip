@@ -1,0 +1,43 @@
+
+<ion-list class="ibiz-searchform">
+<ion-item>
+    <ion-segment [(ngModel)]="searchform.activeValue">
+
+        <ion-segment-button (click)="searchform.toggleSearchMore()">
+          高级搜索
+        </ion-segment-button>
+    </ion-segment>
+</ion-item>
+<div *ngIf="searchform.$searchMore"  class="ibiz-searchform-content">
+          <ion-item *ngIf="searchform.$item.n_wfworkflowid_eq.visible">
+        <ion-avatar item-start class="ibiz-searchform-label"><span class="span-stars" *ngIf="searchform.$item.n_wfworkflowid_eq.allowEmpty">*</span>审批类型</ion-avatar>
+	<ion-select [selectOptions]="{title:'审批类型',cssClass:'ibiz-select-alert'}" cancelText="取消" okText="确定" [(ngModel)]="searchform.$data.n_wfworkflowid_eq" *ngIf="searchform.$item.n_wfworkflowid_eq.config" multiple=true (ngModelChange)="searchform.fieldChange($event, 'n_wfworkflowid_eq', searchform.$item.n_wfworkflowid_eq)">
+        <ion-option *ngFor="let item of searchform.$item.n_wfworkflowid_eq.config.items" value="{{ item.value }}">{{item.text}}</ion-option>
+      </ion-select>
+    </ion-item>
+
+
+      <button ion-button class="ibiz-searchbtn" (click)="searchform.onResetClick()">重置</button>
+      <button ion-button class="ibiz-searchbtn" (click)="searchform.onSearchClick()">确认</button>
+</div>
+</ion-list>
+    <ion-list>
+    <ion-item-sliding *ngFor="let item of mdctrl.$items">
+      <ion-item (tap)="mdctrl.clickItem(item)">
+        <ion-card>
+          <ion-card-header>
+            <ion-avatar item-start *ngIf="(item.iconcls != '' && item.iconcls != undefined) || (item.icon != '' && item.icon != undefined)">
+              <ion-icon *ngIf="item.iconcls != '' && item.iconcls != undefined" name="{{item.iconcls}}"></ion-icon>
+              <img *ngIf="item.iconcls == '' || item.iconcls == undefined" src="/assets/images/'+{{item.icon}}" />
+            </ion-avatar>
+            <h2>{{ item.srfmajortext }}</h2>
+            <p>{{ item.srfsubtitle }} {{item.srftype}}</p>
+            <ion-note item-right>{{ item.srftime }}</ion-note>
+            </ion-card-header>
+        </ion-card>
+      </ion-item>
+        <ion-item-options side="right">
+          <button ion-button color="danger" (click)="mdctrl.doRemove(item)">删除</button>
+        </ion-item-options>
+      </ion-item-sliding>
+  </ion-list>

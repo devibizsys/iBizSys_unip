@@ -1,0 +1,1 @@
+var OA_JPYDPickupGridViewController = OA_JPYDPickupGridViewControllerBase.extend({});

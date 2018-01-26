@@ -1,0 +1,1 @@
+var UserRoleDataActionPickupGridViewController = UserRoleDataActionPickupGridViewControllerBase.extend({});

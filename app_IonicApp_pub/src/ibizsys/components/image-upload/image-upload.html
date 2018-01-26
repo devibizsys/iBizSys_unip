@@ -1,0 +1,18 @@
+<ion-grid>
+  <ion-row>
+    <ion-col col-12>
+      <input #fileUpload hidden=true type="file" ng2FileSelect [uploader]="uploader" multiple accept="image/gif, image/jpeg, image/jpg, image/png" (change)="fileChange()"/>
+    </ion-col>
+    <ion-col col-3 *ngFor="let file of files;let i = index;" text-center>
+      <ion-icon name="close-circle" class="delete-image" (tap)="deleteFile(file.id, i)"></ion-icon>
+      <img src="fieldUpload/exportfile.jsp?fileid={{file.id}}" class="ibiz-file-image">
+    </ion-col>
+
+    <div class="image-plus-list">
+      <ion-col col-3 text-center (tap)="fileSelect()">
+        <ion-icon name="images" class="image-plus"></ion-icon>
+      </ion-col>
+    </div>
+
+  </ion-row>
+</ion-grid>

@@ -1,0 +1,1 @@
+var OrgSectorMgrViewController = OrgSectorMgrViewControllerBase.extend({});

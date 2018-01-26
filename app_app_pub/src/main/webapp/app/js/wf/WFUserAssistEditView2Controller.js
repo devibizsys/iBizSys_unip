@@ -1,0 +1,1 @@
+var WFUserAssistEditView2Controller = WFUserAssistEditView2ControllerBase.extend({});

@@ -1,0 +1,1 @@
+var WFReminderMPickupViewController = WFReminderMPickupViewControllerBase.extend({});

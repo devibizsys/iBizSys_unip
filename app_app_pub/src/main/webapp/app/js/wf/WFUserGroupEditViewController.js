@@ -1,0 +1,1 @@
+var WFUserGroupEditViewController = WFUserGroupEditViewControllerBase.extend({});

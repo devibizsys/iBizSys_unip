@@ -1,0 +1,1 @@
+var OrgSecUserGridViewController = OrgSecUserGridViewControllerBase.extend({});

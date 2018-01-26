@@ -1,0 +1,1 @@
+var TSSDGroupEditView2Controller = TSSDGroupEditView2ControllerBase.extend({});

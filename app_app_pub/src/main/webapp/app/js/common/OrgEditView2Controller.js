@@ -1,0 +1,1 @@
+var OrgEditView2Controller = OrgEditView2ControllerBase.extend({});

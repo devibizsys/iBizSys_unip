@@ -1,0 +1,1 @@
+var MsgSendQueueHisGridViewController = MsgSendQueueHisGridViewControllerBase.extend({});

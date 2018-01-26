@@ -1,0 +1,1 @@
+var OrgUserUX_GridView2Controller = OrgUserUX_GridView2ControllerBase.extend({});

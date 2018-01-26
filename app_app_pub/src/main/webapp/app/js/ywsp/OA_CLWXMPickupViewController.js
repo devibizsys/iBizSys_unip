@@ -1,0 +1,1 @@
+var OA_CLWXMPickupViewController = OA_CLWXMPickupViewControllerBase.extend({});

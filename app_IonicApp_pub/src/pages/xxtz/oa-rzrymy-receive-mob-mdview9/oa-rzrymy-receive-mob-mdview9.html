@@ -1,0 +1,59 @@
+
+<ion-list class="ibiz-searchform">
+<ion-item>
+    <ion-segment [(ngModel)]="searchform.activeValue">
+      <ion-segment-button [ngClass]="{activated: searchform.activeValue==item.value}" *ngFor="let item of searchform?.$item?.n_sfyd_eq?.config?.items" value="{{ item.value }}" (tap)="searchform.quickSearch( 'n_sfyd_eq', item.value )">
+        {{ item.text }}
+</ion-segment-button>
+
+
+        <ion-segment-button (click)="searchform.toggleSearchMore()">
+          高级搜索
+        </ion-segment-button>
+    </ion-segment>
+</ion-item>
+<div *ngIf="searchform.$searchMore"  class="ibiz-searchform-content">
+          <ion-item *ngIf="searchform.$item.n_rzlx_eq.visible">
+        <ion-avatar item-start class="ibiz-searchform-label"><span class="span-stars" *ngIf="searchform.$item.n_rzlx_eq.allowEmpty">*</span>日志类型(=)</ion-avatar>
+	<ion-select text-right [(ngModel)]="searchform.$data.n_rzlx_eq" *ngIf="searchform.$item.n_rzlx_eq.config" interface="popover" (ngModelChange)="searchform.fieldChange($event, 'n_rzlx_eq', searchform.$item.n_rzlx_eq)">
+        <ion-option value="">请选择</ion-option>
+        <ion-option *ngFor="let item of searchform.$item.n_rzlx_eq.config.items" value="{{ item.value }}">{{item.text}}</ion-option>
+      </ion-select>
+    </ion-item>
+
+      <ion-item *ngIf="searchform.$item.n_oa_rzryname_like.visible">
+        <ion-avatar item-start class="ibiz-searchform-label"><span class="span-stars" *ngIf="searchform.$item.n_oa_rzryname_like.allowEmpty">*</span>日志人员名称(%)</ion-avatar>
+	<ion-input type="text" [(ngModel)]="searchform.$data.n_oa_rzryname_like" placeholder="" [disabled]="searchform.$item.n_oa_rzryname_like.disabled" (ngModelChange)="searchform.fieldChange($event, 'n_oa_rzryname_like', searchform.$item.n_oa_rzryname_like)"></ion-input>
+    </ion-item>
+
+
+      <button ion-button class="ibiz-searchbtn" (click)="searchform.onResetClick()">重置</button>
+      <button ion-button class="ibiz-searchbtn" (click)="searchform.onSearchClick()">确认</button>
+</div>
+</ion-list>
+  <ion-list class="md-list">
+  <ion-item  (tap)="mdctrl.clickItem(item)"  *ngFor="let item of mdctrl.$items">
+    <ion-card>
+      <ion-card-header>
+        <ion-avatar item-start *ngIf="(item.iconcls != '' && item.iconcls != undefined) || (item.icon != '' && item.icon != undefined)">
+          <ion-icon *ngIf="item.iconcls != '' && item.iconcls != undefined" name="{{item.iconcls}}"></ion-icon>
+          <img *ngIf="item.iconcls == '' || item.iconcls == undefined" src="/assets/images/'+{{item.icon}}" />
+        </ion-avatar>
+        <ion-avatar class="userIcon" item-start *ngIf="(item.iconcls == '' || item.iconcls == undefined) && (item.icon == '' || item.icon == undefined)">
+            {{ item.srfname?.substring(item.srfname.length-2) }}
+        </ion-avatar>
+        <h2 class="font-bold">{{ item.srfname }}</h2>
+        <p>{{item.srftime}}</p>
+        <ion-note item-right>{{item.srfstate}}</ion-note>
+      </ion-card-header>
+      <ion-card-content>
+        <h3>{{item.srfsubtitle}}</h3>
+        <p>
+        <span>{{item.srfcontenttitle}}：</span>
+          {{item.srfcontent}}
+        </p>
+        <div text-right>查看全文></div>
+      </ion-card-content>
+    </ion-card>
+  </ion-item>
+</ion-list>

@@ -1,0 +1,1 @@
+var OA_GZRZEditView2Controller = OA_GZRZEditView2ControllerBase.extend({});

@@ -1,0 +1,1 @@
+var DataSyncOut2PickupViewController = DataSyncOut2PickupViewControllerBase.extend({});

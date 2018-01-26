@@ -1,0 +1,1 @@
+var OrgUserJXKHJCRYPickupViewController = OrgUserJXKHJCRYPickupViewControllerBase.extend({});

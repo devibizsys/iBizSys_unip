@@ -1,0 +1,1 @@
+var UserRoleEditView3Controller = UserRoleEditView3ControllerBase.extend({});

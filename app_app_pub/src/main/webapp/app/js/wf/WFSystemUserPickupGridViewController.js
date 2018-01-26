@@ -1,0 +1,1 @@
+var WFSystemUserPickupGridViewController = WFSystemUserPickupGridViewControllerBase.extend({});

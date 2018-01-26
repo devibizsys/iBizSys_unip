@@ -1,0 +1,1 @@
+var OA_QXJEditView2Controller = OA_QXJEditView2ControllerBase.extend({});
